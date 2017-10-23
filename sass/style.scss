@@ -1,0 +1,11 @@
+$colorRed: #C0392B;
+$colorGray: #F2F2F2;
+$colorLight: #FFFFFF;
+$colorP: #949697;
+@import 'content';
+.myHeading{
+	padding-left: 15px;
+	border-left: 3px solid $colorRed;
+}
+
+
