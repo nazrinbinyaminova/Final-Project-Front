@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   font: 14px/1.5 "Open Sans", Arial, sans-serif;
@@ -181,4 +182,47 @@ body {
   margin: 0;
   border-bottom: 1px solid #2F4154;
   color: #ECECED;
+=======
+#content {
+  width: 100%;
+}
+#content .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+#content .wrapper .container .row .col-md-8 .myPadding {
+  padding: 0px 45px 0px 0px;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide {
+  width: 100%;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide img {
+  width: 100%;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo {
+  padding: 5px 10px 5px 10px;
+  background-color: #F2F2F2;
+  height: 28px;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo time {
+  float: left;
+  color: #949697;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo i {
+  float: right;
+  color: #949697;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 h4.headingClass {
+  font-size: 17px;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 p {
+  color: #949697;
+  font-size: 14px;
+}
+
+.myHeading, #content .wrapper .container .row .col-md-8 h2.headClass, #content .wrapper .container .row .col-md-8 .col-md-6 h4.headingClass {
+  padding-left: 15px;
+  border-left: 3px solid #C0392B;
+>>>>>>> origin/master
 }
