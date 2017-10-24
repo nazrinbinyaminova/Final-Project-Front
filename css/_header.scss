@@ -1,0 +1,239 @@
+body {
+	margin: 0;
+	font: 14px/1.5 "Open Sans", Arial, sans-serif;
+}
+
+.active {
+	border-bottom: 2px solid $colorred;
+}
+
+#header {
+	.topHead {
+		width: 100%;
+		height: 46px;
+		padding: 12px 0;
+		background: $color;
+		border-top: 4px solid $colorred;
+		.container {
+			.row {
+				.trending {
+					color: $colorred;
+					margin-right: 50px; 
+				}
+				.contactLink {
+					display: inline-block;
+					float: right;
+
+					li {
+						display: inline-block;
+						list-style-type: none;
+						width: 20px;
+						height: 20px;
+						text-align: center;
+
+						i {
+							color: $color;
+						}
+					}
+				}
+
+				.search {
+					display: inline-block;
+					background: #E9E9E9;
+					float: right;
+					margin-left: 50px;
+
+					input {
+						border: none;
+						background: #E9E9E9;
+						outline: none;
+					}
+
+					i {
+						color: gray;
+					}
+				}
+			}
+		}
+	}
+		
+}
+	
+#navHead {
+	.container {
+		.smart {
+			a{
+				color: $blackcolor;
+				text-decoration: none;
+
+				p {
+					font-size: 250%;
+					padding: 40px 0;
+					font-weight: 900;
+					span {
+						color: $colorred;
+					}
+				}
+			}
+		}
+
+		.row {
+			.col-md-12 {
+				>ul {
+					list-style-type: none;
+					padding: 0;
+					background-color: $blackcolor;
+					position: relative;
+					border-bottom: 2px solid #2F4154;
+
+
+					>li {
+						float: left;
+						padding: 12px 25px;
+						margin-bottom:-2px;
+
+						&:hover {
+							background-color: #1E2935;
+							transition: all 0.3s ease;
+							border-bottom: 2px solid $colorred;
+						}
+
+						>a {
+							text-decoration: none;
+							color: $navcolor;
+						}
+						>i {
+							color: $navcolor;
+						}
+
+					}
+					.dropDownMenuFeatures {
+						position: absolute;	
+						padding: 40px 0;
+						background-color: $blackcolor;
+						top: 47px;
+						left: 0;
+						width: 100%;
+
+						ul {
+							padding: 0 30px;
+							a {
+								text-decoration: none;
+								color: $navcolor;
+								h5 {
+									padding: 10px 0;
+									font-weight: bold;
+									margin: 0;
+									border-bottom: 1px solid #2F4154;
+								}
+							}
+							li {
+								padding: 10px 8px;
+								list-style-type:none;
+								border-bottom: 0.1px solid #1F2C38;
+								font-size: 13px;
+
+								i {
+									color: $navcolor;
+								}
+							}
+						}
+					}
+
+					.dropDownMenuEnter {
+						position: absolute;	
+						background-color: $blackcolor;
+						top: 47px;
+						left: 0;
+						width: 100%;
+						.col-md-3{
+							
+							ul {
+								background-color:#1E2935;
+								height: 370px;
+								
+								li {
+									border-bottom: 0.1px solid #1F2C38;
+								}
+							}
+						}
+						.col-md-6 {
+							ul {
+								
+								li {
+									.comment {
+										height: 30px;
+										background-color: white;
+										padding: 5px 10px;
+										span {
+											float: left;
+											color: gray;
+										}
+										p {
+											color: gray;
+											float: right;
+										}
+									}
+									a {
+										h5 {
+											padding: 2px 5px;
+											border-width: 0 0 0 2px;
+											border-color: $colorred;
+											border-left: 4px solid $colorred;
+										}
+									}
+									.col-md-3 {
+										img {
+											width: 100%;
+										}
+									}
+									.col-md-9 {
+										.dropDownRightComment {
+											span {
+												color: gray;
+												float: left;
+											}
+											p {
+												color: gray;
+												float: right;
+											}
+											a{
+												h5{
+													font-size: 13px;
+													border: 0;
+													border-bottom: 1px solid #2F4154;
+													padding: 0 0 14px 0;
+													font-weight: bold;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						ul {
+							padding: 30px 28px;
+							
+							li {
+								padding: 20px 0 0 0 ;
+								list-style-type:none;
+								font-size: 14px;
+								a {
+									text-decoration: none;
+									color: $navcolor;
+								}
+							}
+
+							h5 {
+								padding: 10px 0;
+								margin: 0;
+								border-bottom: 1px solid #2F4154;
+								color: $navcolor;
+							}
+						}
+					}		
+				}
+			}
+		}
+	}
+}
