@@ -17,19 +17,19 @@ $(document).ready(function(){
 		})
 	})
 
-	$(".dropDownMenuFeatures").hide();
-	$(".menuDropFeatures").hover(function(){
-		$(".dropDownMenuFeatures").fadeIn();
-	}, function(){
-		$(".dropDownMenuFeatures").fadeOut();
-	});
+	// $(".dropDownMenuFeatures").hide();
+	// $(".menuDropFeatures").hover(function(){
+	// 	$(".dropDownMenuFeatures").fadeIn();
+	// }, function(){
+	// 	$(".dropDownMenuFeatures").fadeOut();
+	// });
 
-	$(".dropDownMenuEnter").hide();
-	$(".menuDropEnter").hover(function(){
-		$(".dropDownMenuEnter").fadeIn();
-	}, function(){
-		$(".dropDownMenuEnter").fadeOut();
-	});
+	// $(".dropDownMenuEnter").hide();
+	// $(".menuDropEnter").hover(function(){
+	// 	$(".dropDownMenuEnter").fadeIn();
+	// }, function(){
+	// 	$(".dropDownMenuEnter").fadeOut();
+	// });
 })
 
 

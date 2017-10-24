@@ -1,7 +1,9 @@
-<<<<<<< HEAD
 body {
   margin: 0;
   font: 14px/1.5 "Open Sans", Arial, sans-serif;
+}
+body i {
+  padding: 0 5px;
 }
 
 .active {
@@ -10,18 +12,16 @@ body {
 
 #header .topHead {
   width: 100%;
-  height: 46px;
-  padding: 12px 0;
+  padding: 10px 0;
   background: #F2F2F2;
   border-top: 4px solid #E54E53;
 }
 #header .topHead .container .row .trending {
   color: #E54E53;
-  margin-right: 50px;
 }
 #header .topHead .container .row .contactLink {
   display: inline-block;
-  float: right;
+  padding: 0;
 }
 #header .topHead .container .row .contactLink li {
   display: inline-block;
@@ -36,8 +36,7 @@ body {
 #header .topHead .container .row .search {
   display: inline-block;
   background: #E9E9E9;
-  float: right;
-  margin-left: 50px;
+  padding: 2px 7px;
 }
 #header .topHead .container .row .search input {
   border: none;
@@ -48,13 +47,16 @@ body {
   color: gray;
 }
 
+#navHead {
+  padding: 20px 0;
+}
 #navHead .container .smart a {
   color: #19232D;
   text-decoration: none;
 }
 #navHead .container .smart a p {
   font-size: 250%;
-  padding: 40px 0;
+  padding: 30px 0;
   font-weight: 900;
 }
 #navHead .container .smart a p span {
@@ -79,25 +81,30 @@ body {
 }
 #navHead .container .row .col-md-12 > ul > li > a {
   text-decoration: none;
-  color: #ECECED;
+  color: #D7DADE;
 }
 #navHead .container .row .col-md-12 > ul > li > i {
-  color: #ECECED;
+  color: #D7DADE;
+}
+#navHead .container .row .col-md-12 > ul .menuDropFeatures:hover .dropDownMenuFeatures {
+  display: block;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuFeatures {
   position: absolute;
+  z-index: 10;
   padding: 40px 0;
   background-color: #19232D;
   top: 47px;
   left: 0;
   width: 100%;
+  display: none;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuFeatures ul {
   padding: 0 30px;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuFeatures ul a {
   text-decoration: none;
-  color: #ECECED;
+  color: #D7DADE;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuFeatures ul a h5 {
   padding: 10px 0;
@@ -112,21 +119,26 @@ body {
   font-size: 13px;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuFeatures ul li i {
-  color: #ECECED;
+  color: #D7DADE;
+}
+#navHead .container .row .col-md-12 > ul .menuDropEnter:hover .dropDownMenuEnter {
+  display: block;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter {
   position: absolute;
+  z-index: 10;
   background-color: #19232D;
   top: 47px;
   left: 0;
   width: 100%;
+  display: none;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-3 ul {
   background-color: #1E2935;
   height: 370px;
 }
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-3 ul li {
-  border-bottom: 0.1px solid #1F2C38;
+#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-3 ul a {
+  text-decoration: none;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .comment {
   height: 30px;
@@ -175,54 +187,96 @@ body {
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul li a {
   text-decoration: none;
-  color: #ECECED;
+  color: #D7DADE;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul h5 {
   padding: 10px 0;
   margin: 0;
   border-bottom: 1px solid #2F4154;
-  color: #ECECED;
-=======
-#content {
-  width: 100%;
-}
-#content .wrapper {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-}
-#content .wrapper .container .row .col-md-8 .myPadding {
-  padding: 0px 45px 0px 0px;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide {
-  width: 100%;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide img {
-  width: 100%;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo {
-  padding: 5px 10px 5px 10px;
-  background-color: #F2F2F2;
-  height: 28px;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo time {
-  float: left;
-  color: #949697;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo i {
-  float: right;
-  color: #949697;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 h4.headingClass {
-  font-size: 17px;
-}
-#content .wrapper .container .row .col-md-8 .col-md-6 p {
-  color: #949697;
-  font-size: 14px;
+  color: #D7DADE;
 }
 
-.myHeading, #content .wrapper .container .row .col-md-8 h2.headClass, #content .wrapper .container .row .col-md-8 .col-md-6 h4.headingClass {
-  padding-left: 15px;
-  border-left: 3px solid #C0392B;
->>>>>>> origin/master
+#footer {
+  background-color: #19232D;
+  color: #D7DADE;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto {
+  padding: 50px 0;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto h5 {
+  border-bottom: 1px solid #2F4154;
+  padding: 10px 0;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto h3 {
+  padding: 15px 0;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto h3 span {
+  color: #E54E53;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto p {
+  line-height: 25px;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto label {
+  display: block;
+  font-weight: normal;
+  padding: 10px 0;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto input {
+  background-color: #1F2C38;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  color: #D7DADE;
+  width: 70%;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto button {
+  background-color: #2A3C4C;
+  border: none;
+  padding: 5px 15px;
+  outline: none;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul {
+  list-style-type: none;
+  padding: 0;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li {
+  padding: 30px 0 0 0;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li a {
+  text-decoration: none;
+  color: #D7DADE;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li a h5 {
+  padding: 2px 5px;
+  border-width: 0 0 0 2px;
+  border-color: #E54E53;
+  border-left: 4px solid #E54E53;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-3 img {
+  width: 100%;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-9 .dropDownRightComment span {
+  color: lightgray;
+  float: left;
+  font-size: 12px;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-9 .dropDownRightComment p {
+  color: lightgray;
+  float: right;
+  font-size: 12px;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-9 .dropDownRightComment a h5 {
+  font-size: 13px;
+  padding: 0 0 15px 0;
+  border: 0;
+  margin: 0;
+  border-bottom: 1px solid #2F4154;
+  font-weight: bold;
+  color: #D7DADE;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery {
+  padding-top: 20px;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery img {
+  margin: 6px;
 }
