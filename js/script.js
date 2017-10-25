@@ -30,6 +30,31 @@ $(document).ready(function(){
 	// }, function(){
 	// 	$(".dropDownMenuEnter").fadeOut();
 	// });
+	$(".smallNavBar .listBtn i").click(function(){
+		$(".smallNavBarItem").toggle();
+	});
+
+	$(".smallNavBarItem .fa-chevron-down").click(function(){
+		$(this).parent("li").siblings("ul").toggle();
+		if ($(this).parent("li").attr("class")!="activeSmall") {
+			$(this).parent("li").addClass("activeSmall");
+		}else{
+			$(this).parent("li").removeClass("activeSmall");		}
+	});
+
+	$(".smallNavBarItem .fa-angle-down").click(function(){
+		$(this).parent("li").siblings("ul").toggle();
+		if ($(this).parent("li").attr("class")!="activeSmall") {
+			$(this).parent("li").addClass("activeSmall");
+		}else{
+			$(this).parent("li").removeClass("activeSmall");
+		}
+	});
+
+	$(".smallNavBar .right i").click(function(){
+		$(".smallNavBar .left input").show();
+		$(".smallNavBar .left a").hide();
+	});
 })
 
 

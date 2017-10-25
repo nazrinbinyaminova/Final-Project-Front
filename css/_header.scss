@@ -13,9 +13,24 @@ body {
 #header {
 	.topHead {
 		width: 100%;
-		padding: 10px 0;
+		padding-top: 10px;
 		background: $colorSearch;
 		border-top: 4px solid $colorRed;
+
+		@media screen and (min-width: 799px) and (max-width: 996px){
+			font-size: 13px;
+			input{
+				width: 80%;
+			}
+		}
+
+		@media screen and (max-width: 799px){
+			text-align: center;
+			font-size: 14px;
+			input{
+				width: 80%;
+			}
+		}
 		.container {
 			.row {
 				.trending {
@@ -23,11 +38,10 @@ body {
 				}
 				.contactLink {
 					display: inline-block;
-					padding: 0;
+					padding: 5px 0;
 
 					li {
 						display: inline-block;
-						list-style-type: none;
 						width: 20px;
 						height: 20px;
 						text-align: center;
@@ -75,13 +89,16 @@ body {
 						color: $colorRed;
 					}
 				}
+
+				@media screen and (max-width: 799px){
+					text-align: center;
+				}
 			}
 		}
 
 		.row {
 			.col-md-12 {
 				>ul {
-					list-style-type: none;
 					padding: 0;
 					background-color: $blackcolor;
 					position: relative;
@@ -111,20 +128,22 @@ body {
 					.menuDropFeatures{
 						&:hover .dropDownMenuFeatures{
 							display: block;
+							opacity: 1;
 						}
 					}
 					.dropDownMenuFeatures {
 						position: absolute;
 						z-index: 10;	
-						padding: 40px 0;
+						padding: 30px 20px;
 						background-color: $blackcolor;
 						top: 47px;
 						left: 0;
 						width: 100%;
 						display: none;
+						opacity: 0;
 
 						ul {
-							padding: 0 30px;
+							padding-left: 10px;
 							a {
 								text-decoration: none;
 								color: $navcolor;
@@ -136,8 +155,7 @@ body {
 								}
 							}
 							li {
-								padding: 10px 8px;
-								list-style-type:none;
+								padding: 10px 0px;
 								border-bottom: 0.1px solid #1F2C38;
 								font-size: 13px;
 
@@ -147,6 +165,7 @@ body {
 							}
 						}
 					}
+
 					.menuDropEnter{
 						&:hover .dropDownMenuEnter{
 							display: block;
@@ -178,6 +197,9 @@ body {
 							ul {
 								
 								li {
+									img{
+										width: 100%;
+									}
 									.comment {
 										height: 30px;
 										background-color: white;
@@ -233,7 +255,6 @@ body {
 							
 							li {
 								padding: 20px 0 0 0 ;
-								list-style-type:none;
 								font-size: 14px;
 								a {
 									text-decoration: none;
@@ -249,6 +270,83 @@ body {
 							}
 						}
 					}		
+				}
+				.smallNavBar{
+					background-color: $blackcolor;
+					ul{
+						padding:0;
+						li{
+							float: left;
+							padding: 12px;
+						}
+							
+							.left{
+								input{
+								display: none;
+								background-color: $blackcolor;
+								border: none;
+								outline: none;
+								color: #EFEFEF;
+								width: 100%;
+
+									&::placeholder{
+										color: white;
+									}
+								}
+								a{
+								text-decoration: none;
+								color: #EFEFEF;
+									p{
+									margin:0;
+									span{
+										font-size: 12px;
+									}
+								}
+							}
+							}
+							i{
+								color: #EFEFEF;
+								font-size: 18px;
+							}
+						
+						.listBtn{
+							background-color: $colorRed;
+						}
+					}
+				}
+				.smallNavBarItem{
+					background-color: $blackcolor;
+					display: none;
+					ul{
+						li{
+							padding: 12px 20px;
+							border-top: 1px solid #1F2C38;
+							a{
+								color: #EFEFEF;
+								text-decoration: none;
+							}
+							i{
+								color: #EFEFEF;
+							}
+						}
+						.featuresItem{
+							display: none;
+							li{
+								padding: 7px 28px;
+
+							}
+							.featuresItemItem{
+								display: none;
+								li{
+									padding: 9px 50px;
+									border: none;
+								}
+							}
+						}
+					}
+					.activeSmall{
+						background-color: #1E2935;
+					}
 				}
 			}
 		}
@@ -288,6 +386,9 @@ body {
 						padding: 5px 10px;
 						color: $navcolor;
 						width: 70%;
+						&::placeholder{
+							color: $navcolor;
+						}
 					}
 
 					button{
@@ -352,6 +453,20 @@ body {
 					}
 				}			
 			}
+		}
+	}
+}
+
+#footCopyright{
+	background-color: #121A21;
+	padding: 10px 0;
+	color: gray;
+	a{
+		color: lightgray;
+	}
+	ul{
+		li{
+			display: inline-block;
 		}
 	}
 }
