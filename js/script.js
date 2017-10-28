@@ -30,6 +30,22 @@ $(document).ready(function(){
 	// }, function(){
 	// 	$(".dropDownMenuEnter").fadeOut();
 	// });
+	
+	// $(".menuDropFeatures").hover(function(){
+	// 	$(".dropDownMenuFeatures").animate(
+	// 		{display: "block"},1000,
+	// 		function(){
+	// 			$(".dropDownMenuFeatures").animate({opacity: "1"}, 1000)
+	// 		});
+	// }, function(){
+	// 	$(".dropDownMenuFeatures").animate(
+	// 		{opacity: "0"},
+	// 		function(){
+	// 			$(".dropDownMenuFeatures").css("display", "none")
+	// 		})
+	// });
+
+
 	$(".smallNavBar .listBtn i").click(function(){
 		$(".smallNavBarItem").toggle();
 	});
