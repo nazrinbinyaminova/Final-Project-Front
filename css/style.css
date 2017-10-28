@@ -1,3 +1,8 @@
+.myHeading, #content .wrapper .container .row .col-md-8 h2.headClass, #content .wrapper .container .row .col-md-8 .col-md-6 h4.headingClass {
+  padding-left: 15px;
+  border-left: 3px solid #C0392B;
+}
+
 body {
   margin: 0;
   font: 14px/1.5 "Open Sans", Arial, sans-serif;
@@ -6,15 +11,125 @@ body i {
   padding: 0 5px;
 }
 
+/**************** Common Classes *****************/
 .active {
-  border-bottom: 2px solid #E54E53;
+  border-bottom: 2px solid #C0392B;
 }
 
+.images p {
+  padding: 10px 0;
+  color: gray;
+  margin: 0;
+  font-size: 13px;
+}
+.images h5 {
+  border-left: 3px solid #C0392B;
+  padding: 2px 10px;
+}
+.images h5 a {
+  color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+.images .imagesDiv {
+  position: relative;
+}
+.images .imagesDiv .imageTitle {
+  padding: 5px 10px;
+  background-color: #C0392B;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.images .imagesDiv .imageTitle span {
+  color: white;
+}
+.images .imagesDiv .comment {
+  padding: 5px 10px;
+  background-color: #F2F2F2;
+  color: gray;
+}
+.images .imagesDiv .comment p {
+  margin: 0;
+  padding: 0;
+}
+
+.listDiv ul {
+  border-top: 1px solid #D7DADE;
+  margin: 0;
+}
+.listDiv ul li {
+  padding-top: 20px;
+}
+.listDiv ul li .col-md-9 div {
+  margin-left: -15px;
+}
+.listDiv ul li .col-md-9 div span {
+  color: gray;
+  font-size: 13px;
+}
+.listDiv ul li .col-md-9 div p {
+  padding: 5px 0;
+  margin: 0;
+  border-bottom: 1px solid #D7DADE;
+  font-size: 13px;
+}
+
+.entertainment {
+  border-bottom: 1px solid #D7DADE;
+  border-top: 1px solid #D7DADE;
+  background-color: #F2F2F2;
+  margin: 30px 0;
+  padding: 5px 15px;
+}
+.entertainment ul {
+  margin: 0;
+}
+.entertainment ul li {
+  color: gray;
+}
+.entertainment h5 {
+  margin: 0;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.dropDownRightComment span {
+  color: lightgray;
+  float: left;
+}
+.dropDownRightComment p {
+  color: lightgray;
+  float: right;
+  margin: 0;
+}
+.dropDownRightComment a h5 {
+  font-size: 13px;
+  border: 0;
+  border-bottom: 1px solid #D7DADE;
+  font-weight: bold;
+  color: #D7DADE;
+}
+
+.comment {
+  height: 30px;
+  background-color: white;
+  padding: 5px 10px;
+}
+.comment span {
+  float: left;
+  color: gray;
+}
+.comment p {
+  color: gray;
+  float: right;
+}
+
+/**************** Header Section *****************/
 #header .topHead {
   width: 100%;
   padding-top: 10px;
   background: #F2F2F2;
-  border-top: 4px solid #E54E53;
+  border-top: 4px solid #C0392B;
 }
 @media screen and (min-width: 799px) and (max-width: 996px) {
   #header .topHead {
@@ -34,7 +149,7 @@ body i {
   }
 }
 #header .topHead .container .row .trending {
-  color: #E54E53;
+  color: #C0392B;
 }
 #header .topHead .container .row .contactLink {
   display: inline-block;
@@ -60,9 +175,11 @@ body i {
   outline: none;
 }
 #header .topHead .container .row .search i {
+  padding: 5px;
   color: gray;
 }
 
+/**************** NavBar Section *****************/
 #navHead {
   padding: 20px 0;
 }
@@ -76,7 +193,7 @@ body i {
   font-weight: 900;
 }
 #navHead .container .smart a p span {
-  color: #E54E53;
+  color: #C0392B;
 }
 @media screen and (max-width: 799px) {
   #navHead .container .smart a {
@@ -97,7 +214,7 @@ body i {
 #navHead .container .row .col-md-12 > ul > li:hover {
   background-color: #1E2935;
   transition: all 0.3s ease;
-  border-bottom: 2px solid #E54E53;
+  border-bottom: 2px solid #C0392B;
 }
 #navHead .container .row .col-md-12 > ul > li > a {
   text-decoration: none;
@@ -162,42 +279,11 @@ body i {
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li img {
   width: 100%;
 }
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .comment {
-  height: 30px;
-  background-color: white;
-  padding: 5px 10px;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .comment span {
-  float: left;
-  color: gray;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .comment p {
-  color: gray;
-  float: right;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li a h5 {
+#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li a .imageTitle {
   padding: 2px 5px;
   border-width: 0 0 0 2px;
-  border-color: #E54E53;
-  border-left: 4px solid #E54E53;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .col-md-3 img {
-  width: 100%;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .col-md-9 .dropDownRightComment span {
-  color: gray;
-  float: left;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .col-md-9 .dropDownRightComment p {
-  color: gray;
-  float: right;
-}
-#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li .col-md-9 .dropDownRightComment a h5 {
-  font-size: 13px;
-  border: 0;
-  border-bottom: 1px solid #2F4154;
-  padding: 0 0 14px 0;
-  font-weight: bold;
+  border-color: #C0392B;
+  border-left: 4px solid #C0392B;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul {
   padding: 30px 28px;
@@ -211,7 +297,7 @@ body i {
   color: #D7DADE;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul h5 {
-  padding: 10px 0;
+  padding: 12px 0;
   margin: 0;
   border-bottom: 1px solid #2F4154;
   color: #D7DADE;
@@ -252,7 +338,7 @@ body i {
   font-size: 18px;
 }
 #navHead .container .row .col-md-12 .smallNavBar ul .listBtn {
-  background-color: #E54E53;
+  background-color: #C0392B;
 }
 #navHead .container .row .col-md-12 .smallNavBarItem {
   background-color: #19232D;
@@ -286,6 +372,7 @@ body i {
   background-color: #1E2935;
 }
 
+/**************** Slider Section *****************/
 #homeSliderSection {
   display: none;
   background-color: #F2F2F2;
@@ -298,8 +385,12 @@ body i {
   width: 100%;
 }
 
+/**************** News Section *****************/
 #homeNewsSection {
   padding: 40px 0;
+}
+#homeNewsSection img {
+  width: 100%;
 }
 #homeNewsSection .container .row .left {
   padding-right: 30px;
@@ -329,61 +420,6 @@ body i {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
 }
-#homeNewsSection .container .row .left .row .col-md-6 img {
-  width: 100%;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images p {
-  padding: 10px 0;
-  color: gray;
-  margin: 0;
-  font-size: 13px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images h5 {
-  border-left: 3px solid #E54E53;
-  padding: 2px 10px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images .imagesDiv {
-  position: relative;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images .imagesDiv .imageTitle {
-  padding: 5px 10px;
-  background-color: #E54E53;
-  position: absolute;
-  top: 0;
-  left: 10px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images .imagesDiv .imageTitle a {
-  color: white;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images .imagesDiv .comment {
-  padding: 5px 10px;
-  background-color: #F2F2F2;
-  color: gray;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .images .imagesDiv .comment p {
-  margin: 0;
-  padding: 0;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDiv ul {
-  border-top: 1px solid #D7DADE;
-  margin: 0;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDiv ul li {
-  padding-top: 20px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDiv ul li .col-md-9 div {
-  margin-left: -15px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDiv ul li .col-md-9 div span {
-  color: gray;
-  font-size: 13px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDiv ul li .col-md-9 div p {
-  padding: 5px 0;
-  margin: 0;
-  border-bottom: 1px solid #D7DADE;
-  font-size: 13px;
-}
 #homeNewsSection .container .row .left .row .leftItem {
   padding-right: 10px;
 }
@@ -407,24 +443,6 @@ body i {
     border: none;
   }
 }
-#homeNewsSection .container .row .left .row .entertainment {
-  border-bottom: 1px solid #D7DADE;
-  border-top: 1px solid #D7DADE;
-  background-color: #F2F2F2;
-  margin: 40px 0;
-  padding: 5px 15px;
-}
-#homeNewsSection .container .row .left .row .entertainment ul {
-  margin: 0;
-}
-#homeNewsSection .container .row .left .row .entertainment ul li {
-  color: gray;
-}
-#homeNewsSection .container .row .left .row .entertainment h5 {
-  margin: 0;
-  line-height: 22px;
-  color: #E54E53;
-}
 #homeNewsSection .container .row .left .row .col-md-6 .listDivEnter {
   padding-left: 10px;
 }
@@ -433,23 +451,26 @@ body i {
     padding: 0;
   }
 }
+#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul {
+  border: none;
+}
 #homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul li {
+  padding: 0;
   margin-bottom: 20px;
 }
-#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul li .col-md-9 div {
-  margin-left: -15px;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul li .col-md-9 div span {
-  color: gray;
+#homeNewsSection .container .row .left .row .homeItemListBottom li {
+  padding: 10px 0;
   font-size: 13px;
+  border-top: 1px solid #D7DADE;
 }
-#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul li .col-md-9 div p {
-  padding: 6px 0;
-  margin: 0;
-  border-bottom: 1px solid #D7DADE;
-  font-size: 13px;
+#homeNewsSection .container .row .left .row .homeItemListBottom li i {
+  color: #C0392B;
+}
+#homeNewsSection .container .row .left .row .homeItemListBottom li a {
+  color: #19232D;
 }
 
+/**************** Foot Section *****************/
 #footer {
   background-color: #19232D;
   color: #D7DADE;
@@ -465,7 +486,7 @@ body i {
   padding: 15px 0;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto h3 span {
-  color: #E54E53;
+  color: #C0392B;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto p {
   line-height: 25px;
@@ -497,39 +518,18 @@ body i {
   padding: 0;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto ul li {
-  padding: 30px 0 0 0;
+  padding-top: 30px;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto ul li a {
   text-decoration: none;
   color: #D7DADE;
 }
-#footer .container .row .col-md-4 .aboutPostPhoto ul li a h5 {
-  padding: 2px 5px;
-  border-width: 0 0 0 2px;
-  border-color: #E54E53;
-  border-left: 4px solid #E54E53;
-}
 #footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-3 img {
   width: 100%;
 }
-#footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-9 .dropDownRightComment span {
-  color: lightgray;
-  float: left;
-  font-size: 12px;
-}
-#footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-9 .dropDownRightComment p {
-  color: lightgray;
-  float: right;
-  font-size: 12px;
-}
 #footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-9 .dropDownRightComment a h5 {
-  font-size: 13px;
-  padding: 0 0 15px 0;
-  border: 0;
+  padding: 11px 0;
   margin: 0;
-  border-bottom: 1px solid #2F4154;
-  font-weight: bold;
-  color: #D7DADE;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery {
   padding-top: 20px;
@@ -538,14 +538,56 @@ body i {
   margin: 6px;
 }
 
+/**************** CopyRight Section *****************/
 #footCopyright {
   background-color: #121A21;
-  padding: 10px 0;
+  padding: 12px 0;
   color: gray;
+}
+#footCopyright p {
+  margin: 0;
+}
+#footCopyright ul {
+  margin: 0;
 }
 #footCopyright a {
   color: lightgray;
 }
-#footCopyright ul li {
-  display: inline-block;
+
+#content {
+  width: 100%;
+}
+#content .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+#content .wrapper .container .row .col-md-8 .myPadding {
+  padding: 0px 45px 0px 0px;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide {
+  width: 100%;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide img {
+  width: 100%;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo {
+  padding: 5px 10px 5px 10px;
+  background-color: #F2F2F2;
+  height: 28px;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo time {
+  float: left;
+  color: #949697;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 .imageSide .imgInfo i {
+  float: right;
+  color: #949697;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 h4.headingClass {
+  font-size: 17px;
+}
+#content .wrapper .container .row .col-md-8 .col-md-6 p {
+  color: #949697;
+  font-size: 14px;
 }

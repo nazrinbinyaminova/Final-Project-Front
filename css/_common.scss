@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+	font: 14px/1.5 "Open Sans", Arial, sans-serif;
+	i{
+		padding: 0 5px;
+	}
+}
+
+/**************** Common Classes *****************/
+
+.active {
+	border-bottom: 2px solid $colorRed;
+}
+
+.images{
+	p{
+		padding: 10px 0;
+		color: gray;
+		margin: 0;
+		font-size: 13px;
+	}
+	h5{
+		border-left: 3px solid $colorRed;
+		padding: 2px 10px;
+		a{
+			color: $blackcolor;
+			font-family: "Roboto Slab", Georgia, serif;
+		}
+	}
+	.imagesDiv{
+		position: relative;
+
+		.imageTitle{
+			padding: 5px 10px;
+			background-color: $colorRed;
+			position: absolute;
+			top: 0;
+			left: 10px;
+			span{
+				color: white;
+			}
+		}
+		.comment{
+			padding: 5px 10px;
+			background-color: $colorSearch;
+			color: gray;
+			p{
+				margin: 0;
+				padding:0;
+			}
+		}
+	}
+}
+
+.listDiv{
+	ul{
+		border-top: 1px solid $navcolor;
+		margin: 0;
+		li{
+			padding-top: 20px;
+
+			.col-md-9{
+				div{
+					margin-left: -15px;
+					span{
+						color: gray;
+						font-size: 13px;
+					}
+					p{
+						padding: 5px 0;
+						margin: 0;
+						border-bottom: 1px solid $navcolor;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.entertainment{
+	border-bottom:1px solid $navcolor;
+	border-top:1px solid $navcolor;
+	background-color: $colorSearch;
+	margin: 30px 0;
+	padding: 5px 15px;
+	ul{
+		margin: 0;
+		li{
+			color: gray;
+		}
+	}
+	h5{
+		margin: 0;
+		line-height: 22px;
+		font-weight: 600;
+	}
+
+}
+
+.dropDownRightComment {
+	span {
+		color: lightgray;
+		float: left;
+	}
+	p {
+		color: lightgray;
+		float: right;
+		margin:0;
+	}
+	a{
+		h5{
+			font-size: 13px;
+			border: 0;
+			border-bottom: 1px solid $navcolor;
+			font-weight: bold;
+			color: $navcolor;
+		}
+	}
+}
+
+.comment {
+	height: 30px;
+	background-color: white;
+	padding: 5px 10px;
+	span {
+		float: left;
+		color: gray;
+	}
+	p {
+		color: gray;
+		float: right;
+	}
+}

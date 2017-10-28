@@ -17,6 +17,11 @@ $(document).ready(function(){
 		})
 	})
 
+	$("#header .search input").click(function(){
+		$("#header .search").animate({width:"100%"},800)
+	})
+
+
 	// $(".dropDownMenuFeatures").hide();
 	// $(".menuDropFeatures").hover(function(){
 	// 	$(".dropDownMenuFeatures").fadeIn();
@@ -72,5 +77,3 @@ $(document).ready(function(){
 		$(".smallNavBar .left a").hide();
 	});
 })
-
-

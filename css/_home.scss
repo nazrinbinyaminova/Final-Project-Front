@@ -1,14 +1,5 @@
-body {
-	margin: 0;
-	font: 14px/1.5 "Open Sans", Arial, sans-serif;
-	i{
-		padding: 0 5px;
-	}
-}
 
-.active {
-	border-bottom: 2px solid $colorRed;
-}
+/**************** Header Section *****************/
 
 #header {
 	.topHead {
@@ -64,6 +55,7 @@ body {
 					}
 
 					i {
+						padding: 5px;
 						color: gray;
 					}
 				}
@@ -72,6 +64,8 @@ body {
 	}
 		
 }
+
+/**************** NavBar Section *****************/
 	
 #navHead {
 	padding: 20px 0;
@@ -141,7 +135,7 @@ body {
 						left: 0;
 						width: 100%;
 						display: none;
-						
+
 						ul {
 							padding-left: 10px;
 							a {
@@ -195,56 +189,17 @@ body {
 						}
 						.col-md-6 {
 							ul {
-								
 								li {
 									img{
 										width: 100%;
 									}
-									.comment {
-										height: 30px;
-										background-color: white;
-										padding: 5px 10px;
-										span {
-											float: left;
-											color: gray;
-										}
-										p {
-											color: gray;
-											float: right;
-										}
-									}
+									
 									a {
-										h5 {
+										.imageTitle {
 											padding: 2px 5px;
 											border-width: 0 0 0 2px;
 											border-color: $colorRed;
 											border-left: 4px solid $colorRed;
-										}
-									}
-									.col-md-3 {
-										img {
-											width: 100%;
-										}
-									}
-									.col-md-9 {
-										.dropDownRightComment {
-											span {
-												color: gray;
-												float: left;
-											}
-											p {
-												color: gray;
-												float: right;
-											}
-											a{
-												h5{
-													font-size: 13px;
-													border: 0;
-													border-bottom: 1px solid #2F4154;
-													padding: 0 0 14px 0;
-													font-weight: bold;
-												}
-											}
 										}
 									}
 								}
@@ -263,7 +218,7 @@ body {
 							}
 
 							h5 {
-								padding: 10px 0;
+								padding: 12px 0;
 								margin: 0;
 								border-bottom: 1px solid #2F4154;
 								color: $navcolor;
@@ -353,6 +308,8 @@ body {
 	}
 }
 
+/**************** Slider Section *****************/
+
 #homeSliderSection {
 	display: none;
 	background-color: $colorSearch;
@@ -371,9 +328,13 @@ body {
 	}
 }
 
+/**************** News Section *****************/
+
 #homeNewsSection {
 	padding: 40px 0;
-
+	img{
+		width: 100%;
+	}
 	.container{
 		.row{
 			.left{
@@ -395,74 +356,9 @@ body {
 						}
 					}
 					.col-md-6{
-
 						a{
 							color: $blackcolor;
 							font-family: "Roboto Slab", Georgia, serif;
-						}
-						img{
-							width: 100%;
-						}
-						.images{
-							p{
-								padding: 10px 0;
-								color: gray;
-								margin: 0;
-								font-size: 13px;
-							}
-							h5{
-								border-left: 3px solid $colorRed;
-								padding: 2px 10px;
-							}
-							.imagesDiv{
-								position: relative;
-
-								.imageTitle{
-									padding: 5px 10px;
-									background-color: $colorRed;
-									position: absolute;
-									top: 0;
-									left: 10px;
-									a{
-										color: white;
-									}
-								}
-								.comment{
-									padding: 5px 10px;
-									background-color: $colorSearch;
-									color: gray;
-									p{
-										margin: 0;
-										padding:0;
-									}
-								}
-							}
-						}
-						.listDiv{
-
-							ul{
-								border-top: 1px solid $navcolor;
-								margin: 0;
-								li{
-									padding-top: 20px;
-
-									.col-md-9{
-										div{
-											margin-left: -15px;
-											span{
-												color: gray;
-												font-size: 13px;
-											}
-											p{
-												padding: 5px 0;
-												margin: 0;
-												border-bottom: 1px solid $navcolor;
-												font-size: 13px;
-											}
-										}
-									}
-								}
-							}
 						}
 					}
 					.leftItem{
@@ -479,30 +375,8 @@ body {
 							padding:0;
 						}
 						@media screen and (min-width:768px) and (max-width: 991px){
-							
 							border: none;
 						}
-					}
-					
-					.entertainment{
-						border-bottom:1px solid $navcolor;
-						border-top:1px solid $navcolor;
-						background-color: $colorSearch;
-						margin: 40px 0;
-						padding: 5px 15px;
-						ul{
-							margin: 0;
-							li{
-								color: gray;
-
-							}
-						}
-						h5{
-							margin: 0;
-							line-height: 22px;
-							color: $colorRed;
-						}
-
 					}
 					
 					.col-md-6{
@@ -512,24 +386,24 @@ body {
 								padding:0;
 							}
 							ul{
+								border:none;
 								li{
+									padding:0;
 									margin-bottom: 20px;
-									.col-md-9{
-										div{
-											margin-left: -15px;
-											span{
-												color: gray;
-												font-size: 13px;
-											}
-											p{
-												padding: 6px 0;
-												margin: 0;
-												border-bottom: 1px solid $navcolor;
-												font-size: 13px;
-											}
-										}
-									}
 								}
+							}
+						}
+					}
+					.homeItemListBottom{
+						li{
+							padding: 10px 0;
+							font-size: 13px;
+							border-top: 1px solid $navcolor;
+							i{
+								color: $colorRed;
+							}
+							a{
+								color: $blackcolor;
 							}
 						}
 					}
@@ -538,6 +412,8 @@ body {
 		}
 	}
 }
+
+/**************** Foot Section *****************/
 
 #footer{
 	background-color: $blackcolor;
@@ -588,16 +464,10 @@ body {
 						list-style-type: none;
 						padding: 0;
 						li {
-							padding: 30px 0 0 0 ;
+							padding-top: 30px;
 							a {
 								text-decoration: none;
 								color: $navcolor;
-								h5 {
-									padding: 2px 5px;
-									border-width: 0 0 0 2px;
-									border-color: $colorRed;
-									border-left: 4px solid $colorRed;
-								}
 							}
 							.col-md-3 {
 								img {
@@ -606,25 +476,10 @@ body {
 							}
 							.col-md-9 {
 								.dropDownRightComment {
-									span {
-										color: lightgray;
-										float: left;
-										font-size: 12px;
-									}
-									p {
-										color: lightgray;
-										float: right;
-										font-size: 12px;
-									}
 									a{
 										h5{
-											font-size: 13px;
-											padding: 0 0 15px 0;
-											border: 0;
+											padding: 11px 0;
 											margin: 0;
-											border-bottom: 1px solid #2F4154;
-											font-weight: bold;
-											color: $navcolor;
 										}
 									}
 								}
@@ -643,17 +498,20 @@ body {
 	}
 }
 
+/**************** CopyRight Section *****************/
+
 #footCopyright{
 	background-color: #121A21;
-	padding: 10px 0;
+	padding: 12px 0;
 	color: gray;
-	a{
-		color: lightgray;
+	p{
+		margin: 0;
 	}
 	ul{
-		li{
-			display: inline-block;
-		}
+		margin: 0;
+	}
+	a{
+		color: lightgray;
 	}
 }
 

@@ -1,9 +1,18 @@
 $colorSearch: #F2F2F2;
-$colorRed: #E54E53;
 $blackcolor: #19232D;
 $navcolor: #D7DADE;
 $colorGreeeen: #32742C;
 $colorOrangee: #EA8622;
+$colorRed: #C0392B;
+$colorGray: #F2F2F2;
+$colorLight: #FFFFFF;
+$colorP: #949697;
 
-@import "header"
+.myHeading{
+	padding-left: 15px;
+	border-left: 3px solid $colorRed;
+}
 
+@import "common";
+@import "home";
+@import "content";
