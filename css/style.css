@@ -73,6 +73,11 @@ body i {
   border-bottom: 1px solid #D7DADE;
   font-size: 13px;
 }
+@media screen and (max-width: 767px) {
+  .listDiv ul li .col-md-9 div p {
+    padding: 20px 0;
+  }
+}
 
 .entertainment {
   border-bottom: 1px solid #D7DADE;
@@ -106,7 +111,6 @@ body i {
   font-size: 13px;
   border: 0;
   border-bottom: 1px solid #D7DADE;
-  font-weight: bold;
   color: #D7DADE;
 }
 
@@ -257,6 +261,9 @@ body i {
 #navHead .container .row .col-md-12 > ul .dropDownMenuFeatures ul li i {
   color: #D7DADE;
 }
+#navHead .container .row .col-md-12 > ul .dropDownMenuFeatures ul li:hover {
+  background-color: #1c2732;
+}
 #navHead .container .row .col-md-12 > ul .menuDropEnter:hover .dropDownMenuEnter {
   display: block;
 }
@@ -276,8 +283,17 @@ body i {
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-3 ul a {
   text-decoration: none;
 }
+#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-3 ul h5 {
+  padding-left: 5px;
+}
+#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-3 ul h5:hover {
+  background-color: #212e3b;
+}
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li img {
   width: 100%;
+}
+#navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li a {
+  font-family: "Roboto Slab", Georgia, serif;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li a .imageTitle {
   padding: 2px 5px;
@@ -293,7 +309,6 @@ body i {
   font-size: 14px;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul li a {
-  text-decoration: none;
   color: #D7DADE;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul h5 {
@@ -468,6 +483,49 @@ body i {
 }
 #homeNewsSection .container .row .left .row .homeItemListBottom li a {
   color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+#homeNewsSection .container .row .right .rightMenu .headerList {
+  background-color: #19232D;
+}
+#homeNewsSection .container .row .right .rightMenu .headerList li {
+  float: left;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+#homeNewsSection .container .row .right .rightMenu .headerList li a {
+  color: #edf0f4;
+  text-decoration: none;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li {
+  margin-top: 30px;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div {
+  margin-right: -13px;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div span {
+  color: #a5a8ab;
+  font-size: 12px;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
+  padding: 7px 0;
+  margin: 0;
+  border-bottom: 1px solid #D7DADE;
+  font-size: 13px;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p a {
+  color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
+    padding: 28px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
+    padding: 25px 0;
+  }
 }
 
 /**************** Foot Section *****************/

@@ -58,7 +58,6 @@ body {
 		margin: 0;
 		li{
 			padding-top: 20px;
-
 			.col-md-9{
 				div{
 					margin-left: -15px;
@@ -71,6 +70,9 @@ body {
 						margin: 0;
 						border-bottom: 1px solid $navcolor;
 						font-size: 13px;
+						@media screen and (max-width: 767px){
+							padding: 20px 0;
+						}
 					}
 				}
 			}
@@ -113,7 +115,6 @@ body {
 			font-size: 13px;
 			border: 0;
 			border-bottom: 1px solid $navcolor;
-			font-weight: bold;
 			color: $navcolor;
 		}
 	}

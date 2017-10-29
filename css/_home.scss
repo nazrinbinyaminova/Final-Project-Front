@@ -147,6 +147,7 @@
 									margin: 0;
 									border-bottom: 1px solid #2F4154;
 								}
+
 							}
 							li {
 								padding: 10px 0px;
@@ -155,6 +156,9 @@
 
 								i {
 									color: $navcolor;
+								}
+								&:hover{
+									background-color: $blackcolor*1.1;
 								}
 							}
 						}
@@ -180,11 +184,15 @@
 							ul {
 								background-color:#1E2935;
 								height: 370px;
-								
 								a{
 									text-decoration:none;
 								}
-								
+								h5{
+									padding-left:5px;
+									&:hover{
+										background-color: $blackcolor*1.3;
+									}
+								}
 							}
 						}
 						.col-md-6 {
@@ -193,13 +201,14 @@
 									img{
 										width: 100%;
 									}
-									
 									a {
+										font-family: "Roboto Slab", Georgia, serif;
 										.imageTitle {
 											padding: 2px 5px;
 											border-width: 0 0 0 2px;
 											border-color: $colorRed;
 											border-left: 4px solid $colorRed;
+
 										}
 									}
 								}
@@ -212,11 +221,9 @@
 								padding: 20px 0 0 0 ;
 								font-size: 14px;
 								a {
-									text-decoration: none;
 									color: $navcolor;
 								}
 							}
-
 							h5 {
 								padding: 12px 0;
 								margin: 0;
@@ -335,6 +342,7 @@
 	img{
 		width: 100%;
 	}
+	
 	.container{
 		.row{
 			.left{
@@ -390,6 +398,7 @@
 								li{
 									padding:0;
 									margin-bottom: 20px;
+
 								}
 							}
 						}
@@ -404,6 +413,57 @@
 							}
 							a{
 								color: $blackcolor;
+								font-family: "Roboto Slab", Georgia, serif;
+							}
+						}
+					}
+				}
+			}
+			.right{
+				.rightMenu{
+					.headerList{
+						background-color: $blackcolor;
+						li{
+							float: left;
+							padding: 6px 12px;
+							font-size: 13px;
+							a{
+								color: $navcolor*1.1;
+								text-decoration: none;
+							}
+						}
+					}
+					.newsList{
+						li{
+							margin-top: 30px;
+							.col-md-4{
+								div{
+									margin-right: -13px;
+								}
+							}
+							.col-md-8{
+								div{
+									span{
+										color: $navcolor/1.3;
+										font-size: 12px;
+									}
+									p{
+										padding: 7px 0;
+										margin: 0;
+										border-bottom: 1px solid $navcolor;	
+										font-size: 13px;
+										a{
+											color: $blackcolor;
+											font-family: "Roboto Slab", Georgia, serif;
+										}
+										@media screen and (min-width: 768px) and (max-width: 991px){
+											padding: 28px 0;
+										}
+										@media screen and (max-width: 767px){
+											padding: 25px 0;
+										}
+									}							
+								}
 							}
 						}
 					}
