@@ -72,6 +72,7 @@ body i {
   margin: 0;
   border-bottom: 1px solid #D7DADE;
   font-size: 13px;
+  font-family: "Roboto Slab", Georgia, serif;
 }
 @media screen and (max-width: 767px) {
   .listDiv ul li .col-md-9 div p {
@@ -370,6 +371,9 @@ body i {
 #navHead .container .row .col-md-12 .smallNavBarItem ul li i {
   color: #EFEFEF;
 }
+#navHead .container .row .col-md-12 .smallNavBarItem ul li:hover {
+  background-color: #1c2732;
+}
 #navHead .container .row .col-md-12 .smallNavBarItem ul .featuresItem {
   display: none;
 }
@@ -433,7 +437,9 @@ body i {
 }
 #homeNewsSection .container .row .left .row .col-md-6 a {
   color: #19232D;
-  font-family: "Roboto Slab", Georgia, serif;
+}
+#homeNewsSection .container .row .left .row .col-md-6 .imageTitle a {
+  color: white;
 }
 #homeNewsSection .container .row .left .row .leftItem {
   padding-right: 10px;
@@ -485,12 +491,20 @@ body i {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
 }
+#homeNewsSection .container .row .right .rightMenu {
+  margin-bottom: 30px;
+}
+#homeNewsSection .container .row .right .rightMenu h6 {
+  padding: 12px 12px;
+  background-color: #19232D;
+  color: #edf0f4;
+}
 #homeNewsSection .container .row .right .rightMenu .headerList {
   background-color: #19232D;
 }
 #homeNewsSection .container .row .right .rightMenu .headerList li {
   float: left;
-  padding: 6px 12px;
+  padding: 7px 12px;
   font-size: 13px;
 }
 #homeNewsSection .container .row .right .rightMenu .headerList li a {
@@ -579,7 +593,7 @@ body i {
   padding-top: 30px;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto ul li a {
-  text-decoration: none;
+  font-family: "Roboto Slab", Georgia, serif;
   color: #D7DADE;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto ul li .col-md-3 img {
@@ -590,10 +604,15 @@ body i {
   margin: 0;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery {
-  padding-top: 20px;
+  padding-top: 25px;
 }
-#footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery img {
-  margin: 6px;
+#footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery .row .col-lg-12 div {
+  width: 80px;
+  float: left;
+  margin: 5px;
+}
+#footer .container .row .col-md-4 .aboutPostPhoto .flickrGallery .row .col-lg-12 div img {
+  width: 100%;
 }
 
 /**************** CopyRight Section *****************/
