@@ -1,0 +1,20 @@
+$colorSearch: #F2F2F2;
+$colorRed: #E54E53;
+$blackcolor: #19232D;
+$navcolor: #D7DADE;
+$colorRed: #C0392B;
+$colorGray: #F2F2F2;
+$colorLight: #FFFFFF;
+$colorP: #949697;
+@import "header";
+@import "content";
+.myHeading{
+	font: 18px "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    border-left: 3px solid #e54e53;
+    padding-left: 14px;
+    line-height: 2;
+    margin-bottom: 28px;
+}
+
+
