@@ -9,7 +9,144 @@ body {
 /**************** Common Classes *****************/
 
 .active {
-	border-bottom: 2px solid $colorRed;
+	border-width: 0 0 2px 0;
+	border-style: solid;
+}
+
+.imageHover{
+	display: block;
+	transition: .5s ease;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
+.activeOranege{
+	color: $colorOrangee;
+	&:hover{
+		color: $colorOrangee;
+	}
+}
+
+.activeGreen{
+	color: $colorGreeeen;
+	&:hover{
+		color:  $colorGreeeen;
+	}
+}
+
+.activeBlue{
+	color: $colorBlue;
+	&:hover{
+		color: $colorBlue;
+	}
+}
+
+.activeRed{
+	color: $colorRed;
+	&:hover{
+		color: $colorRed;
+	}
+}
+
+.activeLightRed{
+	color: $colorLightRed;
+	&:hover{
+		color: $colorLightRed;
+	}
+}
+
+.activeRedFlower{
+	color: $colorFlower;
+	&:hover{
+		color: $colorFlower;
+	}
+}
+
+.activePink{
+	color: $colorPink;
+	&:hover{
+		color: $colorPink;
+	}
+}
+
+.activeBrown{
+	color: $colorBrown;
+	&:hover{
+		color: $colorBrown;
+	}
+}
+
+.activeGreenBlueBorder{
+	border-color: $colorGreenBlue;
+}
+
+.activeOranegeBorder{
+	border-color: $colorOrangee;
+}
+
+.activeGreenBorder{
+	border-color: $colorGreeeen;
+}
+
+.activeBlueBorder{
+	border-color: $colorBlue;
+}
+
+.activeRedBorder{
+	border-color: $colorRed;
+}
+
+.activeLightRedBorder{
+	border-color: $colorLightRed;
+}
+
+.activeRedFlowerBorder{
+	border-color: $colorFlower;
+}
+
+.activePinkBorder{
+	border-color: $colorPink;
+}
+
+.activeBrownBorder{
+	border-color: $colorBrown;
+}
+
+.activeBackPink{
+	background-color: $colorPink;
+}
+
+.activeBackGreenBlue{
+	background-color: $colorGreenBlue;
+}
+
+.activeBackBrown{
+	background-color: $colorBrown;
+}
+
+.activeBackFlower{
+	background-color: $colorFlower;
+}
+
+.activeBackLightRed{
+	background-color: $colorLightRed;
+}
+
+.activeBackRed{
+	background-color: $colorRed;
+}
+
+.activeBackOrange{
+	background-color: $colorOrangee;
+}
+
+.activeBackGreen{
+	background-color: $colorGreeeen;
+}
+
+.activeBackBlue{
+	background-color: $colorBlue;
 }
 
 .images{
@@ -20,7 +157,8 @@ body {
 		font-size: 13px;
 	}
 	h5{
-		border-left: 3px solid $colorRed;
+		border-width: 0 0 0 3px;
+		border-style: solid;
 		padding: 2px 10px;
 		a{
 			color: $blackcolor;
@@ -32,10 +170,10 @@ body {
 
 		.imageTitle{
 			padding: 5px 10px;
-			background-color: $colorRed;
 			position: absolute;
 			top: 0;
 			left: 10px;
+			z-index: 3;
 			span{
 				color: white;
 			}
@@ -88,9 +226,26 @@ body {
 	margin: 30px 0;
 	padding: 5px 15px;
 	ul{
+		position: relative;
 		margin: 0;
 		li{
-			color: gray;
+			a{
+				color: gray;
+			}
+		}
+
+		.activeList{
+			&::before{
+				content: "";
+				width: 0;
+				height: 0;
+				position: absolute;
+				left: 10px;
+				top: 23px;
+				border-style: solid;
+				border-width: 0 5px 5px 5px;
+				border-color: transparent transparent white transparent;
+			}
 		}
 	}
 	h5{

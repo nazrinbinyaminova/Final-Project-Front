@@ -6,7 +6,12 @@
 		width: 100%;
 		padding-top: 10px;
 		background: $colorSearch;
-		border-top: 4px solid $colorRed;
+		border-width: 4px 0 0 0;
+		border-style: solid;
+
+		a{
+			color: gray;
+		}
 
 		@media screen and (min-width: 799px) and (max-width: 996px){
 			font-size: 13px;
@@ -24,9 +29,6 @@
 		}
 		.container {
 			.row {
-				.trending {
-					color: $colorRed;
-				}
 				.contactLink {
 					display: inline-block;
 					padding: 5px 0;
@@ -79,9 +81,6 @@
 					font-size: 250%;
 					padding: 30px 0;
 					font-weight: 900;
-					span {
-						color: $colorRed;
-					}
 				}
 
 				@media screen and (max-width: 799px){
@@ -205,9 +204,8 @@
 										font-family: "Roboto Slab", Georgia, serif;
 										.imageTitle {
 											padding: 2px 5px;
-											border-width: 0 0 0 2px;
-											border-color: $colorRed;
-											border-left: 4px solid $colorRed;
+											border-width: 0 0 0 4px;
+											border-style: solid;
 
 										}
 									}
@@ -241,39 +239,34 @@
 							float: left;
 							padding: 12px;
 						}
+						i{
+							color: #EFEFEF;
+							font-size: 18px;
+						}
 							
-							.left{
-								input{
-								display: none;
-								background-color: $blackcolor;
-								border: none;
-								outline: none;
-								color: #EFEFEF;
-								width: 100%;
+						.left{
+							input{
+							display: none;
+							background-color: $blackcolor;
+							border: none;
+							outline: none;
+							color: #EFEFEF;
+							width: 100%;
 
-									&::placeholder{
-										color: white;
-									}
+								&::placeholder{
+									color: white;
 								}
-								a{
-									text-decoration: none;
-									color: #EFEFEF;
-									p{
-										margin:0;
-										span{
-											font-size: 12px;
-										}
+							}
+							a{
+								text-decoration: none;
+								color: #EFEFEF;
+								p{
+									margin:0;
+									span{
+										font-size: 12px;
 									}
 								}
 							}
-
-							i{
-								color: #EFEFEF;
-								font-size: 18px;
-							}
-						
-						.listBtn{
-							background-color: $colorRed;
 						}
 					}
 				}
@@ -344,6 +337,7 @@
 #homeNewsSection {
 	padding: 40px 0;
 	img{
+		font-size: 0;
 		width: 100%;
 	}
 	
@@ -378,7 +372,7 @@
 						}
 					}
 					.leftItem{
-						padding-right:10px;
+						margin-right:10px;
 						@media screen and (max-width:767px){
 							border: none;
 							margin: 20px 0;
@@ -386,7 +380,7 @@
 						}
 					}
 					.leftItemRight{
-						padding-left:10px;
+						margin-left:10px;
 						@media screen and (max-width:767px){
 							padding:0;
 						}
@@ -503,9 +497,6 @@
 					}
 					h3{
 						padding: 15px 0;
-						span{
-							color: $colorRed;
-						}
 					}
 					p{
 						line-height: 25px;

@@ -13,7 +13,144 @@ body i {
 
 /**************** Common Classes *****************/
 .active {
-  border-bottom: 2px solid #C0392B;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+}
+
+.imageHover {
+  display: block;
+  transition: .5s ease;
+}
+.imageHover:hover {
+  opacity: 0.7;
+}
+
+.activeOranege {
+  color: #D2691E;
+}
+.activeOranege:hover {
+  color: #D2691E;
+}
+
+.activeGreen {
+  color: #32742C;
+}
+.activeGreen:hover {
+  color: #32742C;
+}
+
+.activeBlue {
+  color: #4682B4;
+}
+.activeBlue:hover {
+  color: #4682B4;
+}
+
+.activeRed {
+  color: #C0392B;
+}
+.activeRed:hover {
+  color: #C0392B;
+}
+
+.activeLightRed {
+  color: #E74C3C;
+}
+.activeLightRed:hover {
+  color: #E74C3C;
+}
+
+.activeRedFlower {
+  color: #FF6347;
+}
+.activeRedFlower:hover {
+  color: #FF6347;
+}
+
+.activePink {
+  color: #D70060;
+}
+.activePink:hover {
+  color: #D70060;
+}
+
+.activeBrown {
+  color: #D2691E;
+}
+.activeBrown:hover {
+  color: #D2691E;
+}
+
+.activeGreenBlueBorder {
+  border-color: #E74C3C;
+}
+
+.activeOranegeBorder {
+  border-color: #D2691E;
+}
+
+.activeGreenBorder {
+  border-color: #32742C;
+}
+
+.activeBlueBorder {
+  border-color: #4682B4;
+}
+
+.activeRedBorder {
+  border-color: #C0392B;
+}
+
+.activeLightRedBorder {
+  border-color: #E74C3C;
+}
+
+.activeRedFlowerBorder {
+  border-color: #FF6347;
+}
+
+.activePinkBorder {
+  border-color: #D70060;
+}
+
+.activeBrownBorder {
+  border-color: #D2691E;
+}
+
+.activeBackPink {
+  background-color: #D70060;
+}
+
+.activeBackGreenBlue {
+  background-color: #E74C3C;
+}
+
+.activeBackBrown {
+  background-color: #D2691E;
+}
+
+.activeBackFlower {
+  background-color: #FF6347;
+}
+
+.activeBackLightRed {
+  background-color: #E74C3C;
+}
+
+.activeBackRed {
+  background-color: #C0392B;
+}
+
+.activeBackOrange {
+  background-color: #D2691E;
+}
+
+.activeBackGreen {
+  background-color: #32742C;
+}
+
+.activeBackBlue {
+  background-color: #4682B4;
 }
 
 .images p {
@@ -23,7 +160,8 @@ body i {
   font-size: 13px;
 }
 .images h5 {
-  border-left: 3px solid #C0392B;
+  border-width: 0 0 0 3px;
+  border-style: solid;
   padding: 2px 10px;
 }
 .images h5 a {
@@ -35,10 +173,10 @@ body i {
 }
 .images .imagesDiv .imageTitle {
   padding: 5px 10px;
-  background-color: #C0392B;
   position: absolute;
   top: 0;
   left: 10px;
+  z-index: 3;
 }
 .images .imagesDiv .imageTitle span {
   color: white;
@@ -88,10 +226,22 @@ body i {
   padding: 5px 15px;
 }
 .entertainment ul {
+  position: relative;
   margin: 0;
 }
-.entertainment ul li {
+.entertainment ul li a {
   color: gray;
+}
+.entertainment ul .activeList::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent white transparent;
 }
 .entertainment h5 {
   margin: 0;
@@ -134,7 +284,11 @@ body i {
   width: 100%;
   padding-top: 10px;
   background: #F2F2F2;
-  border-top: 4px solid #C0392B;
+  border-width: 4px 0 0 0;
+  border-style: solid;
+}
+#header .topHead a {
+  color: gray;
 }
 @media screen and (min-width: 799px) and (max-width: 996px) {
   #header .topHead {
@@ -152,9 +306,6 @@ body i {
   #header .topHead input {
     width: 80%;
   }
-}
-#header .topHead .container .row .trending {
-  color: #C0392B;
 }
 #header .topHead .container .row .contactLink {
   display: inline-block;
@@ -196,9 +347,6 @@ body i {
   font-size: 250%;
   padding: 30px 0;
   font-weight: 900;
-}
-#navHead .container .smart a p span {
-  color: #C0392B;
 }
 @media screen and (max-width: 799px) {
   #navHead .container .smart a {
@@ -298,9 +446,8 @@ body i {
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter .col-md-6 ul li a .imageTitle {
   padding: 2px 5px;
-  border-width: 0 0 0 2px;
-  border-color: #C0392B;
-  border-left: 4px solid #C0392B;
+  border-width: 0 0 0 4px;
+  border-style: solid;
 }
 #navHead .container .row .col-md-12 > ul .dropDownMenuEnter ul {
   padding: 30px 28px;
@@ -328,6 +475,10 @@ body i {
   float: left;
   padding: 12px;
 }
+#navHead .container .row .col-md-12 .smallNavBar ul i {
+  color: #EFEFEF;
+  font-size: 18px;
+}
 #navHead .container .row .col-md-12 .smallNavBar ul .left input {
   display: none;
   background-color: #19232D;
@@ -348,13 +499,6 @@ body i {
 }
 #navHead .container .row .col-md-12 .smallNavBar ul .left a p span {
   font-size: 12px;
-}
-#navHead .container .row .col-md-12 .smallNavBar ul i {
-  color: #EFEFEF;
-  font-size: 18px;
-}
-#navHead .container .row .col-md-12 .smallNavBar ul .listBtn {
-  background-color: #C0392B;
 }
 #navHead .container .row .col-md-12 .smallNavBarItem {
   background-color: #19232D;
@@ -409,6 +553,7 @@ body i {
   padding: 40px 0;
 }
 #homeNewsSection img {
+  font-size: 0;
   width: 100%;
 }
 #homeNewsSection .container .row .left {
@@ -442,7 +587,7 @@ body i {
   color: white;
 }
 #homeNewsSection .container .row .left .row .leftItem {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 @media screen and (max-width: 767px) {
   #homeNewsSection .container .row .left .row .leftItem {
@@ -452,7 +597,7 @@ body i {
   }
 }
 #homeNewsSection .container .row .left .row .leftItemRight {
-  padding-left: 10px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 767px) {
   #homeNewsSection .container .row .left .row .leftItemRight {
@@ -556,9 +701,6 @@ body i {
 }
 #footer .container .row .col-md-4 .aboutPostPhoto h3 {
   padding: 15px 0;
-}
-#footer .container .row .col-md-4 .aboutPostPhoto h3 span {
-  color: #C0392B;
 }
 #footer .container .row .col-md-4 .aboutPostPhoto p {
   line-height: 25px;
