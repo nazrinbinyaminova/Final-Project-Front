@@ -17,6 +17,10 @@ body i {
   border-style: solid;
 }
 
+.activeBackGray {
+  background-color: #a5a8ab;
+}
+
 .imageHover {
   display: block;
   transition: .5s ease;
@@ -188,6 +192,10 @@ body i {
 }
 .images .imagesDiv {
   position: relative;
+  overflow: hidden;
+}
+.images .imagesDiv img {
+  width: 100%;
 }
 .images .imagesDiv .comment {
   padding: 5px 10px;
@@ -287,6 +295,82 @@ body i {
 .comment p {
   color: gray;
   float: right;
+}
+
+.sliderSection:hover .slideBtnLeft {
+  opacity: 0.5;
+}
+.sliderSection:hover .slideBtnRight {
+  opacity: 0.5;
+}
+.sliderSection .homeSlider .slideImage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.sliderSection .homeSlider .slideImage .imageCategory {
+  margin-left: 10px;
+}
+.sliderSection .homeSlider .slideImage img {
+  width: 100%;
+  transition: .5s ease;
+}
+.sliderSection .homeSlider .slideImage img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+.sliderSection .homeSlider .slideImage p {
+  position: absolute;
+  left: 20px;
+  bottom: 50px;
+  font-size: 12px;
+  color: #D7DADE;
+}
+.sliderSection .homeSlider .slideImage h4 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+.sliderSection .homeSlider .slideImage h4 a {
+  color: white;
+}
+.sliderSection .slideBtnLeft {
+  padding: 3px 8px;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  left: 35px;
+  opacity: 0;
+  transition: .5s ease;
+}
+.sliderSection .slideBtnLeft:hover {
+  opacity: 1;
+}
+.sliderSection .slideBtnRight {
+  padding: 3px 8px;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  right: 35px;
+  opacity: 0;
+  transition: .5s ease;
+}
+.sliderSection .slideBtnRight:hover {
+  opacity: 1;
+}
+.sliderSection ul {
+  margin: 0;
+  position: absolute;
+  bottom: -5px;
+}
+.sliderSection ul li {
+  display: inline-block;
+  height: 4px;
+  transition: .5s ease;
+}
+.sliderSection ul:hover li {
+  height: 7px;
 }
 
 /**************** Header Section *****************/
@@ -549,13 +633,28 @@ body i {
 #homeSliderSection {
   background-color: #F2F2F2;
   padding: 30px 0;
-}
-#homeSliderSection .container .row .col-md-8 .homeSlider .slideImage {
   position: relative;
-  width: 100%;
 }
-#homeSliderSection .container .row .col-md-8 .homeSlider .slideImage .imageCategory {
-  margin-left: 10px;
+#homeSliderSection .col-lg-4 .row .slideRightBar {
+  margin-top: 33px;
+}
+#homeSliderSection .col-lg-4 .row img {
+  transition: .5s ease;
+}
+#homeSliderSection .col-lg-4 .row img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+#homeSliderSection .col-lg-4 .row p {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  font-size: 13px;
+  text-shadow: 0.5px 0.5px gray;
+}
+#homeSliderSection .col-lg-4 .row p a {
+  color: white;
+  font-family: "Roboto Slab", Georgia, serif;
 }
 
 /**************** News Section *****************/
@@ -692,6 +791,20 @@ body i {
   #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
     padding: 25px 0;
   }
+}
+#homeNewsSection .container .row .right .rightMenu .sliderSection {
+  margin-top: 30px;
+}
+#homeNewsSection .container .row .right .rightMenu .sliderSection img {
+  transform: scale(1);
+}
+#homeNewsSection .container .row .right .rightMenu .sliderSection .slideBtnLeft {
+  padding: 0px 4px;
+  top: 50%;
+}
+#homeNewsSection .container .row .right .rightMenu .sliderSection .slideBtnRight {
+  padding: 0px 4px;
+  top: 50%;
 }
 
 /**************** Foot Section *****************/

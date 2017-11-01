@@ -317,17 +317,28 @@
 #homeSliderSection {
 	background-color: $colorSearch;
 	padding: 30px 0;
-	.container{
+	position: relative;
+	.col-lg-4{
 		.row{
-			.col-md-8{
-				.homeSlider{
-					.slideImage{
-						position: relative;
-						width: 100%;
-						.imageCategory{
-							margin-left: 10px;
-						}
-					}
+			.slideRightBar{
+				margin-top: 33px;
+			}
+			img{
+				transition: .5s ease;
+				&:hover{
+					transform: scale(1.1);
+					opacity: 0.8;
+				}
+			}
+			p{
+				position: absolute;
+				left: 10px;
+				bottom: 0;
+				font-size: 13px;
+				text-shadow: 0.5px 0.5px gray;
+				a{
+					color: $navcolor*1.3;
+					font-family: "Roboto Slab", Georgia, serif;
 				}
 			}
 		}
@@ -472,6 +483,21 @@
 									}							
 								}
 							}
+						}
+					}
+					.sliderSection{
+						margin-top: 30px;
+						img{
+							transform: scale(1);
+						}
+						.slideBtnLeft{
+							padding: 0px 4px;
+							top: 50%;
+						}
+
+						.slideBtnRight{
+							padding: 0px 4px;
+							top: 50%;
 						}
 					}
 				}
