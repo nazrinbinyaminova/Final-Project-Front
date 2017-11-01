@@ -315,16 +315,18 @@
 /**************** Slider Section *****************/
 
 #homeSliderSection {
-	display: none;
 	background-color: $colorSearch;
 	padding: 30px 0;
 	.container{
 		.row{
 			.col-md-8{
 				.homeSlider{
-					position: relative;
 					.slideImage{
+						position: relative;
 						width: 100%;
+						.imageCategory{
+							margin-left: 10px;
+						}
 					}
 				}
 			}
@@ -365,7 +367,7 @@
 						a{
 							color: $blackcolor;
 						}
-						.imageTitle{
+						.imageCategory{
 							a{
 								color: white;
 							}
@@ -382,7 +384,7 @@
 					.leftItemRight{
 						margin-left:10px;
 						@media screen and (max-width:767px){
-							padding:0;
+							margin: 0;
 						}
 						@media screen and (min-width:768px) and (max-width: 991px){
 							border: none;
@@ -410,9 +412,6 @@
 							padding: 10px 0;
 							font-size: 13px;
 							border-top: 1px solid $navcolor;
-							i{
-								color: $colorRed;
-							}
 							a{
 								color: $blackcolor;
 								font-family: "Roboto Slab", Georgia, serif;

@@ -1,5 +1,5 @@
 body {
-	margin: 0;
+	margin: 0 auto;
 	font: 14px/1.5 "Open Sans", Arial, sans-serif;
 	i{
 		padding: 0 5px;
@@ -149,6 +149,24 @@ body {
 	background-color: $colorBlue;
 }
 
+.displayNone{
+	display: none;
+}
+
+.imageCategory{
+	padding: 5px 10px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: 3;
+	span{
+		color: white;
+	}
+	a{
+		color: white;
+	}
+}
+
 .images{
 	p{
 		padding: 10px 0;
@@ -167,17 +185,6 @@ body {
 	}
 	.imagesDiv{
 		position: relative;
-
-		.imageTitle{
-			padding: 5px 10px;
-			position: absolute;
-			top: 0;
-			left: 10px;
-			z-index: 3;
-			span{
-				color: white;
-			}
-		}
 		.comment{
 			padding: 5px 10px;
 			background-color: $colorSearch;
@@ -226,25 +233,24 @@ body {
 	margin: 30px 0;
 	padding: 5px 15px;
 	ul{
-		position: relative;
 		margin: 0;
 		li{
+			position: relative;
 			a{
 				color: gray;
 			}
-		}
-
-		.activeList{
-			&::before{
-				content: "";
-				width: 0;
-				height: 0;
-				position: absolute;
-				left: 10px;
-				top: 23px;
-				border-style: solid;
-				border-width: 0 5px 5px 5px;
-				border-color: transparent transparent white transparent;
+			.activeList{
+				&::before{
+					content: "";
+					width: 0;
+					height: 0;
+					position: absolute;
+					left: 38%;
+					top: 23px;
+					border-style: solid;
+					border-width: 0 5px 5px 5px;
+					border-color: transparent transparent white transparent;
+				}
 			}
 		}
 	}
