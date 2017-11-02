@@ -373,6 +373,91 @@ body i {
   height: 7px;
 }
 
+.right img {
+  font-size: 0;
+  width: 100%;
+}
+.right .rightMenu {
+  margin-bottom: 30px;
+}
+.right .rightMenu h6 {
+  padding: 12px 12px;
+  background-color: #19232D;
+  color: #edf0f4;
+}
+.right .rightMenu .headerList {
+  background-color: #19232D;
+}
+.right .rightMenu .headerList li {
+  float: left;
+  padding: 7px 12px;
+  font-size: 13px;
+}
+.right .rightMenu .headerList li a {
+  color: #edf0f4;
+  text-decoration: none;
+}
+.right .rightMenu .newsList li {
+  margin-top: 30px;
+}
+.right .rightMenu .newsList li .col-md-4 div {
+  position: relative;
+}
+.right .rightMenu .newsList li .col-md-4 div a:last-child {
+  margin-right: -13px;
+}
+.right .rightMenu .newsList li .col-md-4 div span {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  z-index: 3;
+}
+.right .rightMenu .newsList li .col-md-4 div span a {
+  padding: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.right .rightMenu .newsList li .col-md-8 div span {
+  color: #a5a8ab;
+  font-size: 12px;
+}
+.right .rightMenu .newsList li .col-md-8 div p {
+  padding: 7px 0;
+  margin: 0;
+  border-bottom: 1px solid #D7DADE;
+  font-size: 13px;
+}
+.right .rightMenu .newsList li .col-md-8 div p a {
+  color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .right .rightMenu .newsList li .col-md-8 div p {
+    padding: 28px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .right .rightMenu .newsList li .col-md-8 div p {
+    padding: 25px 0;
+  }
+}
+.right .rightMenu .sliderSection {
+  margin-top: 30px;
+}
+.right .rightMenu .sliderSection img {
+  transform: scale(1);
+}
+.right .rightMenu .sliderSection .slideBtnLeft {
+  padding: 0px 4px;
+  top: 50%;
+}
+.right .rightMenu .sliderSection .slideBtnRight {
+  padding: 0px 4px;
+  top: 50%;
+}
+
 /**************** Header Section *****************/
 #header .topHead {
   width: 100%;
@@ -767,86 +852,6 @@ body i {
   padding: 0px 4px;
   top: 30%;
 }
-#homeNewsSection .container .row .right .rightMenu {
-  margin-bottom: 30px;
-}
-#homeNewsSection .container .row .right .rightMenu h6 {
-  padding: 12px 12px;
-  background-color: #19232D;
-  color: #edf0f4;
-}
-#homeNewsSection .container .row .right .rightMenu .headerList {
-  background-color: #19232D;
-}
-#homeNewsSection .container .row .right .rightMenu .headerList li {
-  float: left;
-  padding: 7px 12px;
-  font-size: 13px;
-}
-#homeNewsSection .container .row .right .rightMenu .headerList li a {
-  color: #edf0f4;
-  text-decoration: none;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li {
-  margin-top: 30px;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div {
-  position: relative;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div a:last-child {
-  margin-right: -13px;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div span {
-  position: absolute;
-  right: 0;
-  bottom: 3px;
-  z-index: 3;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div span a {
-  padding: 5px;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-  text-decoration: none;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div span {
-  color: #a5a8ab;
-  font-size: 12px;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
-  padding: 7px 0;
-  margin: 0;
-  border-bottom: 1px solid #D7DADE;
-  font-size: 13px;
-}
-#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p a {
-  color: #19232D;
-  font-family: "Roboto Slab", Georgia, serif;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
-    padding: 28px 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div p {
-    padding: 25px 0;
-  }
-}
-#homeNewsSection .container .row .right .rightMenu .sliderSection {
-  margin-top: 30px;
-}
-#homeNewsSection .container .row .right .rightMenu .sliderSection img {
-  transform: scale(1);
-}
-#homeNewsSection .container .row .right .rightMenu .sliderSection .slideBtnLeft {
-  padding: 0px 4px;
-  top: 50%;
-}
-#homeNewsSection .container .row .right .rightMenu .sliderSection .slideBtnRight {
-  padding: 0px 4px;
-  top: 50%;
-}
 
 /**************** Foot Section *****************/
 #footer {
@@ -970,4 +975,54 @@ body i {
 #content .wrapper .container .row .col-md-8 .col-md-6 p {
   color: #949697;
   font-size: 14px;
+}
+
+#entertainmentSection {
+  margin: 50px 0;
+}
+#entertainmentSection .left {
+  border-right: 1px solid #D7DADE;
+  padding-right: 30px;
+}
+#entertainmentSection .left h4 {
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  padding: 10px;
+  margin: 0;
+}
+#entertainmentSection .left h4 span {
+  font-weight: 600;
+}
+#entertainmentSection .left .leftItem {
+  margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+  #entertainmentSection .left .leftItem {
+    border: none;
+    margin-right: 0;
+  }
+}
+#entertainmentSection .left .leftItemRight {
+  margin-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  #entertainmentSection .left .leftItemRight {
+    border: none;
+    margin-left: 0;
+  }
+}
+#entertainmentSection .left .images {
+  padding: 25px 0;
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  #entertainmentSection .left {
+    border: none;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #entertainmentSection .left {
+    border: none;
+    padding: 0;
+  }
 }
