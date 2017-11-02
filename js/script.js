@@ -119,6 +119,10 @@ $(document).ready(function(){
 	
 	/****************** Slider Top ******************/
 
+	var slideWidth=$("#homeSliderSection .sliderSection").width();
+	var slideCount=$("#homeSliderSection .slideImage").length;
+	$("#homeSliderSection ul li").width(slideWidth/slideCount-3);
+
 	count=0;
 	$(window).resize(function(){
 		var slideWidth=$("#homeSliderSection .sliderSection").width();
