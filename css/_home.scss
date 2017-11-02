@@ -38,6 +38,10 @@
 						width: 20px;
 						height: 20px;
 						text-align: center;
+						transition: .5s ease;
+						&:hover{
+							border-radius: 50%;
+						}
 
 						i {
 							color: $colorSearch;
@@ -327,7 +331,6 @@
 				transition: .5s ease;
 				&:hover{
 					transform: scale(1.1);
-					opacity: 0.8;
 				}
 			}
 			p{
@@ -429,6 +432,33 @@
 							}
 						}
 					}
+					.slowSlider{
+						overflow: hidden;
+						.sliderSection{
+							margin-bottom: 30px;
+							.homeSlider{
+								width: 205%;
+								transition: .5s ease;
+								.slowSlideItem{
+									span{
+										a{
+											color: $blackcolor;
+											font-family: "Roboto Slab", Georgia, serif;
+										}
+									}
+								}
+							}
+						}
+						.slideBtnLeft{
+							padding: 0px 4px;
+							top: 30%;
+						}
+
+						.slideBtnRight{
+							padding: 0px 4px;
+							top: 30%;
+						}
+					}
 				}
 			}
 			.right{
@@ -456,7 +486,25 @@
 							margin-top: 30px;
 							.col-md-4{
 								div{
-									margin-right: -13px;
+									position: relative;
+									a{
+										&:last-child{
+											margin-right: -13px;
+										}
+									}
+									span{
+										position: absolute;
+										right: 0;
+										bottom: 3px;
+										z-index: 3;
+										a{
+											padding: 5px;
+											color: white;
+											font-size: 10px;
+											font-weight: bold;
+											text-decoration: none;
+										}
+									}
 								}
 							}
 							.col-md-8{

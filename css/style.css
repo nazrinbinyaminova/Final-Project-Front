@@ -26,7 +26,7 @@ body i {
   transition: .5s ease;
 }
 .imageHover:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .activeOranege {
@@ -365,6 +365,7 @@ body i {
   bottom: -5px;
 }
 .sliderSection ul li {
+  width: 147px;
   display: inline-block;
   height: 4px;
   transition: .5s ease;
@@ -410,6 +411,10 @@ body i {
   width: 20px;
   height: 20px;
   text-align: center;
+  transition: .5s ease;
+}
+#header .topHead .container .row .contactLink li:hover {
+  border-radius: 50%;
 }
 #header .topHead .container .row .contactLink li i {
   color: #F2F2F2;
@@ -643,7 +648,6 @@ body i {
 }
 #homeSliderSection .col-lg-4 .row img:hover {
   transform: scale(1.1);
-  opacity: 0.8;
 }
 #homeSliderSection .col-lg-4 .row p {
   position: absolute;
@@ -742,6 +746,28 @@ body i {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
 }
+#homeNewsSection .container .row .left .row .slowSlider {
+  overflow: hidden;
+}
+#homeNewsSection .container .row .left .row .slowSlider .sliderSection {
+  margin-bottom: 30px;
+}
+#homeNewsSection .container .row .left .row .slowSlider .sliderSection .homeSlider {
+  width: 205%;
+  transition: .5s ease;
+}
+#homeNewsSection .container .row .left .row .slowSlider .sliderSection .homeSlider .slowSlideItem span a {
+  color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+#homeNewsSection .container .row .left .row .slowSlider .slideBtnLeft {
+  padding: 0px 4px;
+  top: 30%;
+}
+#homeNewsSection .container .row .left .row .slowSlider .slideBtnRight {
+  padding: 0px 4px;
+  top: 30%;
+}
 #homeNewsSection .container .row .right .rightMenu {
   margin-bottom: 30px;
 }
@@ -766,7 +792,23 @@ body i {
   margin-top: 30px;
 }
 #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div {
+  position: relative;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div a:last-child {
   margin-right: -13px;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div span {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  z-index: 3;
+}
+#homeNewsSection .container .row .right .rightMenu .newsList li .col-md-4 div span a {
+  padding: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
 }
 #homeNewsSection .container .row .right .rightMenu .newsList li .col-md-8 div span {
   color: #a5a8ab;

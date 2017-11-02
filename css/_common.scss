@@ -21,7 +21,7 @@ body {
 	display: block;
 	transition: .5s ease;
 	&:hover{
-		opacity: 0.7;
+		opacity: 0.8;
 	}
 }
 
@@ -374,6 +374,7 @@ body {
 		position: absolute;
 		bottom: -5px;
 		li{
+			width: 147px;
 			display: inline-block;
 			height: 4px;
 			transition: .5s ease;
