@@ -1,3 +1,4 @@
+
 .myHeading, #content .wrapper .row h2.headClass {
   padding-left: 15px;
   border-left: 3px solid #C0392B;
@@ -518,7 +519,6 @@ body i {
   padding: 5px;
   color: gray;
 }
-
 /**************** NavBar Section *****************/
 #navHead {
   padding: 20px 0;
@@ -722,7 +722,6 @@ body i {
 #navHead .container .row .col-md-12 .smallNavBarItem .activeSmall {
   background-color: #1E2935;
 }
-
 /**************** Slider Section *****************/
 #homeSliderSection {
   background-color: #F2F2F2;
@@ -1119,7 +1118,7 @@ body i {
   #content .wrapper .row .col-md-6 {
     padding: 0px;
   }
-}
+
 #content .wrapper .row .col-md-6 p {
   color: #949697;
   font-size: 14px;
@@ -1234,4 +1233,5 @@ body i {
 }
 #fashionSection .left .fashionItem p {
   color: gray;
+
 }
