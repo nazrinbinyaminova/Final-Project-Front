@@ -1,0 +1,479 @@
+body {
+	margin: 0 auto;
+	font: 14px/1.5 "Open Sans", Arial, sans-serif;
+	i{
+		padding: 0 5px;
+	}
+}
+
+/**************** Common Classes *****************/
+
+.active {
+	border-width: 0 0 2px 0;
+	border-style: solid;
+}
+
+.activeBackGray{
+	background-color: $navcolor/1.3;
+}
+
+.imageHover{
+	display: block;
+	transition: .5s ease;
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+.activeOranege{
+	color: $colorOrangee;
+	&:hover{
+		color: $colorOrangee;
+	}
+}
+
+.activeGreen{
+	color: $colorGreeeen;
+	&:hover{
+		color:  $colorGreeeen;
+	}
+}
+
+.activeBlue{
+	color: $colorBlue;
+	&:hover{
+		color: $colorBlue;
+	}
+}
+
+.activeRed{
+	color: $colorRed;
+	&:hover{
+		color: $colorRed;
+	}
+}
+
+.activeLightRed{
+	color: $colorLightRed;
+	&:hover{
+		color: $colorLightRed;
+	}
+}
+
+.activeRedFlower{
+	color: $colorFlower;
+	&:hover{
+		color: $colorFlower;
+	}
+}
+
+.activePink{
+	color: $colorPink;
+	&:hover{
+		color: $colorPink;
+	}
+}
+
+.activeBrown{
+	color: $colorBrown;
+	&:hover{
+		color: $colorBrown;
+	}
+}
+
+.activeGreenBlueBorder{
+	border-color: $colorGreenBlue;
+}
+
+.activeOranegeBorder{
+	border-color: $colorOrangee;
+}
+
+.activeGreenBorder{
+	border-color: $colorGreeeen;
+}
+
+.activeBlueBorder{
+	border-color: $colorBlue;
+}
+
+.activeRedBorder{
+	border-color: $colorRed;
+}
+
+.activeLightRedBorder{
+	border-color: $colorLightRed;
+}
+
+.activeRedFlowerBorder{
+	border-color: $colorFlower;
+}
+
+.activePinkBorder{
+	border-color: $colorPink;
+}
+
+.activeBrownBorder{
+	border-color: $colorBrown;
+}
+
+.activeBackPink{
+	background-color: $colorPink;
+}
+
+.activeBackGreenBlue{
+	background-color: $colorGreenBlue;
+}
+
+.activeBackBrown{
+	background-color: $colorBrown;
+}
+
+.activeBackFlower{
+	background-color: $colorFlower;
+}
+
+.activeBackLightRed{
+	background-color: $colorLightRed;
+}
+
+.activeBackRed{
+	background-color: $colorRed;
+}
+
+.activeBackOrange{
+	background-color: $colorOrangee;
+}
+
+.activeBackGreen{
+	background-color: $colorGreeeen;
+}
+
+.activeBackBlue{
+	background-color: $colorBlue;
+}
+
+.displayNone{
+	display: none;
+}
+
+.imageCategory{
+	padding: 5px 10px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: 3;
+	span{
+		color: white;
+	}
+	a{
+		color: white;
+	}
+}
+
+.images{
+	p{
+		padding: 10px 0;
+		color: gray;
+		margin: 0;
+		font-size: 13px;
+	}
+	h5{
+		border-width: 0 0 0 3px;
+		border-style: solid;
+		padding: 2px 10px;
+		a{
+			color: $blackcolor;
+			font-family: "Roboto Slab", Georgia, serif;
+		}
+	}
+	.imagesDiv{
+		position: relative;
+		overflow: hidden;
+		img{
+			width: 100%;
+		}
+		.comment{
+			padding: 5px 10px;
+			background-color: $colorSearch;
+			color: gray;
+			p{
+				margin: 0;
+				padding:0;
+			}
+		}
+	}
+}
+
+.listDiv{
+	ul{
+		border-top: 1px solid $navcolor;
+		margin: 0;
+		li{
+			padding-top: 20px;
+			.col-md-9{
+				div{
+					margin-left: -15px;
+					span{
+						color: gray;
+						font-size: 13px;
+					}
+					p{
+						padding: 5px 0;
+						margin: 0;
+						border-bottom: 1px solid $navcolor;
+						font-size: 13px;
+						font-family: "Roboto Slab", Georgia, serif;
+						@media screen and (max-width: 767px){
+							padding: 20px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.entertainment{
+	border-bottom:1px solid $navcolor;
+	border-top:1px solid $navcolor;
+	background-color: $colorSearch;
+	margin: 30px 0;
+	padding: 5px 15px;
+	ul{
+		margin: 0;
+		li{
+			position: relative;
+			a{
+				color: gray;
+			}
+			.activeList{
+				&::before{
+					content: "";
+					width: 0;
+					height: 0;
+					position: absolute;
+					left: 38%;
+					top: 23px;
+					border-style: solid;
+					border-width: 0 5px 5px 5px;
+					border-color: transparent transparent white transparent;
+				}
+			}
+		}
+	}
+	h5{
+		margin: 0;
+		line-height: 22px;
+		font-weight: 600;
+	}
+
+}
+
+.dropDownRightComment {
+	span {
+		color: lightgray;
+		float: left;
+	}
+	p {
+		color: lightgray;
+		float: right;
+		margin:0;
+	}
+	a{
+		h5{
+			font-size: 13px;
+			border: 0;
+			border-bottom: 1px solid $navcolor;
+			color: $navcolor;
+		}
+	}
+}
+
+.comment {
+	height: 30px;
+	background-color: white;
+	padding: 5px 10px;
+	span {
+		float: left;
+		color: gray;
+	}
+	p {
+		color: gray;
+		float: right;
+	}
+}
+
+.sliderSection{
+	&:hover .slideBtnLeft{
+		opacity: 0.5;
+	}
+	&:hover .slideBtnRight{
+		opacity: 0.5;
+	}
+	.homeSlider{
+		.slideImage{
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			.imageCategory{
+				margin-left: 10px;
+			}
+			img{
+				width: 100%;
+				transition: .5s ease;
+				&:hover{
+					transform: scale(1.1);
+					opacity: 0.9;
+				}
+			}
+			p{
+				position: absolute;
+				left: 20px;
+				bottom: 50px;
+				font-size: 12px;
+				color: $navcolor;
+			}
+			h4{
+				position: absolute;
+				left: 20px;
+				bottom: 20px;
+				font-family: "Roboto Slab", Georgia, serif;
+				a{
+					color: $navcolor*1.2;
+				}
+			}
+		}
+	}
+	.slideBtnLeft{
+		padding: 3px 8px;
+		background-color: $navcolor*1.2;
+		position: absolute;
+		top: 45%;
+		left: 35px;
+		opacity: 0;
+		transition: .5s ease;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	.slideBtnRight{
+		padding: 3px 8px;
+		background-color: $navcolor*1.2;
+		position:absolute;
+		top: 45%;
+		right: 35px;
+		opacity: 0;
+		transition: .5s ease;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	ul{
+		margin: 0;
+		position: absolute;
+		bottom: -5px;
+		li{
+			display: inline-block;
+			height: 4px;
+			transition: .5s ease;
+		}
+		&:hover li{
+			height: 7px;
+		}
+	}
+}
+
+.right{
+	img{
+		font-size: 0;
+		width: 100%;
+	}
+	.rightMenu{
+		margin-bottom: 30px;
+		h6{
+			padding: 12px 12px;
+			background-color: $blackcolor;
+			color: $navcolor*1.1;
+		}
+		.headerList{
+			background-color: $blackcolor;
+			li{
+				float: left;
+				padding: 7px 12px;
+				font-size: 13px;
+				a{
+					color: $navcolor*1.1;
+					text-decoration: none;
+				}
+			}
+		}
+		.newsList{
+			li{
+				margin-top: 30px;
+				.col-md-4{
+					div{
+						position: relative;
+						a{
+							&:last-child{
+								margin-right: -13px;
+							}
+						}
+						span{
+							position: absolute;
+							right: 0;
+							bottom: 3px;
+							z-index: 3;
+							a{
+								padding: 5px;
+								color: white;
+								font-size: 10px;
+								font-weight: bold;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+				.col-md-8{
+					div{
+						span{
+							color: $navcolor/1.3;
+							font-size: 12px;
+						}
+						p{
+							padding: 7px 0;
+							margin: 0;
+							border-bottom: 1px solid $navcolor;	
+							font-size: 13px;
+							a{
+								color: $blackcolor;
+								font-family: "Roboto Slab", Georgia, serif;
+							}
+							@media screen and (min-width: 768px) and (max-width: 991px){
+								padding: 28px 0;
+							}
+							@media screen and (max-width: 767px){
+								padding: 25px 0;
+							}
+						}							
+					}
+				}
+			}
+		}
+		.sliderSection{
+			margin-top: 30px;
+			img{
+				transform: scale(1);
+			}
+			.slideBtnLeft{
+				padding: 0px 4px;
+				top: 50%;
+			}
+
+			.slideBtnRight{
+				padding: 0px 4px;
+				top: 50%;
+			}
+		}
+	}
+}

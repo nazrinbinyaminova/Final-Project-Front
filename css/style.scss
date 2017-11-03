@@ -1,13 +1,26 @@
-$colorSearch: #F2F2F2;
-$colorRed: #E54E53;
+
 $blackcolor: #19232D;
 $navcolor: #D7DADE;
 $colorRed: #C0392B;
 $colorGray: #F2F2F2;
 $colorLight: #FFFFFF;
 $colorP: #949697;
+$colorSearch: #F2F2F2;
+$blackcolor: #19232D;
+$colorGreeeen: #32742C;
+$colorOrangee: #D2691E;
+$colorRed: #C0392B;
+$colorBlue: #4682B4;
+$colorBrown: #D2691E;
+$colorPink: #D70060;
+$colorFlower: #FF6347;
+$colorLightRed: #E74C3C;
+$colorGreenBlue: #E74C3C;
+
 @import "header";
 @import "content";
+@import "common";
+@import  "home";
 .myHeading{
 	font: 18px "Open Sans", Arial, sans-serif;
     text-transform: uppercase;
