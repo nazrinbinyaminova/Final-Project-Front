@@ -1,5 +1,32 @@
 #content{
 	width: 100%;
+	.twitColor{
+		background-color: #2aa9e0;
+	}
+	.fbColor{
+		background-color: $darkBlue;
+	}
+	.linkColor{
+		background-color: #02669a;
+	}
+	.pinColor{
+		background-color: #ca2128;
+	}
+	.googleColor{
+		background-color: #d3492c;
+	}
+	.tumblrColor{
+		background-color: #44546b;
+	}
+	.messageColor{
+		background-color: $blackcolor;
+	}
+	.colorP{
+		color: #606569;
+	}
+	.imgInfoColor{
+		background-color: $colorGray;
+	}
 	.padCol{
 		padding: 10px 25px 0px 0px;
 	}
@@ -9,18 +36,27 @@
 	.myTopMargin{
 		margin-top: 25px;
 	}
+	.BottomMargin{
+		margin-bottom: 15px;
+	}
 	 .padd{
 		padding-left: 0;
 	}
 	.border{
 		margin-top: 25px;
-		 border-left: 3px solid #e54e53;
+		border-left: 3px solid #e54e53;
 	}
 	.myPadd{
 		padding: 25px 20px 25px 0;
 		@media screen and(max-width: 768px) {
 			padding: 25px 0 25px 0;
 		}
+	}
+	.borderRight{
+		border-right: 1px solid $colorGray;
+	}
+	.paddRightLeft{
+		padding: 0px 20px 0px 0px;
 	}
 	.right{
 		float: right;
@@ -44,12 +80,15 @@
 	.imgInfoPadd{
 		padding: 5px 10px 5px 10px;
 	}
-	h5{
+	.h5{
+		@media screen and(max-width: 768px) {
+			width: 	100%;
+		}
 		margin-top: 25px;
 		width: 97%;
 		font-size: 12px;
 		color: gray;
-		padding: 15px 0;
+		padding: 15px 5px;
 		background-color: none;
 	}
 	.borderRow{
@@ -61,6 +100,9 @@
 		color: #19232d;
 	}
 	.paragraf{
+		@media screen and(max-width: 768px) {
+				padding: 0px 15px;
+		}
 		padding-right: 20px;
 		font-size: 14px;
 	}
@@ -72,13 +114,12 @@
 		@media screen and(max-width: 768px) {
 			margin: 2px  0px ;
 		}
-		width: 60px;
+		width: 54px;
 	    height: 30px;
 	    line-height: 30px;
 	    text-align: center;
 	    font-size: 20px;
 	    margin-right: 2px;
-	    background: #2aa9e0;
 	}	
 	.light{
 		color: #fff; 
@@ -91,6 +132,14 @@
 			float: none;
    			padding: 21px 0px;
 		}
+	}
+	.formButton{
+    background: #19232d;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    padding: 7px 21px;
+    margin-bottom: 30px;
 	}	
 	.wrapper{
 		// @media screen and(max-width: 500px) {
@@ -131,7 +180,7 @@
 							}
 								}
 
-					border-right: 1px solid lightgray;
+					
 					.imageSide{
 							
 							.imageItem{
@@ -160,7 +209,6 @@
 								}
 							}
 							.imgInfo{
-								background-color: $colorGray;
 								height: 20px;
 
 								time{
@@ -170,7 +218,6 @@
 								
 							}							
 						}
-					
 					
 					h2.headClass{
 						@media screen and(max-width: 768px) {
