@@ -41,7 +41,6 @@ $(document).ready(function(){
 		$(".dropDownMenuEnter").hide();
 	});
 
-
 	/****************** XS size NavBar ******************/
 
 	$(".smallNavBar .listBtn i").click(function(){

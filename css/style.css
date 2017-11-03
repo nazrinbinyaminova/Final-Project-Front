@@ -559,6 +559,10 @@ body i {
 #navHead .container .row .col-md-12 > ul > li > i {
   color: #D7DADE;
 }
+#navHead .container .row .col-md-12 > ul > li:nth-child(8) {
+  padding: 12px 16px;
+  background-color: #263544;
+}
 #navHead .container .row .col-md-12 > ul .menuDropFeatures:hover .dropDownMenuFeatures {
   display: block;
 }

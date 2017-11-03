@@ -100,8 +100,7 @@
 					background-color: $blackcolor;
 					position: relative;
 					border-bottom: 2px solid #2F4154;
-
-
+					
 					>li {
 						float: left;
 						padding: 12px 25px;
@@ -121,6 +120,12 @@
 							color: $navcolor;
 						}
 
+					}
+					>li{
+						&:nth-child(8){
+							padding: 12px 16px;
+							background-color: $blackcolor*1.5;
+						}
 					}
 					
 					.menuDropFeatures{
