@@ -12,36 +12,6 @@
 	.left{
 		padding-right: 30px;
 		border-right: 1px solid $navcolor;
-		.fashionItem{
-		padding: 30px 0;
-		border-bottom: 1px solid $navcolor;
-			&:last-child{
-				border: none;
-			}
-			.comment{
-				padding: 0;
-				height: 20px;
-				font-size: 12px;
-				p{
-					margin: 0;
-				}
-			}
-			.readMoreBtn{
-				width: 100px;
-				padding: 5px 10px;
-				a{
-					color: white;
-				}
-			}
-			h5{
-				a{
-					color: $blackcolor;
-					font-family: "Roboto Slab", Georgia, serif;
-				}
-			}
-			p{
-				color: gray;
-			}
-		}
+		
 	}
 }
