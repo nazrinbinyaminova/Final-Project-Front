@@ -327,6 +327,7 @@
 	background-color: $colorSearch;
 	padding: 30px 0;
 	position: relative;
+	
 	.col-lg-4{
 		.row{
 			.slideRightBar{
@@ -410,22 +411,6 @@
 						}
 					}
 					
-					.col-md-6{
-						.listDivEnter{
-							padding-left: 10px;
-							@media screen and (max-width:767px){
-								padding:0;
-							}
-							ul{
-								border:none;
-								li{
-									padding:0;
-									margin-bottom: 20px;
-
-								}
-							}
-						}
-					}
 					.homeItemListBottom{
 						li{
 							padding: 10px 0;
@@ -435,33 +420,6 @@
 								color: $blackcolor;
 								font-family: "Roboto Slab", Georgia, serif;
 							}
-						}
-					}
-					.slowSlider{
-						overflow: hidden;
-						.sliderSection{
-							margin-bottom: 30px;
-							.homeSlider{
-								width: 205%;
-								transition: .5s ease;
-								.slowSlideItem{
-									span{
-										a{
-											color: $blackcolor;
-											font-family: "Roboto Slab", Georgia, serif;
-										}
-									}
-								}
-							}
-						}
-						.slideBtnLeft{
-							padding: 0px 4px;
-							top: 30%;
-						}
-
-						.slideBtnRight{
-							padding: 0px 4px;
-							top: 30%;
 						}
 					}
 				}

@@ -1,4 +1,3 @@
-
 .myHeading, #content .wrapper .row h2.headClass {
   padding-left: 15px;
   border-left: 3px solid #C0392B;
@@ -236,6 +235,22 @@ body i {
   }
 }
 
+.listDivEnter {
+  padding-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .listDivEnter {
+    padding: 0;
+  }
+}
+.listDivEnter ul {
+  border: none;
+}
+.listDivEnter ul li {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .entertainment {
   border-bottom: 1px solid #D7DADE;
   border-top: 1px solid #D7DADE;
@@ -309,6 +324,7 @@ body i {
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: none;
 }
 .sliderSection .homeSlider .slideImage .imageCategory {
   margin-left: 10px;
@@ -336,6 +352,9 @@ body i {
 }
 .sliderSection .homeSlider .slideImage h4 a {
   color: white;
+}
+.sliderSection .homeSlider .slideImage:first-child {
+  display: block;
 }
 .sliderSection .slideBtnLeft {
   padding: 3px 8px;
@@ -460,6 +479,29 @@ body i {
   top: 50%;
 }
 
+.slowSlider {
+  overflow: hidden;
+}
+.slowSlider .sliderSection {
+  margin-bottom: 30px;
+}
+.slowSlider .sliderSection .homeSlider {
+  width: 205%;
+  transition: .5s ease;
+}
+.slowSlider .sliderSection .homeSlider .slowSlideItem span a {
+  color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+.slowSlider .slideBtnLeft {
+  padding: 0px 4px;
+  top: 30%;
+}
+.slowSlider .slideBtnRight {
+  padding: 0px 4px;
+  top: 30%;
+}
+
 /**************** Header Section *****************/
 #header .topHead {
   width: 100%;
@@ -519,6 +561,7 @@ body i {
   padding: 5px;
   color: gray;
 }
+
 /**************** NavBar Section *****************/
 #navHead {
   padding: 20px 0;
@@ -722,6 +765,7 @@ body i {
 #navHead .container .row .col-md-12 .smallNavBarItem .activeSmall {
   background-color: #1E2935;
 }
+
 /**************** Slider Section *****************/
 #homeSliderSection {
   background-color: #F2F2F2;
@@ -810,21 +854,6 @@ body i {
     border: none;
   }
 }
-#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter {
-  padding-left: 10px;
-}
-@media screen and (max-width: 767px) {
-  #homeNewsSection .container .row .left .row .col-md-6 .listDivEnter {
-    padding: 0;
-  }
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul {
-  border: none;
-}
-#homeNewsSection .container .row .left .row .col-md-6 .listDivEnter ul li {
-  padding: 0;
-  margin-bottom: 20px;
-}
 #homeNewsSection .container .row .left .row .homeItemListBottom li {
   padding: 10px 0;
   font-size: 13px;
@@ -833,28 +862,6 @@ body i {
 #homeNewsSection .container .row .left .row .homeItemListBottom li a {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
-}
-#homeNewsSection .container .row .left .row .slowSlider {
-  overflow: hidden;
-}
-#homeNewsSection .container .row .left .row .slowSlider .sliderSection {
-  margin-bottom: 30px;
-}
-#homeNewsSection .container .row .left .row .slowSlider .sliderSection .homeSlider {
-  width: 205%;
-  transition: .5s ease;
-}
-#homeNewsSection .container .row .left .row .slowSlider .sliderSection .homeSlider .slowSlideItem span a {
-  color: #19232D;
-  font-family: "Roboto Slab", Georgia, serif;
-}
-#homeNewsSection .container .row .left .row .slowSlider .slideBtnLeft {
-  padding: 0px 4px;
-  top: 30%;
-}
-#homeNewsSection .container .row .left .row .slowSlider .slideBtnRight {
-  padding: 0px 4px;
-  top: 30%;
 }
 
 /**************** Foot Section *****************/
@@ -1118,7 +1125,7 @@ body i {
   #content .wrapper .row .col-md-6 {
     padding: 0px;
   }
-
+}
 #content .wrapper .row .col-md-6 p {
   color: #949697;
   font-size: 14px;
@@ -1233,5 +1240,78 @@ body i {
 }
 #fashionSection .left .fashionItem p {
   color: gray;
+}
 
+#fullWidthHome {
+  padding: 50px 0;
+}
+#fullWidthHome img {
+  width: 100%;
+}
+#fullWidthHome .col-md-10 div {
+  margin-left: -15px;
+}
+#fullWidthHome .col-md-10 div span {
+  color: gray;
+  font-size: 13px;
+}
+#fullWidthHome .col-md-10 div p {
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #D7DADE;
+  font-size: 13px;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+@media screen and (max-width: 767px) {
+  #fullWidthHome .col-md-10 div p {
+    padding: 20px 0;
+  }
+}
+#fullWidthHome .col-md-10 div p a {
+  color: #19232D;
+}
+#fullWidthHome .col-lg-9 p {
+  padding: 10px 0;
+}
+#fullWidthHome .col-lg-9 p a {
+  color: #19232D;
+}
+#fullWidthHome .slowSlider .homeSlider {
+  width: 150%;
+}
+#fullWidthHome .slowSlider .homeSlider .slowSlideItem {
+  margin-right: 20px;
+}
+#fullWidthHome hr {
+  margin: 20px  0;
+  border-color: #D7DADE;
+}
+#fullWidthHome .col-lg-6:first-child {
+  border-right: 1px solid #D7DADE;
+}
+@media screen and (max-width: 767px) {
+  #fullWidthHome .col-lg-6:first-child {
+    border: 0;
+  }
+}
+#fullWidthHome .leftItem {
+  padding-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  #fullWidthHome .leftItem {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+#fullWidthHome .leftItemRight {
+  padding-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  #fullWidthHome .leftItemRight {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+#fullWidthHome .col-lg-4 .leftItem {
+  padding: 20px 0;
 }
