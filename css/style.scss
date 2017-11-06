@@ -1,4 +1,4 @@
-
+$colorBack: #f9f9f9;
 $colorSearch: #F2F2F2;
 $blackcolor: #19232D;
 $navcolor: #D7DADE;
@@ -15,7 +15,7 @@ $colorFlower: #FF6347;
 $colorLightRed: #E74C3C;
 $colorGreenBlue: #E74C3C;
 $darkBlue: #204385;
-
+$RedRose: #e54e53;
 .myHeading{
 	padding-left: 15px;
 	border-left: 3px solid $colorRed;
@@ -26,3 +26,4 @@ $darkBlue: #204385;
 @import "content";
 @import "entertainment";
 @import "fashion";
+@import  "formContent";

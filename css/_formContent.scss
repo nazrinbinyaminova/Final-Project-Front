@@ -1,0 +1,110 @@
+#formContent{
+	.margBottom{
+		margin-bottom: 15px;
+	}
+	.padLeft{
+		padding-left: 25px;
+	}
+	.padding{
+		padding: 0;
+	}
+	.borderTop{
+		border-top: 1px solid lightgray;
+		padding-top: 15px;
+	}
+	.borderBottom{
+		border-bottom: 1px solid lightgray; 
+		margin-bottom: 15px;
+	}
+	.border{
+		margin-top: 25px;
+		border-left: 3px solid #e54e53;
+	}
+	.borderRow{
+		border-top: 1px solid lightgray;
+		border-bottom: 1px solid lightgray;
+	}
+	.h5{
+		margin-top: 25px;
+		font-size: 12px;
+		color: gray;
+		background-color: none;
+	}
+.left{
+		margin-left: 18px;
+		font-size: 18px;
+	    padding-left: 18px;	    
+	}
+	.fleft{
+		float: left;
+	}
+	.fright{
+		float: right
+	}
+	.radius{
+		border-radius: 0;
+	}
+	.searchText{
+	background: #f9f9f9;
+    border: 1px solid #d9d9d9;
+    height: 35px;
+    outline: 0;
+    padding-left: 7px;
+    font-size: 13px;
+    color: #a6a6a6;
+    width: 100%;
+	}
+	.formButton{
+		float: right;
+	background-color: #e54e53;
+	color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    height: 35px;
+    padding: 0 20px;
+    margin-top: 0;
+    border: 0;
+	}
+	.fontSize{
+		font-size: 12px;
+		color: #606569;
+	}
+	.statistic{
+		overflow: hidden;
+	    background: #f9f9f9;
+	    padding: 15px;
+	    border-top: 1px solid #d9d9d9;
+	    border-bottom: 1px solid #d9d9d9;
+	    font-size: 14px;
+	}
+	.listItem{
+
+		text-align: center;
+		border: 1px solid lightgray;
+		padding: 3px 6px;
+		background: #f2f2f2;
+		margin-bottom: 8px;
+	}
+	.paragraf{
+		@media screen and(max-width: 768px) {
+				padding: 0px 15px;
+		}
+		padding-right: 20px;
+		
+	}
+	.aboutForm{
+		.formImg{
+			@media screen and(max-width: 768px) {
+				visibility:none 
+			}
+			}
+		width: max-width;
+		height: max-height;
+		.formItem{
+			width: max-width;
+			height: max-height;
+			margin-bottom: 30px;
+			
+		}
+	}
+}

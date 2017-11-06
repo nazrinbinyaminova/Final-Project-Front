@@ -38,7 +38,12 @@ body {
 		color:  $colorGreeeen;
 	}
 }
-
+.activeRedRose{
+	color: $RedRose;
+		&:hover{
+		color: $RedRose;
+	}
+}
 .activeBlue{
 	color: $colorBlue;
 	&:hover{
@@ -59,7 +64,9 @@ body {
 		color: $colorLightRed;
 	}
 }
-
+.activeBlack{
+	color: $blackcolor;
+}
 .activeRedFlower{
 	color: $colorFlower;
 	&:hover{
@@ -152,7 +159,9 @@ body {
 .activeBackBlue{
 	background-color: $colorBlue;
 }
-
+.activeBackGray{
+	background-color: $colorBack;
+}
 .displayNone{
 	display: none;
 }
