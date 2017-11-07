@@ -1,41 +1,7 @@
 #entertainmentSection{
-	margin: 30px 0;
 	.left{
-		border-right: 1px solid $navcolor;
-		padding-right: 30px;
-		h4{
-			border-width: 0 0 0 3px;
-			border-style: solid;
-			padding: 10px;
-			margin: 0;
-			span{
-				font-weight: 600;
-			}
-		}
-		.leftItem{
-			margin-right: 15px;
-			@media screen and (max-width: 767px){
-				border: none;
-				margin-right:0;
-			}
-		}
-		.leftItemRight{
-			margin-left: 15px;
-			@media screen and (max-width: 767px){
-				border: none;
-				margin-left:0;
-			}
-		}
 		.images{
 			padding: 25px 0;
-		}
-		@media screen and (min-width: 767px) and (max-width: 991px){
-			border: none;
-			padding:0;
-		}
-		@media screen and (max-width: 767px){
-			border: none;
-			padding:0;
 		}
 	}
 }

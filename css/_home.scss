@@ -365,75 +365,9 @@
 /**************** News Section *****************/
 
 #homeNewsSection {
-	padding: 40px 0;
 	img{
 		font-size: 0;
 		width: 100%;
-	}
-	
-	.container{
-		.row{
-			.left{
-				padding-right: 30px;
-				border-right: 1px solid $navcolor;
-				@media screen and (min-width:768px) and (max-width: 991px){
-					padding:0;
-					border: none;
-				}
-				@media screen and (max-width: 767px){
-					padding:0;
-					border: none;
-				}
-				.row{
-					.leftBorder{
-						border-right: 1px solid $navcolor;
-						@media screen and (max-width: 767px){
-							border: none;
-						}
-					}
-					.col-md-6{
-						a{
-							color: $blackcolor;
-						}
-						.imageCategory{
-							a{
-								color: white;
-							}
-						}
-					}
-					.leftItem{
-						margin-right:10px;
-						@media screen and (max-width:767px){
-							border: none;
-							margin: 20px 0;
-							padding-right:0;
-						}
-					}
-					.leftItemRight{
-						margin-left:10px;
-						@media screen and (max-width:767px){
-							margin: 0;
-						}
-						@media screen and (min-width:768px) and (max-width: 991px){
-							border: none;
-						}
-					}
-					
-					.homeItemListBottom{
-						li{
-							padding: 10px 0;
-							font-size: 13px;
-							border-top: 1px solid $navcolor;
-							a{
-								color: $blackcolor;
-								font-family: "Roboto Slab", Georgia, serif;
-							}
-						}
-					}
-				}
-			}
-			
-		}
 	}
 }
 
