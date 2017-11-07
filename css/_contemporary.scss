@@ -1,2 +1,49 @@
 #contemporaryHomeSection{
+	padding: 40px 0;
+
+	.left{
+		padding-right: 30px;
+		border-right: 1px solid $navcolor;
+		.entertainment{
+			margin: 0;
+		}
+		.entertainmentItem{
+			padding: 30px 0;
+			.col-lg-6{
+				&:first-child{
+					border-right: 1px solid $navcolor;
+				}
+				.leftItem{
+					margin-right: 10px;
+				}
+			}
+		}
+		.gallery{
+			margin: 20px 0;
+			.galleryItem{
+				position: relative;
+				margin: 15px 0;
+				img{
+					width: 100%;
+				}
+				.galleryItemTitle{
+					position: absolute;
+					bottom: 5px;
+					left: 15px;
+					text-shadow: 1px 1px 1px gray;
+					p{
+						font-size: 12px;
+						margin: 0;
+						color: $colorSearch;
+					}
+					h5{
+						font-family: "Roboto Slab", Georgia, serif;
+						a{
+							color: $colorSearch*1.1;
+						}
+					}
+				}
+			}
+		}
+	}
 }

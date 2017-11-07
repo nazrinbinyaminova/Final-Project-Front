@@ -538,6 +538,11 @@ body i {
   color: gray;
 }
 
+hr {
+  margin: 30px  0;
+  border-color: #D7DADE;
+}
+
 /**************** Header Section *****************/
 #header .col-lg-5 span {
   display: none;
@@ -1295,10 +1300,6 @@ body i {
 #fullWidthHome .slowSlider .homeSlider .slowSlideItem {
   margin-right: 20px;
 }
-#fullWidthHome hr {
-  margin: 20px  0;
-  border-color: #D7DADE;
-}
 #fullWidthHome .col-lg-6:first-child {
   border-right: 1px solid #D7DADE;
 }
@@ -1327,4 +1328,51 @@ body i {
 }
 #fullWidthHome .col-lg-4 .leftItem {
   padding: 20px 0;
+}
+
+#contemporaryHomeSection {
+  padding: 40px 0;
+}
+#contemporaryHomeSection .left {
+  padding-right: 30px;
+  border-right: 1px solid #D7DADE;
+}
+#contemporaryHomeSection .left .entertainment {
+  margin: 0;
+}
+#contemporaryHomeSection .left .entertainmentItem {
+  padding: 30px 0;
+}
+#contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
+  border-right: 1px solid #D7DADE;
+}
+#contemporaryHomeSection .left .entertainmentItem .col-lg-6 .leftItem {
+  margin-right: 10px;
+}
+#contemporaryHomeSection .left .gallery {
+  margin: 20px 0;
+}
+#contemporaryHomeSection .left .gallery .galleryItem {
+  position: relative;
+  margin: 15px 0;
+}
+#contemporaryHomeSection .left .gallery .galleryItem img {
+  width: 100%;
+}
+#contemporaryHomeSection .left .gallery .galleryItem .galleryItemTitle {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  text-shadow: 1px 1px 1px gray;
+}
+#contemporaryHomeSection .left .gallery .galleryItem .galleryItemTitle p {
+  font-size: 12px;
+  margin: 0;
+  color: #F2F2F2;
+}
+#contemporaryHomeSection .left .gallery .galleryItem .galleryItemTitle h5 {
+  font-family: "Roboto Slab", Georgia, serif;
+}
+#contemporaryHomeSection .left .gallery .galleryItem .galleryItemTitle h5 a {
+  color: white;
 }

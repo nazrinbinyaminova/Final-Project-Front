@@ -44,11 +44,6 @@
 		}
 	}
 
-	hr{
-		margin: 20px  0;
-		border-color: $navcolor; 
-	}
-
 	.col-lg-6{
 		&:first-child{
 			border-right: 1px solid $navcolor;
@@ -79,3 +74,4 @@
 		}
 	}
 }
+
