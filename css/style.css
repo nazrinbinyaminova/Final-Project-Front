@@ -21,6 +21,10 @@ body i {
   border-style: solid;
 }
 
+.activeSmall {
+  background-color: #1E2935;
+}
+
 .activeBackGray {
   background-color: #a5a8ab;
 }
@@ -515,11 +519,11 @@ body i {
 }
 .slowSlider .slideBtnLeft {
   padding: 0px 4px;
-  top: 30%;
+  top: 40%;
 }
 .slowSlider .slideBtnRight {
   padding: 0px 4px;
-  top: 30%;
+  top: 40%;
 }
 
 .fashionItem {
@@ -546,7 +550,7 @@ body i {
 }
 
 hr {
-  margin: 30px  0;
+  margin: 20px  0;
   border-color: #D7DADE;
 }
 
@@ -633,6 +637,9 @@ hr {
     padding: 0;
     border: none;
   }
+}
+.left .sliderSection {
+  position: relative;
 }
 .left .row .leftBorder {
   border-right: 1px solid #D7DADE;
@@ -946,9 +953,6 @@ hr {
 #navHead .container .row .col-md-12 .smallNavBarItem ul .featuresItem .featuresItemItem li {
   padding: 9px 50px;
   border: none;
-}
-#navHead .container .row .col-md-12 .smallNavBarItem .activeSmall {
-  background-color: #1E2935;
 }
 
 /**************** Slider Section *****************/
