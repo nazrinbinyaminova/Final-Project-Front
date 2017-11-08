@@ -491,9 +491,6 @@ body i {
 .right .rightMenu .sliderSection {
   margin-top: 30px;
 }
-.right .rightMenu .sliderSection img {
-  transform: scale(1);
-}
 .right .rightMenu .sliderSection .slideBtnLeft {
   padding: 0px 4px;
   top: 50%;
@@ -567,6 +564,10 @@ hr {
   border-style: solid;
   float: left;
   padding: 0 10px;
+  color: #19232D;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+.fullComment h3 a {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
 }
@@ -686,6 +687,63 @@ hr {
 .left .row .homeItemListBottom li a {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
+}
+
+.testPageParagraph div {
+  margin: 15px 0;
+  padding: 10px 25px;
+  background-color: #F2F2F2;
+  border-left: 3px solid #D7DADE;
+}
+.testPageParagraph p {
+  line-height: 25px;
+  color: gray;
+}
+.testPageParagraph p span {
+  font-weight: bold;
+}
+.testPageParagraph h4 {
+  font-weight: bold;
+}
+.testPageParagraph ul {
+  list-style: square;
+}
+.testPageParagraph ul li {
+  color: gray;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.errorBox {
+  margin: 100px 0;
+}
+.errorBox h1 {
+  font-size: 4.6em;
+  margin: 12px 0;
+}
+.errorBox h3 {
+  font-weight: bold;
+}
+.errorBox p {
+  margin: 10px 0;
+  line-height: 25px;
+}
+.errorBox a {
+  font-size: 13px;
+}
+.errorBox ul li i {
+  padding: 0 10px 0 0;
+}
+
+.percentBox {
+  margin-left: 10px;
+}
+.percentBox a {
+  padding: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /**************** Header Section *****************/

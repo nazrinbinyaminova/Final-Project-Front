@@ -507,9 +507,6 @@ body {
 		}
 		.sliderSection{
 			margin-top: 30px;
-			img{
-				transform: scale(1);
-			}
 			.slideBtnLeft{
 				padding: 0px 4px;
 				top: 50%;
@@ -600,6 +597,10 @@ hr{
 		padding: 0 10px;
 		color: $blackcolor;
 		font-family: "Roboto Slab", Georgia, serif;
+		a{
+			color: $blackcolor;
+			font-family: "Roboto Slab", Georgia, serif;
+		}
 	}
 	p{
 		font-size: 16px;
@@ -716,5 +717,68 @@ hr{
 				}
 			}
 		}
+	}
+}
+
+.testPageParagraph{
+	div{
+		margin: 15px 0;
+		padding: 10px 25px;
+		background-color: $colorSearch;
+		border-left: 3px solid $navcolor;
+	}
+	p{
+		line-height: 25px;
+		color: gray;
+		span{
+			font-weight: bold;
+		}
+	}
+	h4{
+		font-weight: bold;
+	}
+	ul{
+		list-style: square;
+		li{
+			color: gray;
+			font-size: 13px;
+			line-height: 25px;
+		}
+	}
+}
+
+.errorBox{
+	margin: 100px 0;
+	h1{
+		font-size: 4.6em;
+		margin: 12px 0;
+	}
+	h3{
+		font-weight: bold;
+	}
+	p{
+		margin: 10px 0;
+		line-height: 25px;
+	}
+	a{
+		font-size: 13px;
+	}
+	ul{
+		li{
+			i{
+				padding: 0 10px 0 0;
+			}
+		}
+	}
+}
+
+.percentBox{
+	margin-left: 10px;
+	a{
+		padding: 5px;
+		color: white;
+		font-size: 10px;
+		font-weight: bold;
+		text-decoration: none;
 	}
 }
