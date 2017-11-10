@@ -1525,77 +1525,6 @@ hr {
   padding: 25px 0;
 }
 
-#fullWidthHome .left {
-  padding: 0;
-  border: none;
-}
-#fullWidthHome img {
-  width: 100%;
-}
-#fullWidthHome .col-md-10 div {
-  margin-left: -15px;
-}
-#fullWidthHome .col-md-10 div span {
-  color: gray;
-  font-size: 13px;
-}
-#fullWidthHome .col-md-10 div p {
-  padding: 8px 0;
-  margin: 0;
-  border-bottom: 1px solid #D7DADE;
-  font-size: 13px;
-  font-family: "Roboto Slab", Georgia, serif;
-}
-@media screen and (max-width: 767px) {
-  #fullWidthHome .col-md-10 div p {
-    padding: 20px 0;
-  }
-}
-#fullWidthHome .col-md-10 div p a {
-  color: #19232D;
-}
-#fullWidthHome .col-lg-9 p {
-  padding: 8px 0;
-}
-#fullWidthHome .col-lg-9 p a {
-  color: #19232D;
-}
-#fullWidthHome .slowSlider .homeSlider {
-  width: 150%;
-}
-#fullWidthHome .slowSlider .homeSlider .slowSlideItem {
-  margin-right: 20px;
-}
-
-#contemporaryHomeSection .left {
-  padding-right: 30px;
-  border-right: 1px solid #D7DADE;
-}
-@media screen and (max-width: 991px) {
-  #contemporaryHomeSection .left {
-    border: none;
-    padding-right: 0;
-  }
-}
-#contemporaryHomeSection .left .entertainment {
-  margin: 0;
-}
-#contemporaryHomeSection .left .entertainmentItem {
-  padding: 30px 0;
-}
-#contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
-  border-right: 1px solid #D7DADE;
-}
-@media screen and (max-width: 991px) {
-  #contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
-    border: none;
-  }
-}
-/*<<<<<<< HEAD*//*
-#fashionSection .left .fashionItem p {
-  color: gray;
-}
-
 #formContent .margBottom {
   margin-bottom: 15px;
 }
@@ -1702,13 +1631,79 @@ hr {
   width: max-width;
   height: max-height;
   margin-bottom: 30px;
-=======
+}
+
+#fullWidthHome .left {
+  padding: 0;
+  border: none;
+}
+#fullWidthHome img {
+  width: 100%;
+}
+#fullWidthHome .col-md-10 div {
+  margin-left: -15px;
+}
+#fullWidthHome .col-md-10 div span {
+  color: gray;
+  font-size: 13px;
+}
+#fullWidthHome .col-md-10 div p {
+  padding: 8px 0;
+  margin: 0;
+  border-bottom: 1px solid #D7DADE;
+  font-size: 13px;
+  font-family: "Roboto Slab", Georgia, serif;
+}
+@media screen and (max-width: 767px) {
+  #fullWidthHome .col-md-10 div p {
+    padding: 20px 0;
+  }
+}
+#fullWidthHome .col-md-10 div p a {
+  color: #19232D;
+}
+#fullWidthHome .col-lg-9 p {
+  padding: 8px 0;
+}
+#fullWidthHome .col-lg-9 p a {
+  color: #19232D;
+}
+#fullWidthHome .slowSlider .homeSlider {
+  width: 150%;
+}
+#fullWidthHome .slowSlider .homeSlider .slowSlideItem {
+  margin-right: 20px;
+}
+
+#contemporaryHomeSection .left {
+  padding-right: 30px;
+  border-right: 1px solid #D7DADE;
+}
+@media screen and (max-width: 991px) {
+  #contemporaryHomeSection .left {
+    border: none;
+    padding-right: 0;
+  }
+}
+#contemporaryHomeSection .left .entertainment {
+  margin: 0;
+}
+#contemporaryHomeSection .left .entertainmentItem {
+  padding: 30px 0;
+}
+#contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
+  border-right: 1px solid #D7DADE;
+}
+@media screen and (max-width: 991px) {
+  #contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
+    border: none;
+  }
+}
 #contemporaryHomeSection .left .entertainmentItem .col-lg-6 .leftItem {
   margin-right: 10px;
-}*/
+}
 @media screen and (max-width: 991px) {
   #contemporaryHomeSection .left .entertainmentItem .col-lg-6 .leftItem {
     margin-right: 0;
   }
-/*>>>>>>> 2f9ec4570735a5f604a2b1792ae43a7428279905*/
 }
