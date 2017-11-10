@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     /****************** Links in Header Section ******************/
 
 	var linkCount = $("#header .col-md-5 span").length;
@@ -136,7 +136,6 @@ $(document).ready(function(){
 			count=0;
 		}
 		$("#homeSliderSection .slideImage").hide();
-		$("#homeSliderSection .slideImage").eq(count).removeClass("displayNone");
 		$("#homeSliderSection .slideImage").eq(count).fadeIn(1000);
 		$("#homeSliderSection ul li").addClass("activeBackGray");
 		$("#homeSliderSection ul li").removeClass("activeBackRed");
@@ -150,7 +149,6 @@ $(document).ready(function(){
 			count=slideCount-1;
 		}
 		$("#homeSliderSection .slideImage").hide();
-		$("#homeSliderSection .slideImage").eq(count).removeClass("displayNone");
 		$("#homeSliderSection .slideImage").eq(count).fadeIn(1000);
 		$("#homeSliderSection ul li").addClass("activeBackGray");
 		$("#homeSliderSection ul li").removeClass("activeBackRed");
@@ -167,7 +165,6 @@ $(document).ready(function(){
 			count2=slideCount-1;
 		}
 		$(".rightSlider .slideImage").hide();
-		$(".rightSlider .slideImage").eq(count2).removeClass("displayNone");
 		$(".rightSlider .slideImage").eq(count2).fadeIn(1000);
 	})
 
@@ -178,7 +175,6 @@ $(document).ready(function(){
 			count2=0;
 		}
 		$(".rightSlider .slideImage").hide();
-		$(".rightSlider .slideImage").eq(count2).removeClass("displayNone");
 		$(".rightSlider .slideImage").eq(count2).fadeIn(1000);
 	})
 
@@ -226,7 +222,6 @@ $(document).ready(function(){
 			count=0;
 		}
 		$("#homeSliderSection .slideImage").hide();
-		$("#homeSliderSection .slideImage").eq(count).removeClass("displayNone");
 		$("#homeSliderSection .slideImage").eq(count).fadeIn(1000);
 		$("#homeSliderSection ul li").addClass("activeBackGray");
 		$("#homeSliderSection ul li").removeClass("activeBackRed");
@@ -238,8 +233,7 @@ $(document).ready(function(){
 
 	$("#homeSliderSection ul li").click(function(){
 		var index = $("#homeSliderSection ul li").index(this);
-		$("#homeSliderSection .slideImage").addClass("displayNone");
-		$("#homeSliderSection .slideImage").eq(index).removeClass("displayNone");
+		$("#homeSliderSection .slideImage").hide();
 		$("#homeSliderSection .slideImage").eq(index).fadeIn(1000);
 		$("#homeSliderSection ul li").addClass("activeBackGray");
 		$("#homeSliderSection ul li").removeClass("activeBackRed");

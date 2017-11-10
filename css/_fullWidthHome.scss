@@ -1,0 +1,49 @@
+#fullWidthHome{
+	.left{
+		padding:0;
+		border: none;
+	}
+	img {
+		width: 100%;
+	}
+	.col-md-10{
+		div{
+			margin-left: -15px;
+			span{
+				color: gray;
+				font-size: 13px;
+			}
+			p{
+				padding: 8px 0;
+				margin: 0;
+				border-bottom: 1px solid $navcolor;
+				font-size: 13px;
+				font-family: "Roboto Slab", Georgia, serif;
+				@media screen and (max-width: 767px){
+					padding: 20px 0;
+				}
+				a{
+					color: $blackcolor;
+				}
+			}
+		}
+	}
+	.col-lg-9{
+		p{
+			padding: 8px 0;
+			a{
+				color: $blackcolor;
+			}
+		}
+	}
+
+	.slowSlider{
+		.homeSlider{
+			width: 150%;
+			.slowSlideItem{
+				margin-right: 20px;
+			}
+		}
+	}
+}
+

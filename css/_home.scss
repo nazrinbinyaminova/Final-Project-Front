@@ -2,6 +2,14 @@
 /**************** Header Section *****************/
 
 #header {
+	.col-lg-5{
+		span{
+			display: none;
+			&:first-child{
+				display: block;
+			}
+		}
+	}
 	.topHead {
 		width: 100%;
 		padding-top: 10px;
@@ -312,9 +320,6 @@
 							}
 						}
 					}
-					.activeSmall{
-						background-color: #1E2935;
-					}
 				}
 			}
 		}
@@ -327,6 +332,7 @@
 	background-color: $colorSearch;
 	padding: 30px 0;
 	position: relative;
+	
 	.col-lg-4{
 		.row{
 			.slideRightBar{
@@ -356,118 +362,9 @@
 /**************** News Section *****************/
 
 #homeNewsSection {
-	padding: 40px 0;
 	img{
 		font-size: 0;
 		width: 100%;
-	}
-	
-	.container{
-		.row{
-			.left{
-				padding-right: 30px;
-				border-right: 1px solid $navcolor;
-				@media screen and (min-width:768px) and (max-width: 991px){
-					padding:0;
-					border: none;
-				}
-				@media screen and (max-width: 767px){
-					padding:0;
-					border: none;
-				}
-				.row{
-					.leftBorder{
-						border-right: 1px solid $navcolor;
-						@media screen and (max-width: 767px){
-							border: none;
-						}
-					}
-					.col-md-6{
-						a{
-							color: $blackcolor;
-						}
-						.imageCategory{
-							a{
-								color: white;
-							}
-						}
-					}
-					.leftItem{
-						margin-right:10px;
-						@media screen and (max-width:767px){
-							border: none;
-							margin: 20px 0;
-							padding-right:0;
-						}
-					}
-					.leftItemRight{
-						margin-left:10px;
-						@media screen and (max-width:767px){
-							margin: 0;
-						}
-						@media screen and (min-width:768px) and (max-width: 991px){
-							border: none;
-						}
-					}
-					
-					.col-md-6{
-						.listDivEnter{
-							padding-left: 10px;
-							@media screen and (max-width:767px){
-								padding:0;
-							}
-							ul{
-								border:none;
-								li{
-									padding:0;
-									margin-bottom: 20px;
-
-								}
-							}
-						}
-					}
-					.homeItemListBottom{
-						li{
-							padding: 10px 0;
-							font-size: 13px;
-							border-top: 1px solid $navcolor;
-							a{
-								color: $blackcolor;
-								font-family: "Roboto Slab", Georgia, serif;
-							}
-						}
-					}
-					.slowSlider{
-						overflow: hidden;
-						.sliderSection{
-							margin-bottom: 30px;
-							.homeSlider{
-								width: 205%;
-								transition: .5s ease;
-								.slowSlideItem{
-									span{
-										a{
-											color: $blackcolor;
-											font-family: "Roboto Slab", Georgia, serif;
-										}
-									}
-								}
-							}
-						}
-						.slideBtnLeft{
-							padding: 0px 4px;
-							top: 30%;
-						}
-
-						.slideBtnRight{
-							padding: 0px 4px;
-							top: 30%;
-						}
-					}
-				}
-			}
-			
-		}
 	}
 }
 

@@ -81,9 +81,17 @@ body {
 }
 /**************** Common Classes *****************/
 
+.sectionPadding{
+	padding: 40px 0;
+}
+
 .active {
 	border-width: 0 0 2px 0;
 	border-style: solid;
+}
+
+.activeSmall{
+	background-color: #1E2935;
 }
 
 .activeBackGray{
@@ -242,6 +250,16 @@ body {
 	display: none;
 }
 
+.pageNewsHeader{
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	padding: 10px;
+	margin: 0;
+	span{
+		font-weight: 600;
+	}
+}
+
 .imageCategory{
 	padding: 5px 10px;
 	position: absolute;
@@ -292,6 +310,9 @@ body {
 }
 
 .listDiv{
+	img{
+		width: 100%;
+	}
 	ul{
 		border-top: 1px solid $navcolor;
 		margin: 0;
@@ -305,7 +326,7 @@ body {
 						font-size: 13px;
 					}
 					p{
-						padding: 5px 0;
+						padding: 7px 0;
 						margin: 0;
 						border-bottom: 1px solid $navcolor;
 						font-size: 13px;
@@ -313,12 +334,31 @@ body {
 						@media screen and (max-width: 767px){
 							padding: 20px 0;
 						}
+						a{
+							color: $blackcolor
+						}
 					}
 				}
 			}
 		}
 	}
 }
+
+.listDivEnter{
+	padding-left: 10px;
+	@media screen and (max-width:767px){
+		padding:0;
+	}
+	ul{
+		border:none;
+		li{
+			padding:0;
+			margin-bottom: 20px;
+
+		}
+	}
+}
+
 
 .entertainment{
 	border-bottom:1px solid $navcolor;
@@ -402,6 +442,7 @@ body {
 			position: relative;
 			width: 100%;
 			overflow: hidden;
+			display: none;
 			.imageCategory{
 				margin-left: 10px;
 			}
@@ -428,6 +469,9 @@ body {
 				a{
 					color: $navcolor*1.2;
 				}
+			}
+			&:first-child{
+				display: block;
 			}
 		}
 	}
@@ -548,9 +592,6 @@ body {
 		}
 		.sliderSection{
 			margin-top: 30px;
-			img{
-				transform: scale(1);
-			}
 			.slideBtnLeft{
 				padding: 0px 4px;
 				top: 50%;
@@ -561,5 +602,268 @@ body {
 				top: 50%;
 			}
 		}
+	}
+}
+
+.slowSlider{
+	overflow: hidden;
+	.sliderSection{
+		margin-bottom: 30px;
+		.homeSlider{
+			width: 205%;
+			transition: .5s ease;
+			.slowSlideItem{
+				span{
+					a{
+						color: $blackcolor;
+						font-family: "Roboto Slab", Georgia, serif;
+					}
+				}
+			}
+		}
+	}
+	.slideBtnLeft{
+		padding: 0px 4px;
+		top: 40%;
+	}
+
+	.slideBtnRight{
+		padding: 0px 4px;
+		top: 40%;
+	}
+}
+
+
+.fashionItem{
+	padding: 30px 0;
+	border-bottom: 1px solid $navcolor;
+	&:last-child{
+		border: none;
+	}
+	.comment{
+		padding: 0;
+		height: 20px;
+		font-size: 12px;
+		p{
+			margin: 0;
+		}
+	}
+	h5{
+		a{
+			color: $blackcolor;
+			font-family: "Roboto Slab", Georgia, serif;
+		}
+	}
+	p{
+		color: gray;
+	}
+}
+
+hr{
+	margin: 20px  0;
+	border-color: $navcolor; 
+}
+
+
+.readMoreBtn{
+	width: 100px;
+	padding: 5px 10px;
+	a{
+		color: white;
+	}
+}
+
+
+.fullComment{
+	h3{
+		border-width: 0 0 0 3px;
+		border-style: solid;
+		float: left;
+		padding: 0 10px;
+		color: $blackcolor;
+		font-family: "Roboto Slab", Georgia, serif;
+		a{
+			color: $blackcolor;
+			font-family: "Roboto Slab", Georgia, serif;
+		}
+	}
+	p{
+		font-size: 16px;
+		padding: 22px 0;
+	}
+}
+
+.newsAuthor{
+	padding: 6px 0;
+	border-width: 1px 0 1px 0;
+	border-style: solid;
+	border-color: $navcolor;
+	margin: 10px 0;
+	p{
+		float: left;
+		color: $navcolor/1.3;
+		padding: 0;
+	}
+	span{
+		float: right;
+	}
+	a{
+		color: $blackcolor;
+	}
+}
+
+
+.galleryItem{
+	position: relative;
+	margin-bottom: 30px;
+	img{
+		width: 100%;
+	}
+	.galleryItemTitle{
+		width: 100%;
+		padding: 5px 10px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-shadow: 1px 1px 1px gray;
+		background: linear-gradient(transparent, black);
+		p{
+			font-size: 12px;
+			margin: 0;
+			color: $colorSearch;
+		}
+		h5{
+			font-family: "Roboto Slab", Georgia, serif;
+			a{
+				color: $colorSearch*1.1;
+			}
+		}
+	}
+}
+
+
+.left{
+	padding-right: 30px;
+	border-right: 1px solid $navcolor;
+	@media screen and (min-width:768px) and (max-width: 991px){
+		padding:0;
+		border: none;
+	}
+	@media screen and (max-width: 767px){
+		padding:0;
+		border: none;
+	}
+	.sliderSection{
+		position: relative;
+	}
+	.row{
+		.leftBorder{
+			border-right: 1px solid $navcolor;
+			@media screen and (max-width: 767px){
+				border: none;
+			}
+		}
+		.col-md-6{
+			a{
+				color: $blackcolor;
+			}
+			.imageCategory{
+				a{
+					color: white;
+				}
+			}
+		}
+		.leftItem{
+			margin-right:10px;
+			@media screen and (max-width:767px){
+				border: none;
+				margin: 20px 0;
+				padding-right:0;
+			}
+		}
+		.leftItemRight{
+			margin-left:10px;
+			@media screen and (max-width:767px){
+				margin: 0;
+			}
+			@media screen and (min-width:768px) and (max-width: 991px){
+				border: none;
+			}
+		}
+		
+		.homeItemListBottom{
+			li{
+				padding: 10px 0;
+				font-size: 13px;
+				border-top: 1px solid $navcolor;
+				a{
+					color: $blackcolor;
+					font-family: "Roboto Slab", Georgia, serif;
+				}
+			}
+		}
+	}
+}
+
+.testPageParagraph{
+	div{
+		margin: 15px 0;
+		padding: 10px 25px;
+		background-color: $colorSearch;
+		border-left: 3px solid $navcolor;
+	}
+	p{
+		line-height: 25px;
+		color: gray;
+		span{
+			font-weight: bold;
+		}
+	}
+	h4{
+		font-weight: bold;
+	}
+	ul{
+		list-style: square;
+		li{
+			color: gray;
+			font-size: 13px;
+			line-height: 25px;
+		}
+	}
+}
+
+.errorBox{
+	margin: 100px 0;
+	h1{
+		font-size: 4.6em;
+		margin: 12px 0;
+	}
+	h3{
+		font-weight: bold;
+	}
+	p{
+		margin: 10px 0;
+		line-height: 25px;
+	}
+	a{
+		font-size: 13px;
+	}
+	ul{
+		li{
+			i{
+				padding: 0 10px 0 0;
+			}
+		}
+	}
+}
+
+.percentBox{
+	margin-left: 10px;
+	a{
+		padding: 5px;
+		color: white;
+		font-size: 10px;
+		font-weight: bold;
+		text-decoration: none;
 	}
 }
