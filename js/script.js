@@ -313,5 +313,21 @@ $(document).ready(function(){
   		})
 		
 	})
+	/******************  Politic page info  ******************/
+	$("#content .infoTab").hide();
+	$("#content .infoImgTab").hide();
+	$("#content .wrapper .imageSide").click(function(){
+		$("#content .infoTab").show();
+		$("#content .infoImgTab").show();
+	})
+	$("#content .infoTab").click(function(){
+		$("#content .infoTab").hide();
+		$("#content .infoImgTab").hide();
+	})
+	$("#content .infoImgTab .closeImg").click(function(){
+		$(".closeImg").removeAttr('href');
+		$("#content .infoTab").hide();
+		$("#content .infoImgTab").hide();
+	})
 })
 

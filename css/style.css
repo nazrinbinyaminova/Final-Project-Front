@@ -1237,7 +1237,7 @@ hr {
   left: 0;
   z-index: 1040;
   background-color: #000000;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 #content .infoImgTab {
   position: fixed;
@@ -1269,7 +1269,7 @@ hr {
   cursor: pointer;
   position: absolute;
   right: 5px;
-  bottom: 0;
+  bottom: 5px;
   display: block;
   line-height: 22px;
   text-indent: -10000px;
