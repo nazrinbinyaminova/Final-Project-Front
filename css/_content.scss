@@ -1,5 +1,53 @@
 #content{
+
 	width: 100%;
+	.infoTab{
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1040;
+	    background-color: #000000;
+	    opacity: 0.6;
+	}
+	.infoImgTab{
+		position: fixed;
+		top: 20px;
+	    left: 335px;
+	    display: block;
+	    z-index: 1200;
+	}
+	.imageTab{
+		// background: url(../Image/92334668@N07-11368399496_102334390b_o.jpg);
+		background-color: white;
+		// padding: 10px;
+		width: 650px;
+		height: 470px;
+		border: 8px solid white;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		img{
+			width: 100%;
+		}
+		.pstyle{
+			color: gray;
+			font-size: 12px;
+			margin: 5px 50px 5px 5px;
+		}
+		.closeImg{
+			width: 30px;
+		    height: 30px;
+		    background: url(../Image/sprite.png) 2px 1px no-repeat;
+		    cursor: pointer;
+		    position: absolute;
+		    right: 5px;
+		    bottom: 0;
+		    display: block;
+		    line-height: 22px;
+		    text-indent: -10000px;
+			}
+	}
 	.twitColor{
 		background-color: #2aa9e0;
 	}

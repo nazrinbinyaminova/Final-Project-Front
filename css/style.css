@@ -11,6 +11,81 @@ body i {
   padding: 0 5px;
 }
 
+.a {
+  color: gray;
+}
+
+.registerlinkForm {
+  position: fixed;
+  margin: 0;
+  top: 30%;
+  left: 35%;
+  z-index: 1050;
+  width: 560px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.registerlinkForm .margBottom {
+  margin-bottom: 30px;
+}
+.registerlinkForm .activeClick {
+  height: 350px;
+  width: 350px;
+}
+.registerlinkForm a {
+  color: gray;
+}
+.registerlinkForm .header {
+  color: #19232D;
+  margin: 0 -15px;
+  padding: 9px 15px;
+  background: #f2f2f2;
+}
+.registerlinkForm .radius {
+  border-radius: 0;
+}
+.registerlinkForm .searchText {
+  background: #f9f9f9;
+  border: 1px solid #d9d9d9;
+  height: 35px;
+  outline: 0;
+  padding-left: 7px;
+  font-size: 13px;
+  color: #a6a6a6;
+  width: 100%;
+}
+.registerlinkForm .formButton {
+  float: right;
+  background-color: #e54e53;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  height: 35px;
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 0;
+}
+.registerlinkForm .Top {
+  padding: 30px 0px;
+}
+
+.registerForms {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+  opacity: 0.6;
+}
+.registerForms .col-md-4 {
+  background-color: white;
+}
+
 /**************** Common Classes *****************/
 .active {
   border-width: 0 0 2px 0;
@@ -170,6 +245,10 @@ body i {
 
 .activeBackGray {
   background-color: #f9f9f9;
+}
+
+.activeBackWhite {
+  background-color: white;
 }
 
 .displayNone {
@@ -961,6 +1040,51 @@ body i {
 
 #content {
   width: 100%;
+}
+#content .infoTab {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+  opacity: 0.6;
+}
+#content .infoImgTab {
+  position: fixed;
+  top: 20px;
+  left: 335px;
+  display: block;
+  z-index: 1200;
+}
+#content .imageTab {
+  background-color: white;
+  width: 650px;
+  height: 470px;
+  border: 8px solid white;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+#content .imageTab img {
+  width: 100%;
+}
+#content .imageTab .pstyle {
+  color: gray;
+  font-size: 12px;
+  margin: 5px 50px 5px 5px;
+}
+#content .imageTab .closeImg {
+  width: 30px;
+  height: 30px;
+  background: url(../Image/sprite.png) 2px 1px no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  display: block;
+  line-height: 22px;
+  text-indent: -10000px;
 }
 #content .twitColor {
   background-color: #2aa9e0;
