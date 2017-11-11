@@ -126,11 +126,8 @@ body i {
   color: #32742C;
 }
 
-.activeRedRose {
-  color: #e54e53;
-}
-.activeRedRose:hover {
-  color: #e54e53;
+.activeBlack {
+  color: #19232D;
 }
 
 .activeBlue {
@@ -152,10 +149,6 @@ body i {
 }
 .activeLightRed:hover {
   color: #E74C3C;
-}
-
-.activeBlack {
-  color: #19232D;
 }
 
 .activeRedFlower {
@@ -251,14 +244,6 @@ body i {
   background-color: #4682B4;
 }
 
-.activeBackGray {
-  background-color: #f9f9f9;
-}
-
-.activeBackWhite {
-  background-color: white;
-}
-
 .displayNone {
   display: none;
 }
@@ -268,6 +253,7 @@ body i {
   border-style: solid;
   padding: 10px;
   margin: 0;
+  margin-bottom: 30px;
 }
 .pageNewsHeader span {
   font-weight: 600;

@@ -1,0 +1,21 @@
+#blockSidebarSection{
+	.col-lg-12{
+		p{
+			color: $blackcolor*1.5;
+			margin-top: 20px;
+			span{
+				font-weight: bold;
+			}
+		}
+	}
+	.rightMenu{
+		h6{
+			margin:0 0 30px 0;
+		}
+	}
+	.col-lg-4{
+		.imagesDiv{
+			margin-bottom: 30px;
+		}
+	}
+}
