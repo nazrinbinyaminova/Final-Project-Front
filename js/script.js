@@ -240,5 +240,94 @@ $(document).ready(function(){
 		$("#homeSliderSection ul li").eq(index).addClass("activeBackRed");
 		count=index;
 	})
+	/******************  Register Form open with click to icon  ******************/
+	
+	$(".registerlinkForm").hide();
+	$(".registerlinkForm .header span:contains('REGISTER')").html('SIGN IN');
+	$(".registerlinkForm .header span:contains('RECOVER PASSWORD')").html('SIGN IN');
+	$(".registerForms").hide();
+	$(".registerlinkForm .rmvClass ").show();
+	$("#navHead ul .clickFormIcon").click(function(){
+		$(".registerlinkForm .button").val("Login");
+		$(".myLink").removeAttr('href');
+		$(".registerForms").show();
+		$(".registerlinkForm").show();
+		$(".registerlinkForm .h5").show();
+		$(".registerlinkForm .rmvClass ").show();
+		$(".registerlinkForm Form").find("input[type=password], input[type=password], textarea").each(function(ev)
+			  {
+			     if(!$(this).val()) { 
+			     $(this).attr("placeholder", "Your Password");
+			  }
+  		})
+  		$(".registerlinkForm Form .changeIcon").find($(".changeIcon .fa").removeClass("fa-envelope").addClass("fa-lock"));
+  		$(".registerlinkForm ").find($("span .changeA").html('Lost Password?'));
+
+	})
+	$(".registerForms").click(function(){
+		$(".registerlinkForm").hide();
+		$(".registerForms").hide();
+	});
+	$(".registerForms").click(function(){
+		$(".registerlinkForm").hide();
+		$(".registerForms").hide();
+	});
+	$(".registerlinkForm .header button").click(function(){
+		$(".registerlinkForm").hide();
+		$(".registerForms").hide();
+	})
+	$(".registerlinkForm .activeClick").click(function(){
+		$(".registerlinkForm").hide();
+		$(".registerForms").hide();
+	})
+	$(".rightMenu .h5 a").click(function(){
+		$(".registerlinkForm .button").val("Register");
+		$(".myLinkDisabled").removeAttr('href');
+		$(".registerForms").show();
+		$(".registerlinkForm").show();
+		$(".registerlinkForm .header span:contains('SIGN IN')").html('REGISTER');
+		$(".registerlinkForm .header span:contains('RECOVER PASSWORD')").html('REGISTER');
+		$(".registerlinkForm ").find($("span .changeA").html('A password will be e-mailed to you.'));
+		$(".registerlinkForm Form").find("input[type=password], input[type=password], textarea").each(function(ev)
+			  {
+			      if(!$(this).val()) { 
+			     $(this).attr("placeholder", "Your Email");
+			  }
+  		})
+  		$(".registerlinkForm Form .changeIcon").find($(".changeIcon .fa").removeClass("fa-lock").addClass("fa-envelope"));
+  		$(".registerlinkForm .h5").hide();
+  		$(".registerlinkForm .rmvClass ").show();
+	})
+	$(".rightMenu form .form-group ").click(function(){
+		$(".registerForms").show();
+		$(".registerlinkForm").show();
+		$(".registerlinkForm .header span:contains('SIGN IN')").html('RECOVER PASSWORD');
+		$(".registerlinkForm .button").val("RECOVER");
+		$(".a").removeAttr('href');
+		$(".registerlinkForm .rmvClass ").hide();
+		$(".registerlinkForm Form").find("input[type=username], input[type=username], textarea").each(function(ev)
+			  {
+			      if(!$(this).val()) { 
+			     $(this).attr("placeholder", "Your Email or Your Username");
+			  }
+  		})
+		
+	})
+	/******************  Politic page info  ******************/
+	$("#content .infoTab").hide();
+	$("#content .infoImgTab").hide();
+	$("#content .wrapper .imageSide").click(function(){
+		$("#content .infoTab").show();
+		$("#content .infoImgTab").show();
+	})
+	$("#content .infoTab").click(function(){
+		$("#content .infoTab").hide();
+		$("#content .infoImgTab").hide();
+	})
+	$("#content .infoImgTab .closeImg").click(function(){
+		$(".closeImg").removeAttr('href');
+		$("#content .infoTab").hide();
+		$("#content .infoImgTab").hide();
+	})
 })
 

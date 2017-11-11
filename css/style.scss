@@ -1,3 +1,5 @@
+$colorBack: #f9f9f9;
+
 $colorSearch: #F2F2F2;
 $blackcolor: #19232D;
 $navcolor: #D7DADE;
@@ -13,7 +15,8 @@ $colorPink: #D70060;
 $colorFlower: #FF6347;
 $colorLightRed: #E74C3C;
 $colorGreenBlue: #E74C3C;
-
+$darkBlue: #204385;
+$RedRose: #e54e53;
 .myHeading{
 	padding-left: 15px;
 	border-left: 3px solid $colorRed;
@@ -23,5 +26,6 @@ $colorGreenBlue: #E74C3C;
 @import "home";
 @import "content";
 @import "entertainment";
+@import  "formContent";
 @import "fullWidthHome";
 @import "contemporary";

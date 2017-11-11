@@ -11,6 +11,81 @@ body i {
   padding: 0 5px;
 }
 
+.a {
+  color: gray;
+}
+
+.registerlinkForm {
+  position: fixed;
+  margin: 0;
+  top: 30%;
+  left: 35%;
+  z-index: 1050;
+  width: 560px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.registerlinkForm .margBottom {
+  margin-bottom: 30px;
+}
+.registerlinkForm .activeClick {
+  height: 350px;
+  width: 350px;
+}
+.registerlinkForm a {
+  color: gray;
+}
+.registerlinkForm .header {
+  color: #19232D;
+  margin: 0 -15px;
+  padding: 9px 15px;
+  background: #f2f2f2;
+}
+.registerlinkForm .radius {
+  border-radius: 0;
+}
+.registerlinkForm .searchText {
+  background: #f9f9f9;
+  border: 1px solid #d9d9d9;
+  height: 35px;
+  outline: 0;
+  padding-left: 7px;
+  font-size: 13px;
+  color: #a6a6a6;
+  width: 100%;
+}
+.registerlinkForm .formButton {
+  float: right;
+  background-color: #e54e53;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  height: 35px;
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 0;
+}
+.registerlinkForm .Top {
+  padding: 30px 0px;
+}
+
+.registerForms {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+  opacity: 0.6;
+}
+.registerForms .col-md-4 {
+  background-color: white;
+}
+
 /**************** Common Classes *****************/
 .sectionPadding {
   padding: 40px 0;
@@ -51,6 +126,13 @@ body i {
   color: #32742C;
 }
 
+.activeRedRose {
+  color: #e54e53;
+}
+.activeRedRose:hover {
+  color: #e54e53;
+}
+
 .activeBlue {
   color: #4682B4;
 }
@@ -70,6 +152,10 @@ body i {
 }
 .activeLightRed:hover {
   color: #E74C3C;
+}
+
+.activeBlack {
+  color: #19232D;
 }
 
 .activeRedFlower {
@@ -163,6 +249,14 @@ body i {
 
 .activeBackBlue {
   background-color: #4682B4;
+}
+
+.activeBackGray {
+  background-color: #f9f9f9;
+}
+
+.activeBackWhite {
+  background-color: white;
 }
 
 .displayNone {
@@ -1135,6 +1229,78 @@ hr {
 #content {
   width: 100%;
 }
+#content .infoTab {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+  opacity: 0.8;
+}
+#content .infoImgTab {
+  position: fixed;
+  top: 20px;
+  left: 335px;
+  display: block;
+  z-index: 1200;
+}
+#content .imageTab {
+  background-color: white;
+  width: 650px;
+  height: 470px;
+  border: 8px solid white;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+#content .imageTab img {
+  width: 100%;
+}
+#content .imageTab .pstyle {
+  color: gray;
+  font-size: 12px;
+  margin: 5px 50px 5px 5px;
+}
+#content .imageTab .closeImg {
+  width: 30px;
+  height: 30px;
+  background: url(../Image/sprite.png) 2px 1px no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: block;
+  line-height: 22px;
+  text-indent: -10000px;
+}
+#content .twitColor {
+  background-color: #2aa9e0;
+}
+#content .fbColor {
+  background-color: #204385;
+}
+#content .linkColor {
+  background-color: #02669a;
+}
+#content .pinColor {
+  background-color: #ca2128;
+}
+#content .googleColor {
+  background-color: #d3492c;
+}
+#content .tumblrColor {
+  background-color: #44546b;
+}
+#content .messageColor {
+  background-color: #19232D;
+}
+#content .colorP {
+  color: #606569;
+}
+#content .imgInfoColor {
+  background-color: #F2F2F2;
+}
 #content .padCol {
   padding: 10px 25px 0px 0px;
 }
@@ -1143,6 +1309,9 @@ hr {
 }
 #content .myTopMargin {
   margin-top: 25px;
+}
+#content .BottomMargin {
+  margin-bottom: 15px;
 }
 #content .padd {
   padding-left: 0;
@@ -1158,6 +1327,12 @@ hr {
   #content .myPadd {
     padding: 25px 0 25px 0;
   }
+}
+#content .borderRight {
+  border-right: 1px solid #F2F2F2;
+}
+#content .paddRightLeft {
+  padding: 0px 20px 0px 0px;
 }
 #content .right {
   float: right;
@@ -1183,13 +1358,17 @@ hr {
 #content .imgInfoPadd {
   padding: 5px 10px 5px 10px;
 }
-#content h5 {
+#content .h5 {
   margin-top: 25px;
-  width: 97%;
   font-size: 12px;
   color: gray;
-  padding: 15px 0;
+  padding: 15px 5px;
   background-color: none;
+}
+@media screen and (max-width: 768px) {
+  #content .h5 {
+    width: 100%;
+  }
 }
 #content .borderRow {
   border-top: 1px solid lightgray;
@@ -1200,7 +1379,6 @@ hr {
   color: #19232d;
 }
 #content .paragraf {
-  padding-right: 20px;
   font-size: 14px;
 }
 #content .icon {
@@ -1208,13 +1386,12 @@ hr {
   float: right;
 }
 #content .iconItem {
-  width: 60px;
+  width: 54px;
   height: 30px;
   line-height: 30px;
   text-align: center;
   font-size: 20px;
   margin-right: 2px;
-  background: #2aa9e0;
 }
 @media screen and (max-width: 768px) {
   #content .iconItem {
@@ -1233,6 +1410,27 @@ hr {
     padding: 21px 0px;
   }
 }
+#content .radius {
+  border-radius: 0;
+}
+#content .formButton {
+  background: #19232d;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px 21px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 769px) {
+  #content .formButton {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #content .input {
+    padding: 0;
+  }
+}
 #content .wrapper {
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -1248,9 +1446,6 @@ hr {
   #content .wrapper .col-md-12 {
     padding: 0px;
   }
-}
-#content .wrapper .row .col-md-8 {
-  border-right: 1px solid lightgray;
 }
 @media screen and (max-width: 768px) {
   #content .wrapper .row .col-md-8 {
@@ -1277,7 +1472,6 @@ hr {
 #content .wrapper .row .col-md-8 .imageSide .imageItem {
   z-index: 10;
   padding: 4px 16px;
-  background-color: #e67e22;
   position: absolute;
   top: 0;
   left: 10px;
@@ -1296,7 +1490,6 @@ hr {
   transition: all .5s ease;
 }
 #content .wrapper .row .col-md-8 .imgInfo {
-  background-color: #F2F2F2;
   height: 20px;
 }
 #content .wrapper .row .col-md-8 .imgInfo time {
@@ -1330,6 +1523,114 @@ hr {
 
 #entertainmentSection .left .images {
   padding: 25px 0;
+}
+
+#formContent .margBottom {
+  margin-bottom: 15px;
+}
+#formContent .padLeft {
+  padding-left: 25px;
+}
+#formContent .padding {
+  padding: 0;
+}
+#formContent .borderTop {
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+}
+#formContent .borderBottom {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 15px;
+}
+#formContent .border {
+  margin-top: 25px;
+  border-left: 3px solid #e54e53;
+}
+#formContent .borderRow {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+#formContent .h5 {
+  margin-top: 25px;
+  font-size: 12px;
+  color: gray;
+  background-color: none;
+}
+#formContent .left {
+  margin-left: 18px;
+  font-size: 18px;
+  padding-left: 18px;
+}
+#formContent .fleft {
+  float: left;
+}
+#formContent .fright {
+  float: right;
+}
+#formContent .radius {
+  border-radius: 0;
+}
+#formContent .searchText {
+  background: #f9f9f9;
+  border: 1px solid #d9d9d9;
+  height: 35px;
+  outline: 0;
+  padding-left: 7px;
+  font-size: 13px;
+  color: #a6a6a6;
+  width: 100%;
+}
+#formContent .formButton {
+  float: right;
+  background-color: #e54e53;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  height: 35px;
+  padding: 0 20px;
+  margin-top: 0;
+  border: 0;
+}
+#formContent .fontSize {
+  font-size: 12px;
+  color: #606569;
+}
+#formContent .statistic {
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 15px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 14px;
+}
+#formContent .listItem {
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 3px 6px;
+  background: #f2f2f2;
+  margin-bottom: 8px;
+}
+#formContent .paragraf {
+  padding-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  #formContent .paragraf {
+    padding: 0px 15px;
+  }
+}
+#formContent .aboutForm {
+  width: max-width;
+  height: max-height;
+}
+@media screen and (max-width: 768px) {
+  #formContent .aboutForm .formImg {
+    visibility: none;
+  }
+}
+#formContent .aboutForm .formItem {
+  width: max-width;
+  height: max-height;
+  margin-bottom: 30px;
 }
 
 #fullWidthHome .left {
