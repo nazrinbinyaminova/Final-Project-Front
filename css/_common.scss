@@ -152,6 +152,14 @@ body {
 	}
 }
 
+.activeBackWhite{
+	background-color: white;
+}
+
+.activeBackGrayGunay{
+	background-color: $colorBack;
+}
+
 .activePink{
 	color: $colorPink;
 	&:hover{

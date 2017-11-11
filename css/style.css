@@ -158,6 +158,14 @@ body i {
   color: #FF6347;
 }
 
+.activeBackWhite {
+  background-color: white;
+}
+
+.activeBackGrayGunay {
+  background-color: #f9f9f9;
+}
+
 .activePink {
   color: #D70060;
 }
