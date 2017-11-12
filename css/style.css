@@ -756,7 +756,7 @@ hr {
 }
 .testPageParagraph p {
   line-height: 25px;
-  color: gray;
+  color: darkslategray;
   font-size: 14px;
 }
 .testPageParagraph p span {
@@ -769,7 +769,7 @@ hr {
   list-style: square;
 }
 .testPageParagraph ul li {
-  color: gray;
+  color: darkslategray;
   font-size: 14px;
   line-height: 25px;
 }
@@ -803,7 +803,7 @@ hr {
   display: inline-block;
 }
 .authorContact a {
-  color: #606569;
+  color: darkslategray;
   transition: .5s ease;
 }
 .authorContact a:hover {
@@ -1669,4 +1669,28 @@ hr {
 }
 #blockSidebarSection .col-lg-12 p span {
   font-weight: 900;
+}
+
+#contactUsSection .contactUsForm .inputStyle {
+  width: 100%;
+  background-color: #F2F2F2;
+  border: 1px solid #D7DADE;
+  padding: 5px 10px;
+  outline: none;
+}
+#contactUsSection .contactUsForm .inputStyle::placeholder {
+  font-size: 13px;
+  color: darkgray;
+}
+#contactUsSection .contactUsForm .inputStyle:focus {
+  border: 1px solid darkgray;
+}
+#contactUsSection .contactUsForm .inputStyle:focus::placeholder {
+  color: dimgray;
+}
+#contactUsSection .contactUsForm .contactBtn {
+  background-color: #19232D;
+  border: none;
+  padding: 5px 22px;
+  color: white;
 }

@@ -800,7 +800,7 @@ hr{
 	}
 	p{
 		line-height: 25px;
-		color: gray;
+		color: darkslategray;
 		font-size: 14px;
 		span{
 			font-weight: bold;
@@ -812,7 +812,7 @@ hr{
 	ul{
 		list-style: square;
 		li{
-			color: gray;
+			color: darkslategray;
 			font-size: 14px;
 			line-height: 25px;
 		}
@@ -855,7 +855,7 @@ hr{
 		}
 	}
 	a{
-		color: #606569;
+		color: darkslategray;
 		transition: .5s ease;
 		&:hover{
 			color: $blackcolor;
