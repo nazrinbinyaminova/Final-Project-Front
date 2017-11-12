@@ -261,10 +261,10 @@ body i {
   border-style: solid;
   padding: 10px;
   margin: 0;
-  margin-bottom: 30px;
 }
 .pageNewsHeader span {
   font-weight: 600;
+  margin-left: 15px;
 }
 
 .imageCategory {
@@ -347,14 +347,6 @@ body i {
   color: #19232D;
 }
 
-.listDivEnter {
-  padding-left: 10px;
-}
-@media screen and (max-width: 767px) {
-  .listDivEnter {
-    padding: 0;
-  }
-}
 .listDivEnter ul {
   border: none;
 }
@@ -367,7 +359,6 @@ body i {
   border-bottom: 1px solid #D7DADE;
   border-top: 1px solid #D7DADE;
   background-color: #F2F2F2;
-  margin: 30px 0;
   padding: 5px 15px;
 }
 .entertainment ul {
@@ -602,6 +593,9 @@ body i {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
 }
+.slowSlider .sliderSection .homeSlider .slowSlideItem img {
+  width: 100%;
+}
 .slowSlider .slideBtnLeft {
   padding: 0px 4px;
   top: 40%;
@@ -614,9 +608,6 @@ body i {
 .fashionItem {
   padding: 30px 0;
   border-bottom: 1px solid #D7DADE;
-}
-.fashionItem:last-child {
-  border: none;
 }
 .fashionItem .comment {
   padding: 0;
@@ -641,7 +632,7 @@ hr {
 
 .readMoreBtn {
   width: 100px;
-  padding: 5px 10px;
+  padding: 2px 10px;
 }
 .readMoreBtn a {
   color: white;
@@ -650,10 +641,10 @@ hr {
 .fullComment h3 {
   border-width: 0 0 0 3px;
   border-style: solid;
+  font-size: 20px;
   float: left;
-  padding: 0 10px;
+  padding: 5px 10px;
   color: #19232D;
-  font-family: "Roboto Slab", Georgia, serif;
 }
 .fullComment h3 a {
   color: #19232D;
@@ -711,73 +702,53 @@ hr {
   color: white;
 }
 
-.left {
-  padding-right: 30px;
+.leftContent {
+  padding-right: 15px;
   border-right: 1px solid #D7DADE;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .left {
+  .leftContent {
     padding: 0;
     border: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .left {
+  .leftContent {
     padding: 0;
     border: none;
   }
 }
-.left .sliderSection {
+.leftContent .sliderSection {
   position: relative;
 }
-.left .row .leftBorder {
+.leftContent .row .leftBorder {
   border-right: 1px solid #D7DADE;
 }
 @media screen and (max-width: 767px) {
-  .left .row .leftBorder {
+  .leftContent .row .leftBorder {
     border: none;
   }
 }
-.left .row .col-md-6 a {
+.leftContent .row .col-md-6 .images a {
   color: #19232D;
 }
-.left .row .col-md-6 .imageCategory a {
+.leftContent .row .col-md-6 .imageCategory a {
   color: white;
 }
-.left .row .leftItem {
-  margin-right: 10px;
+.leftContent .row .col-md-6 .galleryItemTitle h5 a {
+  color: white;
 }
-@media screen and (max-width: 767px) {
-  .left .row .leftItem {
-    border: none;
-    margin: 20px 0;
-    padding-right: 0;
-  }
-}
-.left .row .leftItemRight {
-  margin-left: 10px;
-}
-@media screen and (max-width: 767px) {
-  .left .row .leftItemRight {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .left .row .leftItemRight {
-    border: none;
-  }
-}
-.left .row .homeItemListBottom li {
+.leftContent .row .homeItemListBottom li {
   padding: 10px 0;
   font-size: 13px;
   border-top: 1px solid #D7DADE;
 }
-.left .row .homeItemListBottom li a {
+.leftContent .row .homeItemListBottom li a {
   color: #19232D;
   font-family: "Roboto Slab", Georgia, serif;
 }
 
-.testPageParagraph div {
+.testPageParagraph .mainSentence {
   margin: 15px 0;
   padding: 10px 25px;
   background-color: #F2F2F2;
@@ -786,6 +757,7 @@ hr {
 .testPageParagraph p {
   line-height: 25px;
   color: gray;
+  font-size: 14px;
 }
 .testPageParagraph p span {
   font-weight: bold;
@@ -823,15 +795,31 @@ hr {
   padding: 0 10px 0 0;
 }
 
-.percentBox {
-  margin-left: 10px;
+.pageTitle {
+  margin-bottom: 30px;
 }
-.percentBox a {
-  padding: 5px;
+
+.authorContact ul li {
+  display: inline-block;
+}
+.authorContact a {
+  color: #606569;
+  transition: .5s ease;
+}
+.authorContact a:hover {
+  color: #19232D;
+  position: relative;
+}
+.authorContact a[title]:hover::after {
+  content: attr(title);
+  padding: 2px 4px;
   color: white;
-  font-size: 10px;
-  font-weight: bold;
-  text-decoration: none;
+  background-color: #19232D;
+  position: absolute;
+  left: -60%;
+  z-index: 5;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 /**************** Header Section *****************/
@@ -1515,10 +1503,6 @@ hr {
   transition: all ease 1s;
 }
 
-#entertainmentSection .left .images {
-  padding: 25px 0;
-}
-
 #formContent .margBottom {
   margin-bottom: 15px;
 }
@@ -1627,7 +1611,7 @@ hr {
   margin-bottom: 30px;
 }
 
-#fullWidthHome .left {
+#fullWidthHome .leftContent {
   padding: 0;
   border: none;
 }
@@ -1669,35 +1653,13 @@ hr {
   margin-right: 20px;
 }
 
-#contemporaryHomeSection .left {
-  padding-right: 30px;
-  border-right: 1px solid #D7DADE;
+#searchResultSection .percentBox {
+  margin: -5px -10px -5px 5px;
+  padding: 4px;
 }
-@media screen and (max-width: 991px) {
-  #contemporaryHomeSection .left {
-    border: none;
-    padding-right: 0;
-  }
-}
-#contemporaryHomeSection .left .entertainment {
-  margin: 0;
-}
-#contemporaryHomeSection .left .entertainmentItem {
-  padding: 30px 0;
-}
-#contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
-  border-right: 1px solid #D7DADE;
-}
-@media screen and (max-width: 991px) {
-  #contemporaryHomeSection .left .entertainmentItem .col-lg-6:first-child {
-    border: none;
-  }
-}
-#contemporaryHomeSection .left .entertainmentItem .col-lg-6 .leftItem {
-  margin-right: 10px;
-}
-@media screen and (max-width: 991px) {
-  #contemporaryHomeSection .left .entertainmentItem .col-lg-6 .leftItem {
-    margin-right: 0;
-  }
+#searchResultSection .percentBox a {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
 }
