@@ -770,7 +770,7 @@ hr {
 }
 .testPageParagraph ul li {
   color: gray;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 25px;
 }
 
@@ -1452,7 +1452,7 @@ hr {
   width: 100%;
 }
 #content .wrapper .row .col-md-8 .imageSide .imageItem {
-  z-index: 10;
+  z-index: 8;
   padding: 4px 16px;
   position: absolute;
   top: 0;
@@ -1662,4 +1662,11 @@ hr {
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
+}
+
+#blockSidebarSection .col-lg-12 p {
+  color: #263544;
+}
+#blockSidebarSection .col-lg-12 p span {
+  font-weight: 900;
 }
