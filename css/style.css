@@ -3,6 +3,11 @@
   border-left: 3px solid #C0392B;
 }
 
+*::selection {
+  background: #E54E53;
+  color: white;
+}
+
 body {
   margin: 0 auto;
   font: 14px/1.5 "Open Sans", Arial, sans-serif;
@@ -201,10 +206,10 @@ body i {
 }
 
 .activeLightRed {
-  color: #E74C3C;
+  color: #E54E53;
 }
 .activeLightRed:hover {
-  color: #E74C3C;
+  color: #E54E53;
 }
 
 .activeRedFlower {
@@ -237,7 +242,7 @@ body i {
 }
 
 .activeGreenBlueBorder {
-  border-color: #E74C3C;
+  border-color: #16A085;
 }
 
 .activeOranegeBorder {
@@ -257,7 +262,7 @@ body i {
 }
 
 .activeLightRedBorder {
-  border-color: #E74C3C;
+  border-color: #E54E53;
 }
 
 .activeRedFlowerBorder {
@@ -277,7 +282,7 @@ body i {
 }
 
 .activeBackGreenBlue {
-  background-color: #E74C3C;
+  background-color: #16A085;
 }
 
 .activeBackBrown {
@@ -289,7 +294,7 @@ body i {
 }
 
 .activeBackLightRed {
-  background-color: #E74C3C;
+  background-color: #E54E53;
 }
 
 .activeBackRed {
@@ -814,7 +819,7 @@ hr {
   line-height: 25px;
   color: darkslategray;
   font-size: 14px;
-  margin: 0;
+  margin-bottom: 20px;
 }
 .testPageParagraph p span {
   font-weight: bold;
@@ -934,6 +939,29 @@ hr {
   z-index: 5;
   font-size: 12px;
   border-radius: 4px;
+}
+
+.percentRange .col-lg-3 div {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.percentRange .col-lg-3 div h1 {
+  font-size: 56px;
+  margin-top: 0;
+  font-weight: 600;
+}
+.percentRange .col-lg-3 div h1 span {
+  font-size: 28px;
+}
+.percentRange .col-lg-3 div p {
+  margin: 0 10px;
+}
+.percentRange h5 span {
+  font-weight: 600;
+}
+.percentRange .range {
+  height: 25px;
 }
 
 /**************** Header Section *****************/

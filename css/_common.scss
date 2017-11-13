@@ -1,3 +1,10 @@
+*{
+	&::selection{
+		background: $colorLightRed;
+		color: white;
+	}
+}
+
 body {
 	margin: 0 auto;
 	font: 14px/1.5 "Open Sans", Arial, sans-serif;
@@ -857,7 +864,7 @@ hr{
 		line-height: 25px;
 		color: darkslategray;
 		font-size: 14px;
-		margin: 0;
+		margin-bottom: 20px;
 		span{
 			font-weight: bold;
 		}
@@ -995,5 +1002,34 @@ hr{
 		  	border-radius: 4px;
 		  	}
 		}
+	}
+}
+
+.percentRange{
+	.col-lg-3 {
+		div{
+			padding: 20px;
+			color: white;
+			text-align: center;
+			h1{
+				font-size: 56px;
+				margin-top: 0;
+				font-weight: 600;
+				span{
+					font-size: 28px;
+				}
+			} 
+			p{
+				margin: 0 10px;
+			}
+		}
+	}
+	h5{
+		span{
+			font-weight: 600;
+		}
+	}
+	.range{
+		height: 25px;
 	}
 }

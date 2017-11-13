@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     /****************** Links in Header Section ******************/
 
 	var linkCount = $("#header .col-md-5 span").length;
