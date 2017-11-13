@@ -298,7 +298,7 @@ $(document).ready(function(){
   		$(".registerlinkForm .h5").hide();
   		$(".registerlinkForm .rmvClass ").show();
 	})
-	$(".rightMenu form .form-group ").click(function(){
+	$(".rightMenu form .form-group .a").click(function(){
 		$(".registerForms").show();
 		$(".registerlinkForm").show();
 		$(".registerlinkForm .header span:contains('SIGN IN')").html('RECOVER PASSWORD');
@@ -312,6 +312,11 @@ $(document).ready(function(){
 			  }
   		})
 		
+	})
+	$("#navHead .smallNavBarItem .visible-xs .userRegister ").click(function () {
+		$(".userRegister").removeAttr('href');
+		$(".registerForms").show();
+		$(".registerlinkForm").show();
 	})
 	/******************  Politic page info  ******************/
 	$("#content .infoTab").hide();
