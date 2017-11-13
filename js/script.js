@@ -10,14 +10,6 @@ $(document).ready(function(){
 		}
 	}
 	setInterval(myFunc, 5000)
- 
-	/****************** Color of Social Icon ******************/
-
-	$(".contactLink li").eq(0).css("background-color","#00ABE3")
-	$(".contactLink li").eq(1).css("background-color","#004088")
-	$(".contactLink li").eq(2).css("background-color","#01669C")
-	$(".contactLink li").eq(3).css("background-color","#CA2128")
-	$(".contactLink li").eq(4).css("background-color","#FF5B22")
 
 	/****************** Search Input Width ******************/
 
