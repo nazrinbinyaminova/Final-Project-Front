@@ -80,6 +80,61 @@ body {
  	}
 }
 /**************** Common Classes *****************/
+.twitter{
+	background-color: #00ABE3;
+	i{
+		color: white;
+	}
+}
+
+.facebook{
+	background-color: #004088;
+	i{
+		color: white;
+	}
+}
+
+.linkedIn{
+	background-color: #01669C;
+	i{
+		color: white;
+	}
+}
+
+.pinterest{
+	background-color: #CA2128;
+	i{
+		color: white;
+	}
+}
+
+.rss{
+	background-color: #FF5B22;
+	i{
+		color: white;
+	}
+}
+
+.google{
+	background-color: #D3492C;
+	i{
+		color: white;
+	}
+}
+
+.tumblr{
+	background-color: #44546B;
+	i{
+		color: white;
+	}
+}
+
+.mail{
+	background-color: #19232D;
+	i{
+		color: white;
+	}
+}
 
 .sectionPadding{
 	padding: 40px 0;
@@ -794,7 +849,7 @@ hr{
 .testPageParagraph{
 	.mainSentence{
 		margin: 15px 0;
-		padding: 10px 25px;
+		padding: 20px 25px;
 		background-color: $colorSearch;
 		border-left: 3px solid $navcolor;
 	}
@@ -802,6 +857,7 @@ hr{
 		line-height: 25px;
 		color: darkslategray;
 		font-size: 14px;
+		margin: 0;
 		span{
 			font-weight: bold;
 		}
@@ -849,28 +905,91 @@ hr{
 }
 
 .authorContact{
-	ul{
-		li{
-			display: inline-block;
-		}
-	}
 	a{
 		color: darkslategray;
 		transition: .5s ease;
-		&:hover{
-			color: $blackcolor;
-			position: relative;
+	}
+	ul{
+		li{
+			display: inline-block;
+			&:hover{
+				color: $blackcolor;
+				position: relative;
+			}
 		}
 	}
-	a[title]{
+	li[title]{
 		&:hover{
 		&::after {
 		  	content: attr(title);
 		  	padding: 2px 4px;
 		  	color: white;
-		  	background-color: $blackcolor;
+		  	background-color: rgba(0,0,0,0.8);
 		  	position: absolute;
 		  	left: -60%;
+		  	z-index: 5;
+		  	font-size: 12px;
+		  	border-radius: 4px;
+		  	}
+		}
+	}
+}
+
+.contactUsForm{
+	.inputStyle{
+		width: 100%;
+		background-color: $colorSearch;
+		border: 1px solid $navcolor;
+		padding: 5px 10px;
+		outline: none;
+		&::placeholder{
+			font-size: 13px;
+			color: darkgray;
+		}
+		&:focus{
+			border: 1px solid darkgray;
+			&::placeholder{
+				color: dimgray;
+			}
+		}
+	}
+	.contactBtn{
+		background-color: $blackcolor;
+		border: none;
+		padding: 5px 22px;
+		color: white;
+	}
+}
+
+.socialShare{
+	padding-top: 10px;
+	ul{
+		margin: 0;
+		li{
+			width: 60px;
+			padding: 4px 15px;
+			float: left;
+			margin: 0 0 5px 5px;
+			transition: .5s ease;
+			i{
+				font-size: 20px;
+			}
+			&:hover{
+				color: $blackcolor;
+				position: relative;
+			}
+		}
+	}
+	li[title]{
+		&:hover{
+		&::after {
+		  	content: attr(title);
+		  	padding: 2px 4px;
+		  	color: white;
+		  	background-color: rgba(0,0,0,0.8);
+		  	position: absolute;
+		  	top: -30px;
+		  	left: 0;
 		  	z-index: 5;
 		  	font-size: 12px;
 		  	border-radius: 4px;

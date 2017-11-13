@@ -87,6 +87,62 @@ body i {
 }
 
 /**************** Common Classes *****************/
+.twitter {
+  background-color: #00ABE3;
+}
+.twitter i {
+  color: white;
+}
+
+.facebook {
+  background-color: #004088;
+}
+.facebook i {
+  color: white;
+}
+
+.linkedIn {
+  background-color: #01669C;
+}
+.linkedIn i {
+  color: white;
+}
+
+.pinterest {
+  background-color: #CA2128;
+}
+.pinterest i {
+  color: white;
+}
+
+.rss {
+  background-color: #FF5B22;
+}
+.rss i {
+  color: white;
+}
+
+.google {
+  background-color: #D3492C;
+}
+.google i {
+  color: white;
+}
+
+.tumblr {
+  background-color: #44546B;
+}
+.tumblr i {
+  color: white;
+}
+
+.mail {
+  background-color: #19232D;
+}
+.mail i {
+  color: white;
+}
+
 .sectionPadding {
   padding: 40px 0;
 }
@@ -750,7 +806,7 @@ hr {
 
 .testPageParagraph .mainSentence {
   margin: 15px 0;
-  padding: 10px 25px;
+  padding: 20px 25px;
   background-color: #F2F2F2;
   border-left: 3px solid #D7DADE;
 }
@@ -758,6 +814,7 @@ hr {
   line-height: 25px;
   color: darkslategray;
   font-size: 14px;
+  margin: 0;
 }
 .testPageParagraph p span {
   font-weight: bold;
@@ -799,24 +856,81 @@ hr {
   margin-bottom: 30px;
 }
 
-.authorContact ul li {
-  display: inline-block;
-}
 .authorContact a {
   color: darkslategray;
   transition: .5s ease;
 }
-.authorContact a:hover {
+.authorContact ul li {
+  display: inline-block;
+}
+.authorContact ul li:hover {
   color: #19232D;
   position: relative;
 }
-.authorContact a[title]:hover::after {
+.authorContact li[title]:hover::after {
   content: attr(title);
   padding: 2px 4px;
   color: white;
-  background-color: #19232D;
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   left: -60%;
+  z-index: 5;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.contactUsForm .inputStyle {
+  width: 100%;
+  background-color: #F2F2F2;
+  border: 1px solid #D7DADE;
+  padding: 5px 10px;
+  outline: none;
+}
+.contactUsForm .inputStyle::placeholder {
+  font-size: 13px;
+  color: darkgray;
+}
+.contactUsForm .inputStyle:focus {
+  border: 1px solid darkgray;
+}
+.contactUsForm .inputStyle:focus::placeholder {
+  color: dimgray;
+}
+.contactUsForm .contactBtn {
+  background-color: #19232D;
+  border: none;
+  padding: 5px 22px;
+  color: white;
+}
+
+.socialShare {
+  padding-top: 10px;
+}
+.socialShare ul {
+  margin: 0;
+}
+.socialShare ul li {
+  width: 60px;
+  padding: 4px 15px;
+  float: left;
+  margin: 0 0 5px 5px;
+  transition: .5s ease;
+}
+.socialShare ul li i {
+  font-size: 20px;
+}
+.socialShare ul li:hover {
+  color: #19232D;
+  position: relative;
+}
+.socialShare li[title]:hover::after {
+  content: attr(title);
+  padding: 2px 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -30px;
+  left: 0;
   z-index: 5;
   font-size: 12px;
   border-radius: 4px;
@@ -831,7 +945,7 @@ hr {
 }
 #header .topHead {
   width: 100%;
-  padding-top: 10px;
+  padding: 10px;
   background: #F2F2F2;
   border-width: 4px 0 0 0;
   border-style: solid;
@@ -856,10 +970,6 @@ hr {
     width: 80%;
   }
 }
-#header .topHead .container .row .contactLink {
-  display: inline-block;
-  padding: 5px 0;
-}
 #header .topHead .container .row .contactLink li {
   display: inline-block;
   width: 20px;
@@ -869,9 +979,6 @@ hr {
 }
 #header .topHead .container .row .contactLink li:hover {
   border-radius: 50%;
-}
-#header .topHead .container .row .contactLink li i {
-  color: #F2F2F2;
 }
 #header .topHead .container .row .search {
   display: inline-block;
@@ -1669,28 +1776,4 @@ hr {
 }
 #blockSidebarSection .col-lg-12 p span {
   font-weight: 900;
-}
-
-#contactUsSection .contactUsForm .inputStyle {
-  width: 100%;
-  background-color: #F2F2F2;
-  border: 1px solid #D7DADE;
-  padding: 5px 10px;
-  outline: none;
-}
-#contactUsSection .contactUsForm .inputStyle::placeholder {
-  font-size: 13px;
-  color: darkgray;
-}
-#contactUsSection .contactUsForm .inputStyle:focus {
-  border: 1px solid darkgray;
-}
-#contactUsSection .contactUsForm .inputStyle:focus::placeholder {
-  color: dimgray;
-}
-#contactUsSection .contactUsForm .contactBtn {
-  background-color: #19232D;
-  border: none;
-  padding: 5px 22px;
-  color: white;
 }
