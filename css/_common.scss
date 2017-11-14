@@ -214,14 +214,6 @@ body {
 	}
 }
 
-.activeBackWhite{
-	background-color: white;
-}
-
-.activeBackGrayGunay{
-	background-color: $colorBack;
-}
-
 .activePink{
 	color: $colorPink;
 	&:hover{
@@ -234,6 +226,14 @@ body {
 	&:hover{
 		color: $colorBrown;
 	}
+}
+
+.activeBackWhite{
+	background-color: white;
+}
+
+.activeBackGrayGunay{
+	background-color: $colorBack;
 }
 
 .activeGreenBlueBorder{
@@ -306,6 +306,69 @@ body {
 
 .activeBackBlue{
 	background-color: $colorBlue;
+}
+
+.activeBackPinkHover{
+	&:hover{
+		color:white;
+		background-color: $colorPink;
+	}
+}
+
+.activeBackGreenBlueHover{
+	&:hover{
+		color:white;
+		background-color: $colorGreenBlue;
+	}
+}
+
+.activeBackBrownHover{
+	&:hover{
+		color:white;
+		background-color: $colorBrown;
+	}
+}
+
+.activeBackFlowerHover{
+	&:hover{
+		color:white;
+		background-color: $colorFlower;
+	}
+}
+
+.activeBackLightRedHover{
+	&:hover{
+		color:white;
+		background-color: $colorLightRed;
+	}
+}
+
+.activeBackRedHover{
+	&:hover{
+		color:white;
+		background-color: $colorRed;
+	}
+}
+
+.activeBackOrangeHover{
+	&:hover{
+		color:white;
+		background-color: $colorOrangee;
+	}
+}
+
+.activeBackGreenHover{
+	&:hover{
+		color:white;
+		background-color: $colorGreeeen;
+	}
+}
+
+.activeBackBlueHover{
+	&:hover{
+		color:white;
+		background-color: $colorBlue;
+	}
 }
 
 .displayNone{
@@ -1031,5 +1094,58 @@ hr{
 	}
 	.range{
 		height: 25px;
+	}
+}
+
+.timelineBox{
+	margin-top: 20px;
+	padding: 0 24px;
+	border-left: 1px solid $navcolor;
+	position: relative;
+	>h5{
+		border: 1px solid $navcolor;
+		font-weight: 600;
+		padding: 5px 15px;
+		position: relative;
+		bottom: 23px;
+		float: left;
+		&::after{
+			content: "";
+			width: 25px;
+			height: 1px;
+			background-color: $navcolor;
+			position: absolute;
+			top: 49%;
+			left: -25px;
+		}
+	}
+	.timelineDates{
+		padding-bottom: 30px;
+		h6{
+			font-family: "Roboto Slab", Georgia, serif;
+			margin-bottom: 15px;
+			font-size: 13px;
+			span{
+				color: dimgray;
+				margin-right: 40px;
+			}
+			a{
+				color: $blackcolor;
+				
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+.loadBtn{
+	li{
+		background-color: $colorSearch;
+		padding: 3px 10px;
+		color: gray;
+		float: left;
+		margin-right: 5px; 
+		transition: .5s ease;
+		font-size: 12px;
 	}
 }
