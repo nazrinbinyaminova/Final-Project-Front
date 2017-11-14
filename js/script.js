@@ -326,5 +326,16 @@ $(document).ready(function(){
 		$("#content .infoTab").hide();
 		$("#content .infoImgTab").hide();
 	})
+	/******************  Reply Button in SinglePost  ******************/
+	$(".reply").click(function(){
+		var index=$(".reply").index(this);
+		$(".replyForm").hide();
+		$(".replyForm").eq(index).show();
+		 $(".replyA").removeAttr("href");
+		// $(".replyForm").hide();
+		// $()
+		// $(".replyA").removeAttr("href");
+		// $(".addForm").addClass(".replyForm");
+	})
 })
 

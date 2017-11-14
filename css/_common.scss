@@ -20,9 +20,6 @@ body {
 	    left: 35%;
 	    z-index: 1050;
 	    width: 560px;
-	    // -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-	    // -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-	    // box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 	    outline: none;
 	    .margBottom{
 		margin-bottom: 30px;
@@ -222,7 +219,12 @@ body {
 .activeBackWhite{
 	background-color: white;
 }
-
+.activeWhite{
+	color: white;
+	&:hover{
+		color: white;
+	}
+}
 .activeBackGrayGunay{
 	background-color: $colorBack;
 }
@@ -783,6 +785,18 @@ hr{
 	img{
 		width: 100%;
 	}
+	.galleryBtn{
+		z-index: 8;
+		padding: 4px 16px;
+	    position: absolute;
+	 	bottom: 140px;
+	    left: 10px;
+		span{
+			color: #fff;
+			font-size: 14px;
+			text-decoration: none;
+			}	
+	}
 	.galleryItemTitle{
 		width: 100%;
 		padding: 5px 10px;
@@ -801,6 +815,12 @@ hr{
 			a{
 				color: $colorSearch*1.1;
 			}
+		}
+		h1{
+			font-family: "Roboto Slab", Georgia, serif;
+			color: white;
+		    padding-right: 25px;
+			padding-bottom: 28px;
 		}
 	}
 }

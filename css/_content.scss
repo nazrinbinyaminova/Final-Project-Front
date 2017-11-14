@@ -86,6 +86,9 @@
 	}	
 	.myTopMargin{
 		margin-top: 25px;
+		@media screen and(max-width: 768px ) {
+			margin-top: 0;
+		}
 	}
 	.BottomMargin{
 		margin-bottom: 20px;
@@ -318,19 +321,22 @@
 						    padding-bottom: 42px;
 						    margin-top: 14px;
 						}
+						.reply{
+							position: absolute;
+						    bottom: -1px;
+						    right: 0;
+						    color: #a6a6a6;
+						    font-size: 12px;
+						    border-width: 0 0 1px 0;
+    						border-style: solid;
+						}
+						}
 					h2.headClass{
 						@media screen and(max-width: 768px) {
 							
 						}
 						@extend .myHeading;
 						}
-									
-					.col-md-6 {
-						@media  screen and (max-width: 768px) {
-							padding: 0px;
-						}
-					}
-					
 					.page-numbers{
 						padding: 3px 10px;
 						background-color: $colorRed;
@@ -347,8 +353,6 @@
                				 transition: all ease 1s;
             			}
 					}
-
-				}
 			
 			
 		
