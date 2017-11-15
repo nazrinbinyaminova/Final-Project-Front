@@ -3,6 +3,45 @@
 		padding-right: 2px;
 	}
 	width: 100%;
+	.imgClick{
+		display: none;
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1040;
+	    background-color: #000000;
+	    opacity: 0.8;
+	}
+	.infoImgClick{
+		position: fixed;
+		top: 20px;
+	    left: 335px;
+	    display: none;
+	    z-index: 1500;
+	    .selectedImg{
+			position: 	absolute;
+			z-index: 100;
+			bottom: 0;
+			left: 	180px;
+			.main{
+				z-index: 100;
+			img{
+				width: 	100%;
+			}
+		}
+		.normal{
+			img{
+				width: 	100%;
+			}
+			width: 	60px;
+			margin-top: 10px;
+			border: 1px solid white;
+		}
+		}
+
+	}
 	.infoTab{
 		display: none;
 		position: fixed;
@@ -20,13 +59,13 @@
 	    left: 335px;
 	    display: none;
 	    z-index: 1200;
+		
 	}
 	.imageTab{
 		// background: url(../Image/92334668@N07-11368399496_102334390b_o.jpg);
 		background-color: white;
 		// padding: 10px;
 		width: 650px;
-		height: 470px;
 		border: 8px solid white;
 		background-repeat: no-repeat;
 		border-radius: 5px;

@@ -3,6 +3,11 @@
   border-left: 3px solid #C0392B;
 }
 
+*::selection {
+  background: #E54E53;
+  color: white;
+}
+
 body {
   margin: 0 auto;
   font: 14px/1.5 "Open Sans", Arial, sans-serif;
@@ -211,10 +216,10 @@ body i {
 }
 
 .activeLightRed {
-  color: #E74C3C;
+  color: #E54E53;
 }
 .activeLightRed:hover {
-  color: #E74C3C;
+  color: #E54E53;
 }
 
 .activeRedFlower {
@@ -254,7 +259,7 @@ body i {
 }
 
 .activeGreenBlueBorder {
-  border-color: #E74C3C;
+  border-color: #16A085;
 }
 
 .activeOranegeBorder {
@@ -274,7 +279,7 @@ body i {
 }
 
 .activeLightRedBorder {
-  border-color: #E74C3C;
+  border-color: #E54E53;
 }
 
 .activeRedFlowerBorder {
@@ -294,7 +299,7 @@ body i {
 }
 
 .activeBackGreenBlue {
-  background-color: #E74C3C;
+  background-color: #16A085;
 }
 
 .activeBackBrown {
@@ -306,7 +311,7 @@ body i {
 }
 
 .activeBackLightRed {
-  background-color: #E74C3C;
+  background-color: #E54E53;
 }
 
 .activeBackRed {
@@ -853,7 +858,7 @@ hr {
   line-height: 25px;
   color: darkslategray;
   font-size: 14px;
-  margin: 0;
+  margin-bottom: 20px;
 }
 .testPageParagraph p span {
   font-weight: bold;
@@ -973,6 +978,29 @@ hr {
   z-index: 5;
   font-size: 12px;
   border-radius: 4px;
+}
+
+.percentRange .col-lg-3 div {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.percentRange .col-lg-3 div h1 {
+  font-size: 56px;
+  margin-top: 0;
+  font-weight: 600;
+}
+.percentRange .col-lg-3 div h1 span {
+  font-size: 28px;
+}
+.percentRange .col-lg-3 div p {
+  margin: 0 10px;
+}
+.percentRange h5 span {
+  font-weight: 600;
+}
+.percentRange .range {
+  height: 25px;
 }
 
 /**************** Header Section *****************/
@@ -1360,6 +1388,44 @@ hr {
 #content .pading {
   padding-right: 2px;
 }
+#content .imgClick {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+  opacity: 0.8;
+}
+#content .infoImgClick {
+  position: fixed;
+  top: 20px;
+  left: 335px;
+  display: none;
+  z-index: 1500;
+}
+#content .infoImgClick .selectedImg {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 180px;
+}
+#content .infoImgClick .selectedImg .main {
+  z-index: 100;
+}
+#content .infoImgClick .selectedImg .main img {
+  width: 100%;
+}
+#content .infoImgClick .selectedImg .normal {
+  width: 60px;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+#content .infoImgClick .selectedImg .normal img {
+  width: 100%;
+}
 #content .infoTab {
   display: none;
   position: fixed;
@@ -1381,7 +1447,6 @@ hr {
 #content .imageTab {
   background-color: white;
   width: 650px;
-  height: 470px;
   border: 8px solid white;
   background-repeat: no-repeat;
   border-radius: 5px;

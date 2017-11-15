@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     /****************** Links in Header Section ******************/
 
 	var linkCount = $("#header .col-md-5 span").length;
@@ -313,8 +315,11 @@ $(document).ready(function(){
 	/******************  Politic page info  ******************/
 	$("#content .infoTab").hide();
 	$("#content .infoImgTab").hide();
-	$("#content .wrapper .imageSide").click(function(){
+	$("#content .wrapper .imageSide img").click(function(){
+		var src= $(this).attr('src');
+		$("#content .imgClick").hide();
 		$("#content .infoTab").show();
+		$("#content .infoImgTab .imgKlik").attr('src', src);
 		$("#content .infoImgTab").show();
 	})
 	$("#content .infoTab").click(function(){
@@ -331,11 +336,24 @@ $(document).ready(function(){
 		var index=$(".reply").index(this);
 		$(".replyForm").hide();
 		$(".replyForm").eq(index).show();
-		 $(".replyA").removeAttr("href");
-		// $(".replyForm").hide();
-		// $()
-		// $(".replyA").removeAttr("href");
-		// $(".addForm").addClass(".replyForm");
+		 $(".replyA").removeAttr("href"); 
 	})
+	/******************  Slider with image click ******************/
+	$(".wrapper .allImgInfo img").click(function(){
+		var srcThis=$(this).attr('src');
+		$(".main").attr('src', srcThis);
+		$("#content .imgClick").show();
+		$("#content .infoImgClick").show();
+	})
+	$('.normal').click(function(){
+	var source = $(this).attr('src');
+	$('.main').attr('src',source);
+});
+	$("#content .imgClick").click(function(){
+		$("#content .imgClick").hide();
+		$("#content .infoImgClick").hide();
+	})
+	$('.main').click(function(){})
+
 })
 
