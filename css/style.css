@@ -20,6 +20,10 @@ body i {
   color: gray;
 }
 
+.font {
+  font-family: "Roboto Slab", Georgia, serif;
+}
+
 .registerlinkForm {
   display: none;
   position: fixed;
@@ -229,21 +233,6 @@ body i {
   color: #FF6347;
 }
 
-.activeBackWhite {
-  background-color: white;
-}
-
-.activeWhite {
-  color: white;
-}
-.activeWhite:hover {
-  color: white;
-}
-
-.activeBackGrayGunay {
-  background-color: #f9f9f9;
-}
-
 .activePink {
   color: #D70060;
 }
@@ -256,6 +245,14 @@ body i {
 }
 .activeBrown:hover {
   color: #D2691E;
+}
+
+.activeBackWhite {
+  background-color: white;
+}
+
+.activeBackGrayGunay {
+  background-color: #f9f9f9;
 }
 
 .activeGreenBlueBorder {
@@ -327,6 +324,51 @@ body i {
 }
 
 .activeBackBlue {
+  background-color: #4682B4;
+}
+
+.activeBackPinkHover:hover {
+  color: white;
+  background-color: #D70060;
+}
+
+.activeBackGreenBlueHover:hover {
+  color: white;
+  background-color: #16A085;
+}
+
+.activeBackBrownHover:hover {
+  color: white;
+  background-color: #D2691E;
+}
+
+.activeBackFlowerHover:hover {
+  color: white;
+  background-color: #FF6347;
+}
+
+.activeBackLightRedHover:hover {
+  color: white;
+  background-color: #E54E53;
+}
+
+.activeBackRedHover:hover {
+  color: white;
+  background-color: #C0392B;
+}
+
+.activeBackOrangeHover:hover {
+  color: white;
+  background-color: #D2691E;
+}
+
+.activeBackGreenHover:hover {
+  color: white;
+  background-color: #32742C;
+}
+
+.activeBackBlueHover:hover {
+  color: white;
   background-color: #4682B4;
 }
 
@@ -801,6 +843,11 @@ hr {
   padding-right: 25px;
   padding-bottom: 28px;
 }
+.galleryItem .galleryItemTitle h6 {
+  font-family: "Roboto Slab", Georgia, serif;
+  color: white;
+  padding-right: 25px;
+}
 
 .leftContent {
   padding-right: 15px;
@@ -1001,6 +1048,56 @@ hr {
 }
 .percentRange .range {
   height: 25px;
+}
+
+.timelineBox {
+  margin-top: 20px;
+  padding: 0 24px;
+  border-left: 1px solid #D7DADE;
+  position: relative;
+}
+.timelineBox > h5 {
+  border: 1px solid #D7DADE;
+  font-weight: 600;
+  padding: 5px 15px;
+  position: relative;
+  bottom: 23px;
+  float: left;
+}
+.timelineBox > h5::after {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background-color: #D7DADE;
+  position: absolute;
+  top: 49%;
+  left: -25px;
+}
+.timelineBox .timelineDates {
+  padding-bottom: 30px;
+}
+.timelineBox .timelineDates h6 {
+  font-family: "Roboto Slab", Georgia, serif;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+.timelineBox .timelineDates h6 span {
+  color: dimgray;
+  margin-right: 40px;
+}
+.timelineBox .timelineDates h6 a {
+  color: #19232D;
+  font-size: 13px;
+}
+
+.loadBtn li {
+  background-color: #F2F2F2;
+  padding: 3px 10px;
+  color: gray;
+  float: left;
+  margin-right: 5px;
+  transition: .5s ease;
+  font-size: 12px;
 }
 
 /**************** Header Section *****************/
@@ -1721,6 +1818,11 @@ hr {
 }
 #content .imgInfo {
   height: 20px;
+}
+@media screen and (max-width: 767px) {
+  #content .imgInfo {
+    height: 60px;
+  }
 }
 #content .imgInfo time {
   float: left;

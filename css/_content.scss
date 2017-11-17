@@ -338,7 +338,9 @@
 							}
 							.imgInfo{
 								height: 20px;
-
+								@media screen and(max-width: 767px) {
+									height: 60px;
+								}
 								time{
 									float: left;
 									color: $colorP;
