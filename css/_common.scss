@@ -15,19 +15,27 @@ body {
 	.a{
 		color: gray;
 	}
+	.font{
+		font-family: "Roboto Slab", Georgia, serif;
+	}
 .registerlinkForm{
+		@media screen and(max-width: 768px) {
+			width: 250px;
+    		margin-left: -90px;
+		}
+		display: none;
 		position: fixed;
 	    margin: 0;
 	    top: 30%;
 	    left: 35%;
 	    z-index: 1050;
 	    width: 560px;
-	    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-	    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-	    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 	    outline: none;
 	    .margBottom{
 		margin-bottom: 30px;
+	}
+	.rightMenu{
+		
 	}
 	.activeClick{
 		height: 350px;
@@ -72,6 +80,10 @@ body {
 	}
 	}
 .registerForms{
+	@media screen and(max-width: 768px) {
+		opacity: 0.8;
+	}
+	display: none;
 	position: fixed;
     top: 0;
     right: 0;
@@ -213,7 +225,6 @@ body {
 		color: $colorFlower;
 	}
 }
-
 .activePink{
 	color: $colorPink;
 	&:hover{
@@ -374,7 +385,9 @@ body {
 .displayNone{
 	display: none;
 }
-
+.topBorderRow{
+	border-top: 2px solid $colorRed;
+}
 .pageNewsHeader{
 	border-width: 0 0 0 3px;
 	border-style: solid;
@@ -839,6 +852,18 @@ hr{
 	img{
 		width: 100%;
 	}
+	.galleryBtn{
+		z-index: 8;
+		padding: 4px 16px;
+	    position: absolute;
+	 	bottom: 140px;
+	    left: 10px;
+		span{
+			color: #fff;
+			font-size: 14px;
+			text-decoration: none;
+			}	
+	}
 	.galleryItemTitle{
 		width: 100%;
 		padding: 5px 10px;
@@ -857,6 +882,17 @@ hr{
 			a{
 				color: $colorSearch*1.1;
 			}
+		}
+		h1{
+			font-family: "Roboto Slab", Georgia, serif;
+			color: white;
+		    padding-right: 25px;
+			padding-bottom: 28px;
+		}
+		h6{
+			font-family: "Roboto Slab", Georgia, serif;
+			color: white;
+		    padding-right: 25px;
 		}
 	}
 }

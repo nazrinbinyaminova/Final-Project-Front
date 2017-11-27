@@ -292,7 +292,7 @@ $(document).ready(function(){
   		$(".registerlinkForm .h5").hide();
   		$(".registerlinkForm .rmvClass ").show();
 	})
-	$(".rightMenu form .form-group ").click(function(){
+	$(".rightMenu form .form-group .a").click(function(){
 		$(".registerForms").show();
 		$(".registerlinkForm").show();
 		$(".registerlinkForm .header span:contains('SIGN IN')").html('RECOVER PASSWORD');
@@ -307,11 +307,19 @@ $(document).ready(function(){
   		})
 		
 	})
+	$("#navHead .smallNavBarItem .visible-xs .userRegister ").click(function () {
+		$(".userRegister").removeAttr('href');
+		$(".registerForms").show();
+		$(".registerlinkForm").show();
+	})
 	/******************  Politic page info  ******************/
 	$("#content .infoTab").hide();
 	$("#content .infoImgTab").hide();
-	$("#content .wrapper .imageSide").click(function(){
+	$("#content .wrapper .imageSide img").click(function(){
+		var src= $(this).attr('src');
+		$("#content .imgClick").hide();
 		$("#content .infoTab").show();
+		$("#content .infoImgTab .imgKlik").attr('src', src);
 		$("#content .infoImgTab").show();
 	})
 	$("#content .infoTab").click(function(){
@@ -323,5 +331,29 @@ $(document).ready(function(){
 		$("#content .infoTab").hide();
 		$("#content .infoImgTab").hide();
 	})
+	/******************  Reply Button in SinglePost  ******************/
+	$(".reply").click(function(){
+		var index=$(".reply").index(this);
+		$(".replyForm").hide();
+		$(".replyForm").eq(index).show();
+		 $(".replyA").removeAttr("href"); 
+	})
+	/******************  Slider with image click ******************/
+	$(".wrapper .allImgInfo img").click(function(){
+		var srcThis=$(this).attr('src');
+		$(".main").attr('src', srcThis);
+		$("#content .imgClick").show();
+		$("#content .infoImgClick").show();
+	})
+	$('.normal').click(function(){
+	var source = $(this).attr('src');
+	$('.main').attr('src',source);
+});
+	$("#content .imgClick").click(function(){
+		$("#content .imgClick").hide();
+		$("#content .infoImgClick").hide();
+	})
+	$('.main').click(function(){})
+
 })
 
